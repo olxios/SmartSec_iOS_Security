@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B280F19B1AB0B52900DC28FC /* SmartSec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D24A6E1A90C7D100FA8CEA /* SmartSec.framework */; };
+		B280F19C1AB0B52900DC28FC /* SmartSec.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2D24A6E1A90C7D100FA8CEA /* SmartSec.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2D24A391A90C77800FA8CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A381A90C77800FA8CEA /* main.m */; };
+		B2D24A3C1A90C77800FA8CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A3B1A90C77800FA8CEA /* AppDelegate.m */; };
+		B2D24A3F1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A3D1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld */; };
+		B2D24A421A90C77800FA8CEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A411A90C77800FA8CEA /* ViewController.m */; };
+		B2D24A451A90C77800FA8CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D24A431A90C77800FA8CEA /* Main.storyboard */; };
+		B2D24A471A90C77800FA8CEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D24A461A90C77800FA8CEA /* Images.xcassets */; };
+		B2D24A4A1A90C77800FA8CEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D24A481A90C77800FA8CEA /* LaunchScreen.xib */; };
+		B2D24A561A90C77800FA8CEA /* SmartSecExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A551A90C77800FA8CEA /* SmartSecExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B280F19D1AB0B52900DC28FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D24A681A90C7D100FA8CEA /* SmartSec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D24A031A90C42900FA8CEA;
+			remoteInfo = SmartSec;
+		};
+		B2D24A501A90C77800FA8CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D24A2B1A90C77800FA8CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D24A321A90C77800FA8CEA;
+			remoteInfo = SmartSecExample;
+		};
+		B2D24A6D1A90C7D100FA8CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D24A681A90C7D100FA8CEA /* SmartSec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2D24A041A90C42900FA8CEA;
+			remoteInfo = SmartSec;
+		};
+		B2D24A6F1A90C7D100FA8CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D24A681A90C7D100FA8CEA /* SmartSec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2D24A0F1A90C42A00FA8CEA;
+			remoteInfo = SmartSecTests;
+		};
+		B2D24A711A90C7E100FA8CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D24A681A90C7D100FA8CEA /* SmartSec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D24A031A90C42900FA8CEA;
+			remoteInfo = SmartSec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B280F19F1AB0B52A00DC28FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B280F19C1AB0B52900DC28FC /* SmartSec.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B2D24A331A90C77800FA8CEA /* SmartSecExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartSecExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D24A371A90C77800FA8CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D24A381A90C77800FA8CEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2D24A3A1A90C77800FA8CEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2D24A3B1A90C77800FA8CEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2D24A3E1A90C77800FA8CEA /* SmartSecExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartSecExample.xcdatamodel; sourceTree = "<group>"; };
+		B2D24A401A90C77800FA8CEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B2D24A411A90C77800FA8CEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B2D24A441A90C77800FA8CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2D24A461A90C77800FA8CEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2D24A491A90C77800FA8CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B2D24A4F1A90C77800FA8CEA /* SmartSecExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartSecExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D24A541A90C77800FA8CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D24A551A90C77800FA8CEA /* SmartSecExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartSecExampleTests.m; sourceTree = "<group>"; };
+		B2D24A681A90C7D100FA8CEA /* SmartSec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SmartSec.xcodeproj; path = ../../SmartSec/SmartSec.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2D24A301A90C77800FA8CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B280F19B1AB0B52900DC28FC /* SmartSec.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D24A4C1A90C77800FA8CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2D24A2A1A90C77800FA8CEA = {
+			isa = PBXGroup;
+			children = (
+				B2D24A351A90C77800FA8CEA /* SmartSecExample */,
+				B2D24A521A90C77800FA8CEA /* SmartSecExampleTests */,
+				B2D24A341A90C77800FA8CEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2D24A341A90C77800FA8CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2D24A331A90C77800FA8CEA /* SmartSecExample.app */,
+				B2D24A4F1A90C77800FA8CEA /* SmartSecExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2D24A351A90C77800FA8CEA /* SmartSecExample */ = {
+			isa = PBXGroup;
+			children = (
+				B2D24A681A90C7D100FA8CEA /* SmartSec.xcodeproj */,
+				B2D24A3A1A90C77800FA8CEA /* AppDelegate.h */,
+				B2D24A3B1A90C77800FA8CEA /* AppDelegate.m */,
+				B2D24A401A90C77800FA8CEA /* ViewController.h */,
+				B2D24A411A90C77800FA8CEA /* ViewController.m */,
+				B2D24A431A90C77800FA8CEA /* Main.storyboard */,
+				B2D24A461A90C77800FA8CEA /* Images.xcassets */,
+				B2D24A481A90C77800FA8CEA /* LaunchScreen.xib */,
+				B2D24A3D1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld */,
+				B2D24A361A90C77800FA8CEA /* Supporting Files */,
+			);
+			path = SmartSecExample;
+			sourceTree = "<group>";
+		};
+		B2D24A361A90C77800FA8CEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2D24A371A90C77800FA8CEA /* Info.plist */,
+				B2D24A381A90C77800FA8CEA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2D24A521A90C77800FA8CEA /* SmartSecExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2D24A551A90C77800FA8CEA /* SmartSecExampleTests.m */,
+				B2D24A531A90C77800FA8CEA /* Supporting Files */,
+			);
+			path = SmartSecExampleTests;
+			sourceTree = "<group>";
+		};
+		B2D24A531A90C77800FA8CEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2D24A541A90C77800FA8CEA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2D24A691A90C7D100FA8CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2D24A6E1A90C7D100FA8CEA /* SmartSec.framework */,
+				B2D24A701A90C7D100FA8CEA /* SmartSecTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2D24A321A90C77800FA8CEA /* SmartSecExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D24A591A90C77800FA8CEA /* Build configuration list for PBXNativeTarget "SmartSecExample" */;
+			buildPhases = (
+				B2D24A2F1A90C77800FA8CEA /* Sources */,
+				B2D24A301A90C77800FA8CEA /* Frameworks */,
+				B2D24A311A90C77800FA8CEA /* Resources */,
+				B280F19F1AB0B52A00DC28FC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2D24A721A90C7E100FA8CEA /* PBXTargetDependency */,
+				B280F19E1AB0B52900DC28FC /* PBXTargetDependency */,
+			);
+			name = SmartSecExample;
+			productName = SmartSecExample;
+			productReference = B2D24A331A90C77800FA8CEA /* SmartSecExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2D24A4E1A90C77800FA8CEA /* SmartSecExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D24A5C1A90C77800FA8CEA /* Build configuration list for PBXNativeTarget "SmartSecExampleTests" */;
+			buildPhases = (
+				B2D24A4B1A90C77800FA8CEA /* Sources */,
+				B2D24A4C1A90C77800FA8CEA /* Frameworks */,
+				B2D24A4D1A90C77800FA8CEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2D24A511A90C77800FA8CEA /* PBXTargetDependency */,
+			);
+			name = SmartSecExampleTests;
+			productName = SmartSecExampleTests;
+			productReference = B2D24A4F1A90C77800FA8CEA /* SmartSecExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2D24A2B1A90C77800FA8CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Olga Dalton";
+				TargetAttributes = {
+					B2D24A321A90C77800FA8CEA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B2D24A4E1A90C77800FA8CEA = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B2D24A321A90C77800FA8CEA;
+					};
+				};
+			};
+			buildConfigurationList = B2D24A2E1A90C77800FA8CEA /* Build configuration list for PBXProject "SmartSecExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2D24A2A1A90C77800FA8CEA;
+			productRefGroup = B2D24A341A90C77800FA8CEA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B2D24A691A90C7D100FA8CEA /* Products */;
+					ProjectRef = B2D24A681A90C7D100FA8CEA /* SmartSec.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B2D24A321A90C77800FA8CEA /* SmartSecExample */,
+				B2D24A4E1A90C77800FA8CEA /* SmartSecExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B2D24A6E1A90C7D100FA8CEA /* SmartSec.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SmartSec.framework;
+			remoteRef = B2D24A6D1A90C7D100FA8CEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2D24A701A90C7D100FA8CEA /* SmartSecTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SmartSecTests.xctest;
+			remoteRef = B2D24A6F1A90C7D100FA8CEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2D24A311A90C77800FA8CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D24A451A90C77800FA8CEA /* Main.storyboard in Resources */,
+				B2D24A4A1A90C77800FA8CEA /* LaunchScreen.xib in Resources */,
+				B2D24A471A90C77800FA8CEA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D24A4D1A90C77800FA8CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2D24A2F1A90C77800FA8CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D24A3C1A90C77800FA8CEA /* AppDelegate.m in Sources */,
+				B2D24A391A90C77800FA8CEA /* main.m in Sources */,
+				B2D24A421A90C77800FA8CEA /* ViewController.m in Sources */,
+				B2D24A3F1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D24A4B1A90C77800FA8CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D24A561A90C77800FA8CEA /* SmartSecExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B280F19E1AB0B52900DC28FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SmartSec;
+			targetProxy = B280F19D1AB0B52900DC28FC /* PBXContainerItemProxy */;
+		};
+		B2D24A511A90C77800FA8CEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2D24A321A90C77800FA8CEA /* SmartSecExample */;
+			targetProxy = B2D24A501A90C77800FA8CEA /* PBXContainerItemProxy */;
+		};
+		B2D24A721A90C7E100FA8CEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SmartSec;
+			targetProxy = B2D24A711A90C7E100FA8CEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2D24A431A90C77800FA8CEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D24A441A90C77800FA8CEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2D24A481A90C77800FA8CEA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2D24A491A90C77800FA8CEA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2D24A571A90C77800FA8CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B2D24A581A90C77800FA8CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2D24A5A1A90C77800FA8CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Olga Dalton (V4AHWHD65Q)";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = SmartSecExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2f640063-b879-4d34-9a8b-aef38caabbf5";
+			};
+			name = Debug;
+		};
+		B2D24A5B1A90C77800FA8CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Olga Dalton (V4AHWHD65Q)";
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = SmartSecExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2f640063-b879-4d34-9a8b-aef38caabbf5";
+			};
+			name = Release;
+		};
+		B2D24A5D1A90C77800FA8CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartSecExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartSecExample.app/SmartSecExample";
+			};
+			name = Debug;
+		};
+		B2D24A5E1A90C77800FA8CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartSecExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartSecExample.app/SmartSecExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2D24A2E1A90C77800FA8CEA /* Build configuration list for PBXProject "SmartSecExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D24A571A90C77800FA8CEA /* Debug */,
+				B2D24A581A90C77800FA8CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D24A591A90C77800FA8CEA /* Build configuration list for PBXNativeTarget "SmartSecExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D24A5A1A90C77800FA8CEA /* Debug */,
+				B2D24A5B1A90C77800FA8CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D24A5C1A90C77800FA8CEA /* Build configuration list for PBXNativeTarget "SmartSecExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D24A5D1A90C77800FA8CEA /* Debug */,
+				B2D24A5E1A90C77800FA8CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B2D24A3D1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B2D24A3E1A90C77800FA8CEA /* SmartSecExample.xcdatamodel */,
+			);
+			currentVersion = B2D24A3E1A90C77800FA8CEA /* SmartSecExample.xcdatamodel */;
+			path = SmartSecExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B2D24A2B1A90C77800FA8CEA /* Project object */;
+}
