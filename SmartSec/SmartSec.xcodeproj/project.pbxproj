@@ -7,24 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B24FC8E51AC831F200474510 /* BaseCoreDataTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = B24FC8E31AC831F200474510 /* BaseCoreDataTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B24FC8E61AC831F200474510 /* BaseCoreDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B24FC8E41AC831F200474510 /* BaseCoreDataTransformer.m */; };
+		B262C8321AC41B3D009E090F /* JailbreakCheck1.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8301AC41B3D009E090F /* JailbreakCheck1.h */; };
+		B262C8331AC41B3D009E090F /* JailbreakCheck1.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8311AC41B3D009E090F /* JailbreakCheck1.m */; };
+		B262C83A1AC43781009E090F /* UIWindow+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8381AC43781009E090F /* UIWindow+Sec.h */; };
+		B262C83B1AC43781009E090F /* UIWindow+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8391AC43781009E090F /* UIWindow+Sec.m */; };
+		B262C83C1AC445C1009E090F /* Defines.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D73A391AAF74EA00F8BB26 /* Defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B262C8411AC44A41009E090F /* LOOCryptString.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C83F1AC44A41009E090F /* LOOCryptString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B262C8421AC44A41009E090F /* LOOCryptString.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8401AC44A41009E090F /* LOOCryptString.m */; };
+		B262C8451AC4676A009E090F /* JailbreakCheck2.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8431AC4676A009E090F /* JailbreakCheck2.h */; };
+		B262C8461AC4676A009E090F /* JailbreakCheck2.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8441AC4676A009E090F /* JailbreakCheck2.m */; };
+		B262C8491AC46C1D009E090F /* UINavigationController+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8471AC46C1D009E090F /* UINavigationController+Sec.h */; };
+		B262C84A1AC46C1D009E090F /* UINavigationController+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8481AC46C1D009E090F /* UINavigationController+Sec.m */; };
+		B262C84E1AC4720F009E090F /* IntegrityCheck1.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C84C1AC4720F009E090F /* IntegrityCheck1.h */; };
+		B262C84F1AC4720F009E090F /* IntegrityCheck1.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C84D1AC4720F009E090F /* IntegrityCheck1.m */; };
+		B262C8521AC4728B009E090F /* IntegrityCheck2.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8501AC4728B009E090F /* IntegrityCheck2.h */; };
+		B262C8531AC4728B009E090F /* IntegrityCheck2.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8511AC4728B009E090F /* IntegrityCheck2.m */; };
+		B262C8611AC56542009E090F /* CryptoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C85F1AC56542009E090F /* CryptoManager.h */; };
+		B262C8621AC56542009E090F /* CryptoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8601AC56542009E090F /* CryptoManager.m */; };
+		B262C8671AC56657009E090F /* NSUserDefaults+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8651AC56657009E090F /* NSUserDefaults+Sec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B262C8681AC56657009E090F /* NSUserDefaults+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8661AC56657009E090F /* NSUserDefaults+Sec.m */; };
+		B262C8751AC57593009E090F /* RNCryptor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C86B1AC57593009E090F /* RNCryptor+Private.h */; };
+		B262C8761AC57593009E090F /* RNCryptor-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = B262C86C1AC57593009E090F /* RNCryptor-Prefix.pch */; };
+		B262C8771AC57593009E090F /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C86D1AC57593009E090F /* RNCryptor.h */; };
+		B262C8781AC57593009E090F /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C86E1AC57593009E090F /* RNCryptor.m */; };
+		B262C8791AC57593009E090F /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C86F1AC57593009E090F /* RNCryptorEngine.h */; };
+		B262C87A1AC57593009E090F /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8701AC57593009E090F /* RNCryptorEngine.m */; };
+		B262C87B1AC57593009E090F /* RNDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8711AC57593009E090F /* RNDecryptor.h */; };
+		B262C87C1AC57593009E090F /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8721AC57593009E090F /* RNDecryptor.m */; };
+		B262C87D1AC57593009E090F /* RNEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8731AC57593009E090F /* RNEncryptor.h */; };
+		B262C87E1AC57593009E090F /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8741AC57593009E090F /* RNEncryptor.m */; };
+		B262C8801AC575D7009E090F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B262C87F1AC575D7009E090F /* Security.framework */; };
+		B262C8871AC5C7EB009E090F /* xxhash.c in Sources */ = {isa = PBXBuildFile; fileRef = B262C8841AC5C7EB009E090F /* xxhash.c */; };
+		B262C8881AC5C7EB009E090F /* xxhash.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8851AC5C7EB009E090F /* xxhash.h */; };
+		B262C8891AC5C7EB009E090F /* xxhsum.c in Sources */ = {isa = PBXBuildFile; fileRef = B262C8861AC5C7EB009E090F /* xxhsum.c */; };
+		B262C88B1AC5D74A009E090F /* NSUserDefaultsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C88A1AC5D74A009E090F /* NSUserDefaultsTest.m */; };
+		B262C8911AC6C547009E090F /* NSData+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C88F1AC6C547009E090F /* NSData+Sec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B262C8921AC6C547009E090F /* NSData+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8901AC6C547009E090F /* NSData+Sec.m */; };
+		B262C8941AC6FBF3009E090F /* NSDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8931AC6FBF3009E090F /* NSDataTest.m */; };
+		B262C8971AC710FD009E090F /* NSFileManager+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8951AC710FD009E090F /* NSFileManager+Sec.h */; };
+		B262C8981AC710FD009E090F /* NSFileManager+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8961AC710FD009E090F /* NSFileManager+Sec.m */; };
+		B262C89B1AC72CF0009E090F /* NSString+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8991AC72CF0009E090F /* NSString+Sec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B262C89C1AC72CF0009E090F /* NSString+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C89A1AC72CF0009E090F /* NSString+Sec.m */; };
+		B262C89F1AC72D38009E090F /* NSArray+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C89D1AC72D38009E090F /* NSArray+Sec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B262C8A01AC72D38009E090F /* NSArray+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C89E1AC72D38009E090F /* NSArray+Sec.m */; };
+		B262C8A31AC72D49009E090F /* NSDictionary+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8A11AC72D49009E090F /* NSDictionary+Sec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B262C8A41AC72D49009E090F /* NSDictionary+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8A21AC72D49009E090F /* NSDictionary+Sec.m */; };
+		B262C8A71AC72D54009E090F /* UIImage+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8A51AC72D54009E090F /* UIImage+Sec.h */; };
+		B262C8A81AC72D54009E090F /* UIImage+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8A61AC72D54009E090F /* UIImage+Sec.m */; };
+		B262C8AE1AC7365D009E090F /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8AD1AC7365D009E090F /* NSArrayTest.m */; };
+		B262C8B01AC7366A009E090F /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8AF1AC7366A009E090F /* NSDictionaryTest.m */; };
+		B262C8B21AC73678009E090F /* NSMutableArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8B11AC73678009E090F /* NSMutableArrayTest.m */; };
+		B262C8B61AC74812009E090F /* NSStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8B51AC74812009E090F /* NSStringTest.m */; };
 		B280F1891AB0625A00DC28FC /* OnStateChangeListener.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1881AB0625A00DC28FC /* OnStateChangeListener.h */; };
 		B280F18C1AB0689700DC28FC /* NSObject+State.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F18A1AB0689700DC28FC /* NSObject+State.h */; };
 		B280F18D1AB0689700DC28FC /* NSObject+State.m in Sources */ = {isa = PBXBuildFile; fileRef = B280F18B1AB0689700DC28FC /* NSObject+State.m */; };
-		B280F1901AB06C9800DC28FC /* DebugCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F18E1AB06C9800DC28FC /* DebugCheck.h */; };
-		B280F1911AB06C9800DC28FC /* DebugCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = B280F18F1AB06C9800DC28FC /* DebugCheck.m */; };
 		B280F1931AB06D3F00DC28FC /* BaseChecksTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1921AB06D3F00DC28FC /* BaseChecksTemplate.h */; };
-		B280F1941AB0727000DC28FC /* SmartSecConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D73A301AAF39F300F8BB26 /* SmartSecConfig.m */; };
 		B280F1981AB0974300DC28FC /* UIViewController+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1961AB0974300DC28FC /* UIViewController+Sec.h */; };
 		B280F1991AB0974300DC28FC /* UIViewController+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B280F1971AB0974300DC28FC /* UIViewController+Sec.m */; };
 		B2D24A0A1A90C42900FA8CEA /* SmartSec.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D24A091A90C42900FA8CEA /* SmartSec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2D24A101A90C42A00FA8CEA /* SmartSec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D24A041A90C42900FA8CEA /* SmartSec.framework */; };
-		B2D24A171A90C42A00FA8CEA /* SmartSecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A161A90C42A00FA8CEA /* SmartSecTests.m */; };
-		B2D24A281A90C6A600FA8CEA /* SmartSecInit.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D24A261A90C6A600FA8CEA /* SmartSecInit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2D24A291A90C6A600FA8CEA /* SmartSecInit.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A271A90C6A600FA8CEA /* SmartSecInit.m */; };
-		B2D73A311AAF39F300F8BB26 /* SmartSecConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D73A2F1AAF39F300F8BB26 /* SmartSecConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2D24A281A90C6A600FA8CEA /* SmartSecConfigurable.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D24A261A90C6A600FA8CEA /* SmartSecConfigurable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2D24A291A90C6A600FA8CEA /* SmartSecConfigurable.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A271A90C6A600FA8CEA /* SmartSecConfigurable.m */; };
 		B2D73A3B1AAF7D3E00F8BB26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D73A3A1AAF7D3E00F8BB26 /* UIKit.framework */; };
 		B2D73A3F1AAF82AA00F8BB26 /* UIApplication+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D73A3D1AAF82AA00F8BB26 /* UIApplication+Sec.h */; };
 		B2D73A401AAF82AA00F8BB26 /* UIApplication+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D73A3E1AAF82AA00F8BB26 /* UIApplication+Sec.m */; };
+		B2E50A2F1AC2FC2100BBD5CA /* SmartSecDefault.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E50A2D1AC2FC2100BBD5CA /* SmartSecDefault.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2E50A301AC2FC2100BBD5CA /* SmartSecDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E50A2E1AC2FC2100BBD5CA /* SmartSecDefault.m */; };
+		B2E50A341AC31A7100BBD5CA /* DebugCheck1.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E50A321AC31A7100BBD5CA /* DebugCheck1.h */; };
+		B2E50A381AC31ADB00BBD5CA /* DebugCheck2.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E50A361AC31ADB00BBD5CA /* DebugCheck2.h */; };
+		B2E50A3D1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E50A3B1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h */; };
+		B2E50A3E1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E50A3C1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m */; };
+		B2E50A401AC3219C00BBD5CA /* DebugCheck1.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E50A331AC31A7100BBD5CA /* DebugCheck1.m */; };
+		B2E50A411AC3219F00BBD5CA /* DebugCheck2.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E50A371AC31ADB00BBD5CA /* DebugCheck2.m */; };
+		B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E50A431AC33C4A00BBD5CA /* SmartSecConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2E50A461AC33C4A00BBD5CA /* SmartSecConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E50A441AC33C4A00BBD5CA /* SmartSecConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +96,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B24FC8E31AC831F200474510 /* BaseCoreDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCoreDataTransformer.h; sourceTree = "<group>"; };
+		B24FC8E41AC831F200474510 /* BaseCoreDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCoreDataTransformer.m; sourceTree = "<group>"; };
+		B262C8301AC41B3D009E090F /* JailbreakCheck1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailbreakCheck1.h; sourceTree = "<group>"; };
+		B262C8311AC41B3D009E090F /* JailbreakCheck1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailbreakCheck1.m; sourceTree = "<group>"; };
+		B262C8381AC43781009E090F /* UIWindow+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Sec.h"; sourceTree = "<group>"; };
+		B262C8391AC43781009E090F /* UIWindow+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Sec.m"; sourceTree = "<group>"; };
+		B262C83F1AC44A41009E090F /* LOOCryptString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOOCryptString.h; sourceTree = "<group>"; };
+		B262C8401AC44A41009E090F /* LOOCryptString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOOCryptString.m; sourceTree = "<group>"; };
+		B262C8431AC4676A009E090F /* JailbreakCheck2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailbreakCheck2.h; sourceTree = "<group>"; };
+		B262C8441AC4676A009E090F /* JailbreakCheck2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailbreakCheck2.m; sourceTree = "<group>"; };
+		B262C8471AC46C1D009E090F /* UINavigationController+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Sec.h"; sourceTree = "<group>"; };
+		B262C8481AC46C1D009E090F /* UINavigationController+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Sec.m"; sourceTree = "<group>"; };
+		B262C84C1AC4720F009E090F /* IntegrityCheck1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegrityCheck1.h; sourceTree = "<group>"; };
+		B262C84D1AC4720F009E090F /* IntegrityCheck1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegrityCheck1.m; sourceTree = "<group>"; };
+		B262C8501AC4728B009E090F /* IntegrityCheck2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegrityCheck2.h; sourceTree = "<group>"; };
+		B262C8511AC4728B009E090F /* IntegrityCheck2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegrityCheck2.m; sourceTree = "<group>"; };
+		B262C85F1AC56542009E090F /* CryptoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoManager.h; sourceTree = "<group>"; };
+		B262C8601AC56542009E090F /* CryptoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoManager.m; sourceTree = "<group>"; };
+		B262C8651AC56657009E090F /* NSUserDefaults+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Sec.h"; sourceTree = "<group>"; };
+		B262C8661AC56657009E090F /* NSUserDefaults+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Sec.m"; sourceTree = "<group>"; };
+		B262C86B1AC57593009E090F /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		B262C86C1AC57593009E090F /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		B262C86D1AC57593009E090F /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		B262C86E1AC57593009E090F /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		B262C86F1AC57593009E090F /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		B262C8701AC57593009E090F /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		B262C8711AC57593009E090F /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		B262C8721AC57593009E090F /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		B262C8731AC57593009E090F /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		B262C8741AC57593009E090F /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		B262C87F1AC575D7009E090F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B262C8841AC5C7EB009E090F /* xxhash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xxhash.c; sourceTree = "<group>"; };
+		B262C8851AC5C7EB009E090F /* xxhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxhash.h; sourceTree = "<group>"; };
+		B262C8861AC5C7EB009E090F /* xxhsum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xxhsum.c; sourceTree = "<group>"; };
+		B262C88A1AC5D74A009E090F /* NSUserDefaultsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsTest.m; sourceTree = "<group>"; };
+		B262C88F1AC6C547009E090F /* NSData+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Sec.h"; sourceTree = "<group>"; };
+		B262C8901AC6C547009E090F /* NSData+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Sec.m"; sourceTree = "<group>"; };
+		B262C8931AC6FBF3009E090F /* NSDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataTest.m; sourceTree = "<group>"; };
+		B262C8951AC710FD009E090F /* NSFileManager+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Sec.h"; sourceTree = "<group>"; };
+		B262C8961AC710FD009E090F /* NSFileManager+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Sec.m"; sourceTree = "<group>"; };
+		B262C8991AC72CF0009E090F /* NSString+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sec.h"; sourceTree = "<group>"; };
+		B262C89A1AC72CF0009E090F /* NSString+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sec.m"; sourceTree = "<group>"; };
+		B262C89D1AC72D38009E090F /* NSArray+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sec.h"; sourceTree = "<group>"; };
+		B262C89E1AC72D38009E090F /* NSArray+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sec.m"; sourceTree = "<group>"; };
+		B262C8A11AC72D49009E090F /* NSDictionary+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Sec.h"; sourceTree = "<group>"; };
+		B262C8A21AC72D49009E090F /* NSDictionary+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Sec.m"; sourceTree = "<group>"; };
+		B262C8A51AC72D54009E090F /* UIImage+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sec.h"; sourceTree = "<group>"; };
+		B262C8A61AC72D54009E090F /* UIImage+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sec.m"; sourceTree = "<group>"; };
+		B262C8AD1AC7365D009E090F /* NSArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
+		B262C8AF1AC7366A009E090F /* NSDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTest.m; sourceTree = "<group>"; };
+		B262C8B11AC73678009E090F /* NSMutableArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArrayTest.m; sourceTree = "<group>"; };
+		B262C8B51AC74812009E090F /* NSStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTest.m; sourceTree = "<group>"; };
 		B280F1881AB0625A00DC28FC /* OnStateChangeListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnStateChangeListener.h; sourceTree = "<group>"; };
 		B280F18A1AB0689700DC28FC /* NSObject+State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+State.h"; sourceTree = "<group>"; };
 		B280F18B1AB0689700DC28FC /* NSObject+State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+State.m"; sourceTree = "<group>"; };
-		B280F18E1AB06C9800DC28FC /* DebugCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugCheck.h; sourceTree = "<group>"; };
-		B280F18F1AB06C9800DC28FC /* DebugCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugCheck.m; sourceTree = "<group>"; };
 		B280F1921AB06D3F00DC28FC /* BaseChecksTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseChecksTemplate.h; sourceTree = "<group>"; };
 		B280F1961AB0974300DC28FC /* UIViewController+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sec.h"; sourceTree = "<group>"; };
 		B280F1971AB0974300DC28FC /* UIViewController+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sec.m"; sourceTree = "<group>"; };
@@ -51,15 +159,22 @@
 		B2D24A091A90C42900FA8CEA /* SmartSec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartSec.h; sourceTree = "<group>"; };
 		B2D24A0F1A90C42A00FA8CEA /* SmartSecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartSecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D24A151A90C42A00FA8CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2D24A161A90C42A00FA8CEA /* SmartSecTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartSecTests.m; sourceTree = "<group>"; };
-		B2D24A261A90C6A600FA8CEA /* SmartSecInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSecInit.h; sourceTree = "<group>"; };
-		B2D24A271A90C6A600FA8CEA /* SmartSecInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSecInit.m; sourceTree = "<group>"; };
-		B2D73A2F1AAF39F300F8BB26 /* SmartSecConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSecConfig.h; sourceTree = "<group>"; };
-		B2D73A301AAF39F300F8BB26 /* SmartSecConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSecConfig.m; sourceTree = "<group>"; };
+		B2D24A261A90C6A600FA8CEA /* SmartSecConfigurable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSecConfigurable.h; sourceTree = "<group>"; };
+		B2D24A271A90C6A600FA8CEA /* SmartSecConfigurable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSecConfigurable.m; sourceTree = "<group>"; };
 		B2D73A391AAF74EA00F8BB26 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		B2D73A3A1AAF7D3E00F8BB26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B2D73A3D1AAF82AA00F8BB26 /* UIApplication+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Sec.h"; sourceTree = "<group>"; };
 		B2D73A3E1AAF82AA00F8BB26 /* UIApplication+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Sec.m"; sourceTree = "<group>"; };
+		B2E50A2D1AC2FC2100BBD5CA /* SmartSecDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSecDefault.h; sourceTree = "<group>"; };
+		B2E50A2E1AC2FC2100BBD5CA /* SmartSecDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSecDefault.m; sourceTree = "<group>"; };
+		B2E50A321AC31A7100BBD5CA /* DebugCheck1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugCheck1.h; sourceTree = "<group>"; };
+		B2E50A331AC31A7100BBD5CA /* DebugCheck1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugCheck1.m; sourceTree = "<group>"; };
+		B2E50A361AC31ADB00BBD5CA /* DebugCheck2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugCheck2.h; sourceTree = "<group>"; };
+		B2E50A371AC31ADB00BBD5CA /* DebugCheck2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugCheck2.m; sourceTree = "<group>"; };
+		B2E50A3B1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ArrayValue.h"; sourceTree = "<group>"; };
+		B2E50A3C1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ArrayValue.m"; sourceTree = "<group>"; };
+		B2E50A431AC33C4A00BBD5CA /* SmartSecConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSecConfig.h; sourceTree = "<group>"; };
+		B2E50A441AC33C4A00BBD5CA /* SmartSecConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSecConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B262C8801AC575D7009E090F /* Security.framework in Frameworks */,
 				B2D73A3B1AAF7D3E00F8BB26 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,9 +198,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B24FC8E21AC831A200474510 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B24FC8E31AC831F200474510 /* BaseCoreDataTransformer.h */,
+				B24FC8E41AC831F200474510 /* BaseCoreDataTransformer.m */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		B262C82F1AC419BF009E090F /* jailbreak */ = {
+			isa = PBXGroup;
+			children = (
+				B262C8301AC41B3D009E090F /* JailbreakCheck1.h */,
+				B262C8311AC41B3D009E090F /* JailbreakCheck1.m */,
+				B262C8431AC4676A009E090F /* JailbreakCheck2.h */,
+				B262C8441AC4676A009E090F /* JailbreakCheck2.m */,
+			);
+			path = jailbreak;
+			sourceTree = "<group>";
+		};
+		B262C84B1AC47203009E090F /* integrity */ = {
+			isa = PBXGroup;
+			children = (
+				B262C84C1AC4720F009E090F /* IntegrityCheck1.h */,
+				B262C84D1AC4720F009E090F /* IntegrityCheck1.m */,
+				B262C8501AC4728B009E090F /* IntegrityCheck2.h */,
+				B262C8511AC4728B009E090F /* IntegrityCheck2.m */,
+			);
+			path = integrity;
+			sourceTree = "<group>";
+		};
+		B262C8641AC56641009E090F /* NSUSerDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				B262C8651AC56657009E090F /* NSUserDefaults+Sec.h */,
+				B262C8661AC56657009E090F /* NSUserDefaults+Sec.m */,
+			);
+			path = NSUSerDefaults;
+			sourceTree = "<group>";
+		};
+		B262C8691AC57593009E090F /* external */ = {
+			isa = PBXGroup;
+			children = (
+				B262C8831AC5C7B0009E090F /* xxHash */,
+				B262C86A1AC57593009E090F /* rncryptor */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		B262C86A1AC57593009E090F /* rncryptor */ = {
+			isa = PBXGroup;
+			children = (
+				B262C86B1AC57593009E090F /* RNCryptor+Private.h */,
+				B262C86C1AC57593009E090F /* RNCryptor-Prefix.pch */,
+				B262C86D1AC57593009E090F /* RNCryptor.h */,
+				B262C86E1AC57593009E090F /* RNCryptor.m */,
+				B262C86F1AC57593009E090F /* RNCryptorEngine.h */,
+				B262C8701AC57593009E090F /* RNCryptorEngine.m */,
+				B262C8711AC57593009E090F /* RNDecryptor.h */,
+				B262C8721AC57593009E090F /* RNDecryptor.m */,
+				B262C8731AC57593009E090F /* RNEncryptor.h */,
+				B262C8741AC57593009E090F /* RNEncryptor.m */,
+			);
+			path = rncryptor;
+			sourceTree = "<group>";
+		};
+		B262C8831AC5C7B0009E090F /* xxHash */ = {
+			isa = PBXGroup;
+			children = (
+				B262C8841AC5C7EB009E090F /* xxhash.c */,
+				B262C8851AC5C7EB009E090F /* xxhash.h */,
+				B262C8861AC5C7EB009E090F /* xxhsum.c */,
+			);
+			path = xxHash;
+			sourceTree = "<group>";
+		};
+		B262C88E1AC6C52D009E090F /* Encrypted Files */ = {
+			isa = PBXGroup;
+			children = (
+				B262C88F1AC6C547009E090F /* NSData+Sec.h */,
+				B262C8901AC6C547009E090F /* NSData+Sec.m */,
+				B262C8951AC710FD009E090F /* NSFileManager+Sec.h */,
+				B262C8961AC710FD009E090F /* NSFileManager+Sec.m */,
+				B262C8991AC72CF0009E090F /* NSString+Sec.h */,
+				B262C89A1AC72CF0009E090F /* NSString+Sec.m */,
+				B262C89D1AC72D38009E090F /* NSArray+Sec.h */,
+				B262C89E1AC72D38009E090F /* NSArray+Sec.m */,
+				B262C8A11AC72D49009E090F /* NSDictionary+Sec.h */,
+				B262C8A21AC72D49009E090F /* NSDictionary+Sec.m */,
+				B262C8A51AC72D54009E090F /* UIImage+Sec.h */,
+				B262C8A61AC72D54009E090F /* UIImage+Sec.m */,
+			);
+			path = "Encrypted Files";
+			sourceTree = "<group>";
+		};
 		B280F1951AB0964300DC28FC /* crypto */ = {
 			isa = PBXGroup;
 			children = (
+				B24FC8E21AC831A200474510 /* Core Data */,
+				B262C85F1AC56542009E090F /* CryptoManager.h */,
+				B262C8601AC56542009E090F /* CryptoManager.m */,
 			);
 			path = crypto;
 			sourceTree = "<group>";
@@ -92,6 +306,7 @@
 		B2D249FA1A90C42900FA8CEA = {
 			isa = PBXGroup;
 			children = (
+				B262C87F1AC575D7009E090F /* Security.framework */,
 				B2D73A3A1AAF7D3E00F8BB26 /* UIKit.framework */,
 				B2D24A061A90C42900FA8CEA /* SmartSec */,
 				B2D24A131A90C42A00FA8CEA /* SmartSecTests */,
@@ -111,14 +326,18 @@
 		B2D24A061A90C42900FA8CEA /* SmartSec */ = {
 			isa = PBXGroup;
 			children = (
+				B2D24A091A90C42900FA8CEA /* SmartSec.h */,
+				B2D73A391AAF74EA00F8BB26 /* Defines.h */,
+				B2E50A421AC33C2C00BBD5CA /* config */,
 				B280F1951AB0964300DC28FC /* crypto */,
 				B2D73A411AAF887300F8BB26 /* checks */,
 				B2D73A3C1AAF821600F8BB26 /* categories */,
-				B2D73A2E1AAF39DD00F8BB26 /* config */,
-				B2D24A091A90C42900FA8CEA /* SmartSec.h */,
-				B2D24A261A90C6A600FA8CEA /* SmartSecInit.h */,
-				B2D24A271A90C6A600FA8CEA /* SmartSecInit.m */,
-				B2D73A391AAF74EA00F8BB26 /* Defines.h */,
+				B2E50A3A1AC31D9F00BBD5CA /* general */,
+				B262C8691AC57593009E090F /* external */,
+				B2D24A261A90C6A600FA8CEA /* SmartSecConfigurable.h */,
+				B2D24A271A90C6A600FA8CEA /* SmartSecConfigurable.m */,
+				B2E50A2D1AC2FC2100BBD5CA /* SmartSecDefault.h */,
+				B2E50A2E1AC2FC2100BBD5CA /* SmartSecDefault.m */,
 				B2D24A071A90C42900FA8CEA /* Supporting Files */,
 			);
 			path = SmartSec;
@@ -135,7 +354,12 @@
 		B2D24A131A90C42A00FA8CEA /* SmartSecTests */ = {
 			isa = PBXGroup;
 			children = (
-				B2D24A161A90C42A00FA8CEA /* SmartSecTests.m */,
+				B262C88A1AC5D74A009E090F /* NSUserDefaultsTest.m */,
+				B262C8931AC6FBF3009E090F /* NSDataTest.m */,
+				B262C8AD1AC7365D009E090F /* NSArrayTest.m */,
+				B262C8B11AC73678009E090F /* NSMutableArrayTest.m */,
+				B262C8AF1AC7366A009E090F /* NSDictionaryTest.m */,
+				B262C8B51AC74812009E090F /* NSStringTest.m */,
 				B2D24A141A90C42A00FA8CEA /* Supporting Files */,
 			);
 			path = SmartSecTests;
@@ -149,24 +373,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B2D73A2E1AAF39DD00F8BB26 /* config */ = {
-			isa = PBXGroup;
-			children = (
-				B2D73A2F1AAF39F300F8BB26 /* SmartSecConfig.h */,
-				B2D73A301AAF39F300F8BB26 /* SmartSecConfig.m */,
-			);
-			path = config;
-			sourceTree = "<group>";
-		};
 		B2D73A3C1AAF821600F8BB26 /* categories */ = {
 			isa = PBXGroup;
 			children = (
+				B262C88E1AC6C52D009E090F /* Encrypted Files */,
+				B262C8641AC56641009E090F /* NSUSerDefaults */,
 				B280F18A1AB0689700DC28FC /* NSObject+State.h */,
 				B280F18B1AB0689700DC28FC /* NSObject+State.m */,
 				B2D73A3D1AAF82AA00F8BB26 /* UIApplication+Sec.h */,
 				B2D73A3E1AAF82AA00F8BB26 /* UIApplication+Sec.m */,
 				B280F1961AB0974300DC28FC /* UIViewController+Sec.h */,
 				B280F1971AB0974300DC28FC /* UIViewController+Sec.m */,
+				B262C8381AC43781009E090F /* UIWindow+Sec.h */,
+				B262C8391AC43781009E090F /* UIWindow+Sec.m */,
+				B262C8471AC46C1D009E090F /* UINavigationController+Sec.h */,
+				B262C8481AC46C1D009E090F /* UINavigationController+Sec.m */,
 			);
 			path = categories;
 			sourceTree = "<group>";
@@ -176,10 +397,42 @@
 			children = (
 				B280F1881AB0625A00DC28FC /* OnStateChangeListener.h */,
 				B280F1921AB06D3F00DC28FC /* BaseChecksTemplate.h */,
-				B280F18E1AB06C9800DC28FC /* DebugCheck.h */,
-				B280F18F1AB06C9800DC28FC /* DebugCheck.m */,
+				B262C84B1AC47203009E090F /* integrity */,
+				B262C82F1AC419BF009E090F /* jailbreak */,
+				B2E50A311AC31A4E00BBD5CA /* debug */,
 			);
 			path = checks;
+			sourceTree = "<group>";
+		};
+		B2E50A311AC31A4E00BBD5CA /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				B2E50A321AC31A7100BBD5CA /* DebugCheck1.h */,
+				B2E50A331AC31A7100BBD5CA /* DebugCheck1.m */,
+				B2E50A361AC31ADB00BBD5CA /* DebugCheck2.h */,
+				B2E50A371AC31ADB00BBD5CA /* DebugCheck2.m */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		B2E50A3A1AC31D9F00BBD5CA /* general */ = {
+			isa = PBXGroup;
+			children = (
+				B262C83F1AC44A41009E090F /* LOOCryptString.h */,
+				B262C8401AC44A41009E090F /* LOOCryptString.m */,
+				B2E50A3B1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h */,
+				B2E50A3C1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m */,
+			);
+			path = general;
+			sourceTree = "<group>";
+		};
+		B2E50A421AC33C2C00BBD5CA /* config */ = {
+			isa = PBXGroup;
+			children = (
+				B2E50A431AC33C4A00BBD5CA /* SmartSecConfig.h */,
+				B2E50A441AC33C4A00BBD5CA /* SmartSecConfig.m */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,15 +442,42 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B262C83C1AC445C1009E090F /* Defines.h in Headers */,
+				B262C89F1AC72D38009E090F /* NSArray+Sec.h in Headers */,
+				B262C87B1AC57593009E090F /* RNDecryptor.h in Headers */,
+				B262C8751AC57593009E090F /* RNCryptor+Private.h in Headers */,
+				B262C8A71AC72D54009E090F /* UIImage+Sec.h in Headers */,
+				B2E50A3D1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h in Headers */,
+				B262C8761AC57593009E090F /* RNCryptor-Prefix.pch in Headers */,
+				B262C8791AC57593009E090F /* RNCryptorEngine.h in Headers */,
+				B262C8A31AC72D49009E090F /* NSDictionary+Sec.h in Headers */,
+				B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */,
+				B262C89B1AC72CF0009E090F /* NSString+Sec.h in Headers */,
+				B262C8911AC6C547009E090F /* NSData+Sec.h in Headers */,
+				B24FC8E51AC831F200474510 /* BaseCoreDataTransformer.h in Headers */,
+				B262C8671AC56657009E090F /* NSUserDefaults+Sec.h in Headers */,
+				B262C8321AC41B3D009E090F /* JailbreakCheck1.h in Headers */,
+				B262C8881AC5C7EB009E090F /* xxhash.h in Headers */,
+				B262C8971AC710FD009E090F /* NSFileManager+Sec.h in Headers */,
+				B2D24A281A90C6A600FA8CEA /* SmartSecConfigurable.h in Headers */,
 				B2D73A3F1AAF82AA00F8BB26 /* UIApplication+Sec.h in Headers */,
-				B2D73A311AAF39F300F8BB26 /* SmartSecConfig.h in Headers */,
+				B262C8521AC4728B009E090F /* IntegrityCheck2.h in Headers */,
+				B262C8411AC44A41009E090F /* LOOCryptString.h in Headers */,
+				B262C87D1AC57593009E090F /* RNEncryptor.h in Headers */,
+				B262C8451AC4676A009E090F /* JailbreakCheck2.h in Headers */,
+				B2E50A2F1AC2FC2100BBD5CA /* SmartSecDefault.h in Headers */,
+				B2E50A341AC31A7100BBD5CA /* DebugCheck1.h in Headers */,
+				B262C8611AC56542009E090F /* CryptoManager.h in Headers */,
 				B280F1981AB0974300DC28FC /* UIViewController+Sec.h in Headers */,
 				B280F18C1AB0689700DC28FC /* NSObject+State.h in Headers */,
-				B2D24A281A90C6A600FA8CEA /* SmartSecInit.h in Headers */,
+				B262C84E1AC4720F009E090F /* IntegrityCheck1.h in Headers */,
 				B2D24A0A1A90C42900FA8CEA /* SmartSec.h in Headers */,
 				B280F1891AB0625A00DC28FC /* OnStateChangeListener.h in Headers */,
-				B280F1901AB06C9800DC28FC /* DebugCheck.h in Headers */,
+				B2E50A381AC31ADB00BBD5CA /* DebugCheck2.h in Headers */,
+				B262C83A1AC43781009E090F /* UIWindow+Sec.h in Headers */,
+				B262C8491AC46C1D009E090F /* UINavigationController+Sec.h in Headers */,
 				B280F1931AB06D3F00DC28FC /* BaseChecksTemplate.h in Headers */,
+				B262C8771AC57593009E090F /* RNCryptor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,11 +577,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B262C8921AC6C547009E090F /* NSData+Sec.m in Sources */,
+				B262C83B1AC43781009E090F /* UIWindow+Sec.m in Sources */,
+				B262C87C1AC57593009E090F /* RNDecryptor.m in Sources */,
+				B262C8681AC56657009E090F /* NSUserDefaults+Sec.m in Sources */,
 				B280F1991AB0974300DC28FC /* UIViewController+Sec.m in Sources */,
-				B280F1941AB0727000DC28FC /* SmartSecConfig.m in Sources */,
-				B280F1911AB06C9800DC28FC /* DebugCheck.m in Sources */,
-				B2D24A291A90C6A600FA8CEA /* SmartSecInit.m in Sources */,
+				B262C8461AC4676A009E090F /* JailbreakCheck2.m in Sources */,
+				B262C8981AC710FD009E090F /* NSFileManager+Sec.m in Sources */,
+				B262C8781AC57593009E090F /* RNCryptor.m in Sources */,
+				B2E50A461AC33C4A00BBD5CA /* SmartSecConfig.m in Sources */,
+				B262C8A81AC72D54009E090F /* UIImage+Sec.m in Sources */,
+				B2E50A301AC2FC2100BBD5CA /* SmartSecDefault.m in Sources */,
+				B262C87E1AC57593009E090F /* RNEncryptor.m in Sources */,
+				B262C89C1AC72CF0009E090F /* NSString+Sec.m in Sources */,
+				B2E50A411AC3219F00BBD5CA /* DebugCheck2.m in Sources */,
+				B2E50A3E1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m in Sources */,
+				B2D24A291A90C6A600FA8CEA /* SmartSecConfigurable.m in Sources */,
 				B2D73A401AAF82AA00F8BB26 /* UIApplication+Sec.m in Sources */,
+				B262C84F1AC4720F009E090F /* IntegrityCheck1.m in Sources */,
+				B262C8621AC56542009E090F /* CryptoManager.m in Sources */,
+				B262C8A01AC72D38009E090F /* NSArray+Sec.m in Sources */,
+				B262C87A1AC57593009E090F /* RNCryptorEngine.m in Sources */,
+				B2E50A401AC3219C00BBD5CA /* DebugCheck1.m in Sources */,
+				B24FC8E61AC831F200474510 /* BaseCoreDataTransformer.m in Sources */,
+				B262C8A41AC72D49009E090F /* NSDictionary+Sec.m in Sources */,
+				B262C8871AC5C7EB009E090F /* xxhash.c in Sources */,
+				B262C8531AC4728B009E090F /* IntegrityCheck2.m in Sources */,
+				B262C8331AC41B3D009E090F /* JailbreakCheck1.m in Sources */,
+				B262C84A1AC46C1D009E090F /* UINavigationController+Sec.m in Sources */,
+				B262C8421AC44A41009E090F /* LOOCryptString.m in Sources */,
+				B262C8891AC5C7EB009E090F /* xxhsum.c in Sources */,
 				B280F18D1AB0689700DC28FC /* NSObject+State.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +615,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D24A171A90C42A00FA8CEA /* SmartSecTests.m in Sources */,
+				B262C8B01AC7366A009E090F /* NSDictionaryTest.m in Sources */,
+				B262C8B61AC74812009E090F /* NSStringTest.m in Sources */,
+				B262C8AE1AC7365D009E090F /* NSArrayTest.m in Sources */,
+				B262C8B21AC73678009E090F /* NSMutableArrayTest.m in Sources */,
+				B262C8941AC6FBF3009E090F /* NSDataTest.m in Sources */,
+				B262C88B1AC5D74A009E090F /* NSUserDefaultsTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

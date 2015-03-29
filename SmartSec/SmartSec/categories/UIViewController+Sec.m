@@ -20,8 +20,16 @@
     // call the real implementation
     [self swizzledViewWillAppear:animated];
     
-    // notify observers that view have loaded
-    [[self class] notifyObservers:self.view fromObservedObject:self];
+    // notify observers that view has loaded
+    [[self class] notifyObservers:NSStringFromSelector(@selector(viewWillAppear:)) fromObservedObject:self];
+}
+
+- (void)swizzledViewDidLoad
+{
+    // call the real implementation
+    [self swizzledViewDidLoad];
+    
+    [[self class] notifyObservers:NSStringFromSelector(@selector(viewDidLoad)) fromObservedObject:self];
 }
 
 + (void)load
@@ -32,6 +40,11 @@
     original = class_getInstanceMethod(self, @selector(viewWillAppear:));
     swizzled = class_getInstanceMethod(self, @selector(swizzledViewWillAppear:));
     method_exchangeImplementations(original, swizzled);
+    
+    original = class_getInstanceMethod(self, @selector(viewDidLoad));
+    swizzled = class_getInstanceMethod(self, @selector(swizzledViewDidLoad));
+    method_exchangeImplementations(original, swizzled);
+
 }
 
 @end

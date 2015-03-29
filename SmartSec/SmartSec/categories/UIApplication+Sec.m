@@ -7,7 +7,7 @@
 //
 
 #import "UIApplication+Sec.h"
-#import "SmartSecInit.h"
+#import "SmartSecConfigurable.h"
 #import "NSObject+State.h"
 
 #import <objc/runtime.h>
@@ -24,12 +24,17 @@
     [self swizzledSetDelegate:delegate];
     
     // can initialize the library, when delegate is ready
-    [SmartSecInit sharedInstance];
+    [SmartSecConfigurable sharedInstance];
     
     // add application state observer
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(applicationActive)
+                                             selector:@selector(applicationStateChanged)
                                                  name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationStateChanged)
+                                                 name:UIApplicationWillResignActiveNotification
                                                object:nil];
 }
 
@@ -45,7 +50,7 @@
 #pragma mark -
 #pragma mark - Notifications
 
-- (void)applicationActive
+- (void)applicationStateChanged
 {
     [[self class] notifyObservers:@(self.applicationState) fromObservedObject:self];
 }

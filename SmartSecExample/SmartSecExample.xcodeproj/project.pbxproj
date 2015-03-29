@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B24FC8C91AC8210100474510 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24FC8C81AC8210100474510 /* ImageIO.framework */; };
+		B24FC8DA1AC821AF00474510 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24FC8D21AC8218100474510 /* libSDWebImage.a */; };
+		B24FC8E01AC82A7600474510 /* BaseManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B24FC8DD1AC82A7600474510 /* BaseManagedObject.m */; };
+		B24FC8E11AC82A7600474510 /* NSManagedObjectContext+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = B24FC8DF1AC82A7600474510 /* NSManagedObjectContext+Request.m */; };
+		B24FC8EE1AC833D300474510 /* TestEntity1.m in Sources */ = {isa = PBXBuildFile; fileRef = B24FC8ED1AC833D300474510 /* TestEntity1.m */; };
 		B280F19B1AB0B52900DC28FC /* SmartSec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D24A6E1A90C7D100FA8CEA /* SmartSec.framework */; };
 		B280F19C1AB0B52900DC28FC /* SmartSec.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2D24A6E1A90C7D100FA8CEA /* SmartSec.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2D24A391A90C77800FA8CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A381A90C77800FA8CEA /* main.m */; };
@@ -20,6 +25,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B24FC8D11AC8218100474510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24FC8CA1AC8218100474510 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53761325155AD0D5005750A4;
+			remoteInfo = SDWebImage;
+		};
+		B24FC8D31AC8218100474510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24FC8CA1AC8218100474510 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537D95C117ECC1FE0097C263;
+			remoteInfo = "SDWebImage+WebP";
+		};
+		B24FC8D51AC8218100474510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24FC8CA1AC8218100474510 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 531041E0157EAFA400BBABC3;
+			remoteInfo = "SDWebImage+MKAnnotation";
+		};
+		B24FC8D71AC8219300474510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24FC8CA1AC8218100474510 /* SDWebImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 53761307155AD0D5005750A4;
+			remoteInfo = SDWebImage;
+		};
 		B280F19D1AB0B52900DC28FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2D24A681A90C7D100FA8CEA /* SmartSec.xcodeproj */;
@@ -72,6 +105,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B24FC8C81AC8210100474510 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B24FC8CA1AC8218100474510 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "SDWebImage-3.7.2/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
+		B24FC8DC1AC82A7600474510 /* BaseManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseManagedObject.h; sourceTree = "<group>"; };
+		B24FC8DD1AC82A7600474510 /* BaseManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseManagedObject.m; sourceTree = "<group>"; };
+		B24FC8DE1AC82A7600474510 /* NSManagedObjectContext+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Request.h"; sourceTree = "<group>"; };
+		B24FC8DF1AC82A7600474510 /* NSManagedObjectContext+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Request.m"; sourceTree = "<group>"; };
+		B24FC8EC1AC833D300474510 /* TestEntity1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity1.h; sourceTree = "<group>"; };
+		B24FC8ED1AC833D300474510 /* TestEntity1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity1.m; sourceTree = "<group>"; };
 		B2D24A331A90C77800FA8CEA /* SmartSecExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartSecExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D24A371A90C77800FA8CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D24A381A90C77800FA8CEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +135,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24FC8DA1AC821AF00474510 /* libSDWebImage.a in Frameworks */,
+				B24FC8C91AC8210100474510 /* ImageIO.framework in Frameworks */,
 				B280F19B1AB0B52900DC28FC /* SmartSec.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,9 +151,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B24FC8C61AC81F6500474510 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				B24FC8CA1AC8218100474510 /* SDWebImage.xcodeproj */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		B24FC8CB1AC8218100474510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B24FC8D21AC8218100474510 /* libSDWebImage.a */,
+				B24FC8D41AC8218100474510 /* libSDWebImage+WebP.a */,
+				B24FC8D61AC8218100474510 /* libSDWebImage+MKAnnotation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B24FC8DB1AC82A6100474510 /* core_data */ = {
+			isa = PBXGroup;
+			children = (
+				B24FC8EB1AC833B300474510 /* model */,
+				B24FC8DC1AC82A7600474510 /* BaseManagedObject.h */,
+				B24FC8DD1AC82A7600474510 /* BaseManagedObject.m */,
+				B24FC8DE1AC82A7600474510 /* NSManagedObjectContext+Request.h */,
+				B24FC8DF1AC82A7600474510 /* NSManagedObjectContext+Request.m */,
+			);
+			path = core_data;
+			sourceTree = "<group>";
+		};
+		B24FC8EB1AC833B300474510 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B24FC8EC1AC833D300474510 /* TestEntity1.h */,
+				B24FC8ED1AC833D300474510 /* TestEntity1.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		B2D24A2A1A90C77800FA8CEA = {
 			isa = PBXGroup;
 			children = (
+				B24FC8C81AC8210100474510 /* ImageIO.framework */,
 				B2D24A351A90C77800FA8CEA /* SmartSecExample */,
 				B2D24A521A90C77800FA8CEA /* SmartSecExampleTests */,
 				B2D24A341A90C77800FA8CEA /* Products */,
@@ -138,6 +221,8 @@
 				B2D24A461A90C77800FA8CEA /* Images.xcassets */,
 				B2D24A481A90C77800FA8CEA /* LaunchScreen.xib */,
 				B2D24A3D1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld */,
+				B24FC8DB1AC82A6100474510 /* core_data */,
+				B24FC8C61AC81F6500474510 /* external */,
 				B2D24A361A90C77800FA8CEA /* Supporting Files */,
 			);
 			path = SmartSecExample;
@@ -193,6 +278,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B24FC8D81AC8219300474510 /* PBXTargetDependency */,
 				B2D24A721A90C7E100FA8CEA /* PBXTargetDependency */,
 				B280F19E1AB0B52900DC28FC /* PBXTargetDependency */,
 			);
@@ -250,6 +336,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = B24FC8CB1AC8218100474510 /* Products */;
+					ProjectRef = B24FC8CA1AC8218100474510 /* SDWebImage.xcodeproj */;
+				},
+				{
 					ProductGroup = B2D24A691A90C7D100FA8CEA /* Products */;
 					ProjectRef = B2D24A681A90C7D100FA8CEA /* SmartSec.xcodeproj */;
 				},
@@ -263,6 +353,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		B24FC8D21AC8218100474510 /* libSDWebImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImage.a;
+			remoteRef = B24FC8D11AC8218100474510 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B24FC8D41AC8218100474510 /* libSDWebImage+WebP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage+WebP.a";
+			remoteRef = B24FC8D31AC8218100474510 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B24FC8D61AC8218100474510 /* libSDWebImage+MKAnnotation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage+MKAnnotation.a";
+			remoteRef = B24FC8D51AC8218100474510 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B2D24A6E1A90C7D100FA8CEA /* SmartSec.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -308,6 +419,9 @@
 				B2D24A391A90C77800FA8CEA /* main.m in Sources */,
 				B2D24A421A90C77800FA8CEA /* ViewController.m in Sources */,
 				B2D24A3F1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld in Sources */,
+				B24FC8E11AC82A7600474510 /* NSManagedObjectContext+Request.m in Sources */,
+				B24FC8E01AC82A7600474510 /* BaseManagedObject.m in Sources */,
+				B24FC8EE1AC833D300474510 /* TestEntity1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +436,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B24FC8D81AC8219300474510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			targetProxy = B24FC8D71AC8219300474510 /* PBXContainerItemProxy */;
+		};
 		B280F19E1AB0B52900DC28FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SmartSec;
@@ -446,6 +565,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2f640063-b879-4d34-9a8b-aef38caabbf5";
 			};
@@ -462,6 +582,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2f640063-b879-4d34-9a8b-aef38caabbf5";
 			};

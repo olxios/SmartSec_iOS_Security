@@ -21,4 +21,8 @@
 // instance methods
 - (void)removeNotificationObservers;
 
+// Disable/enable encryption globally
++ (void)setEncryptionDisabled:(BOOL)encryptionDisabled;
++ (BOOL)encryptionDisabled;
+
 @end

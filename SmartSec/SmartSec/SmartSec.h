@@ -16,5 +16,12 @@ FOUNDATION_EXPORT const unsigned char SmartSecVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SmartSec/PublicHeader.h>
 
-#import <SmartSec/SmartSecInit.h>
+#import <SmartSec/SmartSecConfigurable.h>
 #import <SmartSec/SmartSecConfig.h>
+#import <SmartSec/LOOCryptString.h>
+#import <SmartSec/NSUserDefaults+Sec.h>
+#import <SmartSec/NSData+Sec.h>
+#import <SmartSec/NSArray+Sec.h>
+#import <SmartSec/NSDictionary+Sec.h>  
+#import <SmartSec/NSString+Sec.h>
+#import <SmartSec/BaseCoreDataTransformer.h>

@@ -10,8 +10,22 @@
 #import <objc/runtime.h>
 
 static char stateListenersKey;
+static char encryptionDisabledKey;
 
 @implementation NSObject (State)
+
+#pragma mark -
+#pragma mark - Encryption settings
+
++ (void)setEncryptionDisabled:(BOOL)encryptionDisabled
+{
+    objc_setAssociatedObject(self, &encryptionDisabledKey, @(encryptionDisabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
++ (BOOL)encryptionDisabled
+{
+    return [objc_getAssociatedObject(self, &encryptionDisabledKey) boolValue];
+}
 
 #pragma mark -
 #pragma mark - State listeners

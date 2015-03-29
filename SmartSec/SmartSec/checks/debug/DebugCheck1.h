@@ -9,6 +9,6 @@
 #import "BaseChecksTemplate.h"
 #import "OnStateChangeListener.h"
 
-@interface DebugCheck : NSObject <BaseChecksTemplate, OnStateChangeListener>
+@interface DebugCheck1 : NSObject <BaseChecksTemplate, OnStateChangeListener>
 
 @end

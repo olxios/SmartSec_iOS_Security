@@ -1,13 +1,14 @@
 //
-//  DebugCheck.m
+//  DebugCheck2.m
 //  SmartSec
 //
-//  Created by Olga Dalton on 09/03/15.
+//  Created by Olga Dalton on 21/03/15.
 //  Copyright (c) 2015 Olga Dalton. All rights reserved.
 //
 
+#import "DebugCheck2.h"
+
 // General imports
-#import "DebugCheck.h"
 #import "Defines.h"
 #import <UIKit/UIKit.h>
 
@@ -15,10 +16,7 @@
 #import "UIApplication+Sec.h"
 #import "NSObject+State.h"
 
-// Debugger checks
-#import <dlfcn.h>
-#import <sys/types.h>
-
+// Debugger check imports
 #import <stdio.h>
 #import <sys/types.h>
 #import <unistd.h>
@@ -26,24 +24,16 @@
 #import <stdlib.h>
 
 // Inline functions
-FORCE_INLINE void runChecks();
-FORCE_INLINE void disable_debugger_check1();
 FORCE_INLINE void disable_debugger_check2();
 
-// Defines
-
-typedef int (*ptrace_ptr_t)(int _request, pid_t _pid, caddr_t _addr, int _data);
-#if !defined(PT_DENY_ATTACH)
-#define PT_DENY_ATTACH 31 // define the code if not found
-#endif
-
-@implementation DebugCheck
+@implementation DebugCheck2
 
 #pragma mark -
 #pragma mark - BaseChecksTemplate
 
 - (void)hookChecks
 {
+    // TODO: verify this one!
     [UIApplication addObserver:self];
     [UIViewController addObserver:self];
 }
@@ -58,17 +48,11 @@ typedef int (*ptrace_ptr_t)(int _request, pid_t _pid, caddr_t _addr, int _data);
 #pragma mark - OnStateChangeListener
 
 - (void)onStateChanged:(id)stateObject fromObject:(id)observedObject
-{    
-    if ([self filterState:stateObject fromObject:observedObject])
-    {
-        runChecks();
-    }
-}
-
-- (BOOL)filterState:(id)stateObject fromObject:(id)observedObject
 {
-    return [observedObject isKindOfClass:[UIViewController class]]
-            || [observedObject isKindOfClass:[UIApplication class]];
+#if ENABLE_CHECKS
+    // Disable debugger only in the release mode!
+    disable_debugger_check2();
+#endif
 }
 
 #pragma mark -
@@ -76,31 +60,15 @@ typedef int (*ptrace_ptr_t)(int _request, pid_t _pid, caddr_t _addr, int _data);
 
 - (void)runChecks
 {
-    runChecks();
-}
-
-void runChecks()
-{
-    #if !(DEBUG)
-        NSLog(@"Debug checks!"); // TODO: remove me
-        // Disable debugger only in the release mode!
-        disable_debugger_check1(); // 1 = deny attach
-        disable_debugger_check2(); // 2 = crash
-    #endif
-}
-
-// Standard ptrace check
-void disable_debugger_check1()
-{
-    void* handle = dlopen(0, RTLD_GLOBAL | RTLD_NOW);
-    ptrace_ptr_t ptrace_ptr = dlsym(handle, "ptrace");
-    ptrace_ptr(PT_DENY_ATTACH, 0, 0, 0);
-    dlclose(handle);
+#if ENABLE_CHECKS
+    // Disable debugger only in the release mode!
+    disable_debugger_check2();
+#endif
 }
 
 // Less standard process check
 void disable_debugger_check2()
-{
+{    
     // This check is based on this post
     // http://www.coredump.gr/articles/ios-anti-debugging-protections-part-2/
     

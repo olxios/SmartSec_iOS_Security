@@ -32,20 +32,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello there :)!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ag0-4Y-fJA">
-                                <rect key="frame" x="242" y="288" width="116" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ag0-4Y-fJA">
+                                <rect key="frame" x="247" y="20" width="107" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cQ6-kA-v1d">
+                                <rect key="frame" x="220" y="54" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Z2m-oE-ZRJ"/>
+                                    <constraint firstAttribute="height" constant="160" id="nL3-ou-KQs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remote image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vM2-LV-J6x">
+                                <rect key="frame" x="236" y="254" width="129" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNu-FU-RsC">
+                                <rect key="frame" x="220" y="288" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Zru-rW-dhl"/>
+                                    <constraint firstAttribute="height" constant="160" id="dVv-Yv-RRh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.042538018519043382" green="0.12076666333594747" blue="0.27039574795081966" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="vM2-LV-J6x" firstAttribute="top" secondItem="cQ6-kA-v1d" secondAttribute="bottom" constant="40" id="8ez-0x-9kp"/>
+                            <constraint firstAttribute="centerX" secondItem="vM2-LV-J6x" secondAttribute="centerX" id="ARd-q2-0ll"/>
                             <constraint firstAttribute="centerX" secondItem="ag0-4Y-fJA" secondAttribute="centerX" id="BB6-E1-Utp"/>
+                            <constraint firstItem="cQ6-kA-v1d" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="BC5-So-TSJ"/>
+                            <constraint firstItem="ag0-4Y-fJA" firstAttribute="top" secondItem="cQ6-kA-v1d" secondAttribute="bottom" constant="5" id="Fpl-Wg-sVi"/>
+                            <constraint firstAttribute="centerX" secondItem="cQ6-kA-v1d" secondAttribute="centerX" id="PWg-pk-2Rh"/>
+                            <constraint firstItem="ag0-4Y-fJA" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="WpP-Mf-qah"/>
+                            <constraint firstAttribute="centerX" secondItem="eNu-FU-RsC" secondAttribute="centerX" id="bZy-lP-a6X"/>
                             <constraint firstAttribute="centerY" secondItem="ag0-4Y-fJA" secondAttribute="centerY" id="bqR-xI-kyI"/>
+                            <constraint firstItem="cQ6-kA-v1d" firstAttribute="top" secondItem="ag0-4Y-fJA" secondAttribute="bottom" constant="10" id="dfZ-lf-qfw"/>
+                            <constraint firstItem="eNu-FU-RsC" firstAttribute="top" secondItem="vM2-LV-J6x" secondAttribute="bottom" constant="10" id="eqL-Xe-kqV"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BC5-So-TSJ"/>
+                                <exclude reference="Fpl-Wg-sVi"/>
+                                <exclude reference="bqR-xI-kyI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="QXI-rc-6jy"/>
+                    <connections>
+                        <outlet property="_localImageView" destination="cQ6-kA-v1d" id="Kk4-tT-2Qo"/>
+                        <outlet property="_remoteImageView" destination="eNu-FU-RsC" id="Wf9-ap-Y58"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

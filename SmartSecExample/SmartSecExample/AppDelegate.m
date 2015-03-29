@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import <SmartSec/SmartSec.h>
 
+// need to add this, otherwise compiler gets angry :(
+int main (int argc, char *argv[]);
+
 @interface AppDelegate ()
 
 @end
@@ -16,10 +19,21 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //NSLog(@"Application documents directory: %@", [self applicationDocumentsDirectory]);
-    SmartSecConfig *config = [[SmartSecConfig alloc] init];
-    // TODO: setup config
-    [[SmartSecInit sharedInstance] setConfig:config]; // TODO: set config
+        
+    disableDebuggerChecks(); // just for test
+    //disableJailbreakChecks();
+    //disableIntegrityChecks();
+    
+    onJailbreakDetected(^(JailbreakDetectionType jailbreakDetectionType) {
+        NSLog(@"DEVICE JAILBROKEN!");
+    });
+    
+    onMissingEncryption(^{
+        NSLog(@"ENCRYPTION MISSING! DO SOMETHING SMART...!");
+    });
+    
+    [SmartSecConfig setup:main];
+    
     return YES;
 }
 
@@ -68,7 +82,8 @@
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"SmartSecExample.sqlite"];
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    NSDictionary *options = @{ NSSQLitePragmasOption : @{@"journal_mode" : @"DELETE"} }; // better for viewing data
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
         // Report any error we got.
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
         dict[NSLocalizedDescriptionKey] = @"Failed to initialize the application's saved data";
