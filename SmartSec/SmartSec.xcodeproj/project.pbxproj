@@ -22,7 +22,7 @@
 		B22326261AD47F6F0075FC62 /* UIApplication+SecText.m in Sources */ = {isa = PBXBuildFile; fileRef = B22326241AD47F6F0075FC62 /* UIApplication+SecText.m */; };
 		B22326331AD599380075FC62 /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = B22326311AD599380075FC62 /* NSString+Hash.h */; };
 		B22326341AD599380075FC62 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = B22326321AD599380075FC62 /* NSString+Hash.m */; };
-		B223263A1AD59FC50075FC62 /* PinnedURLConnectionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B22326381AD59FC50075FC62 /* PinnedURLConnectionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B223263A1AD59FC50075FC62 /* PinnedURLConnectionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B22326381AD59FC50075FC62 /* PinnedURLConnectionHandler.h */; };
 		B223263B1AD59FC50075FC62 /* PinnedURLConnectionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B22326391AD59FC50075FC62 /* PinnedURLConnectionHandler.m */; };
 		B223263E1AD59FE20075FC62 /* NSURLConnection+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B223263C1AD59FE20075FC62 /* NSURLConnection+Sec.h */; };
 		B223263F1AD59FE20075FC62 /* NSURLConnection+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B223263D1AD59FE20075FC62 /* NSURLConnection+Sec.m */; };
@@ -95,7 +95,7 @@
 		B280F1931AB06D3F00DC28FC /* BaseChecksTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1921AB06D3F00DC28FC /* BaseChecksTemplate.h */; };
 		B280F1981AB0974300DC28FC /* UIViewController+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1961AB0974300DC28FC /* UIViewController+Sec.h */; };
 		B280F1991AB0974300DC28FC /* UIViewController+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B280F1971AB0974300DC28FC /* UIViewController+Sec.m */; };
-		B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C0D1AD71662003B7C16 /* URLWhitelist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C0D1AD71662003B7C16 /* URLWhitelist.h */; };
 		B2C83C101AD71662003B7C16 /* URLWhitelist.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C83C0E1AD71662003B7C16 /* URLWhitelist.m */; };
 		B2C83C131AD82792003B7C16 /* UIWebView+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C111AD82792003B7C16 /* UIWebView+Sec.h */; };
 		B2C83C141AD82792003B7C16 /* UIWebView+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C83C121AD82792003B7C16 /* UIWebView+Sec.m */; };
@@ -118,6 +118,7 @@
 		B2E50A411AC3219F00BBD5CA /* DebugCheck2.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E50A371AC31ADB00BBD5CA /* DebugCheck2.m */; };
 		B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E50A431AC33C4A00BBD5CA /* SmartSecConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2E50A461AC33C4A00BBD5CA /* SmartSecConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E50A441AC33C4A00BBD5CA /* SmartSecConfig.m */; };
+		B2FB2EEF1AD8948D0062A1FF /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FB2EEE1AD894380062A1FF /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +246,7 @@
 		B2E50A3C1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ArrayValue.m"; sourceTree = "<group>"; };
 		B2E50A431AC33C4A00BBD5CA /* SmartSecConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSecConfig.h; sourceTree = "<group>"; };
 		B2E50A441AC33C4A00BBD5CA /* SmartSecConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSecConfig.m; sourceTree = "<group>"; };
+		B2FB2EEE1AD894380062A1FF /* Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,8 +479,9 @@
 		B2D24A061A90C42900FA8CEA /* SmartSec */ = {
 			isa = PBXGroup;
 			children = (
-				B22326171AD478990075FC62 /* SecImports.h */,
 				B2D24A091A90C42900FA8CEA /* SmartSec.h */,
+				B2FB2EEE1AD894380062A1FF /* Crypto.h */,
+				B22326171AD478990075FC62 /* SecImports.h */,
 				B2D73A391AAF74EA00F8BB26 /* Defines.h */,
 				B2E50A421AC33C2C00BBD5CA /* config */,
 				B2C83C0C1AD715B9003B7C16 /* whitelist */,
@@ -609,15 +612,16 @@
 				B223260D1AD423E50075FC62 /* UITextField+SecText.h in Headers */,
 				B262C83C1AC445C1009E090F /* Defines.h in Headers */,
 				B233D78A1AD85320001D33EA /* WKWebView+Callbacks.h in Headers */,
+				B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */,
 				B262C89F1AC72D38009E090F /* NSArray+Sec.h in Headers */,
 				B262C87B1AC57593009E090F /* RNDecryptor.h in Headers */,
 				B22326211AD47B580075FC62 /* UIApplication+TopController.h in Headers */,
 				B262C8751AC57593009E090F /* RNCryptor+Private.h in Headers */,
 				B262C8A71AC72D54009E090F /* UIImage+Sec.h in Headers */,
-				B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */,
 				B2E50A3D1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h in Headers */,
 				B233D78E1AD85329001D33EA /* WKWebView+Sec.h in Headers */,
 				B262C8761AC57593009E090F /* RNCryptor-Prefix.pch in Headers */,
+				B2FB2EEF1AD8948D0062A1FF /* Crypto.h in Headers */,
 				B262C8791AC57593009E090F /* RNCryptorEngine.h in Headers */,
 				B22326331AD599380075FC62 /* NSString+Hash.h in Headers */,
 				B262C8A31AC72D49009E090F /* NSDictionary+Sec.h in Headers */,

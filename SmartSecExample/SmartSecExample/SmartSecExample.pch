@@ -10,5 +10,6 @@
 #define SmartSecExample_SmartSecExample_pch
 
 #import <SmartSec/SecImports.h>
+#import <SmartSec/Crypto.h>
 
 #endif
