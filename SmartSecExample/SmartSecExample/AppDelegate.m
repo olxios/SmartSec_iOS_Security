@@ -20,17 +20,24 @@ int main (int argc, char *argv[]);
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         
-    disableDebuggerChecks(); // just for test
-    //disableJailbreakChecks();
-    //disableIntegrityChecks();
+    disableDebuggerChecks();
     
     onJailbreakDetected(^(JailbreakDetectionType jailbreakDetectionType) {
-        NSLog(@"DEVICE JAILBROKEN!");
+        ReleaseLog(@"DEVICE JAILBROKEN!");
     });
     
     onMissingEncryption(^{
-        NSLog(@"ENCRYPTION MISSING! DO SOMETHING SMART...!");
+        ReleaseLog(@"ENCRYPTION MISSING! DO SOMETHING SMART...!");
     });
+    
+    //allowInvalidCertificatesInReleaseMode(@[@"kosmos.infohaiku.com"]);
+    
+    NSDictionary *sslPinDictionary = @{@"twitter.com" :
+                                           @[[[NSBundle mainBundle] pathForResource:@"random-org" ofType:@"der"],
+                                            /*[[NSBundle mainBundle] pathForResource:@"twitter" ofType:@"der"]]*/
+                                             @"cfb6fe515a13f0f84e058865c62087e890d8f0ea9d6723f8fc6a2193d29ced51"]};
+    
+    pinSSLCertificatesWithDictionary(sslPinDictionary);
     
     [SmartSecConfig setup:main];
     
@@ -49,6 +56,22 @@ int main (int argc, char *argv[]);
     [self saveContext];
 }
 
+#pragma mark -
+#pragma mark - URL Schemes
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    ReleaseLog(@"Calling Application Bundle ID: %@", sourceApplication);
+    ReleaseLog(@"URL scheme:%@", [url scheme]);
+    ReleaseLog(@"URL query: %@", [url query]);
+    
+    ReleaseLog(@"URL: %@", url);
+    
+    return YES;
+}
+
+#pragma mark -
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;

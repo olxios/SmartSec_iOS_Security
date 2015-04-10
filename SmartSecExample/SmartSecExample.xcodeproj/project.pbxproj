@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22327171AD6A7200075FC62 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22327161AD6A7200075FC62 /* SecondViewController.m */; };
+		B223271E1AD6AB4F0075FC62 /* infohaiku.der in Resources */ = {isa = PBXBuildFile; fileRef = B22327191AD6AB4F0075FC62 /* infohaiku.der */; };
+		B223271F1AD6AB4F0075FC62 /* kosmos.der in Resources */ = {isa = PBXBuildFile; fileRef = B223271A1AD6AB4F0075FC62 /* kosmos.der */; };
+		B22327201AD6AB4F0075FC62 /* random-org.der in Resources */ = {isa = PBXBuildFile; fileRef = B223271B1AD6AB4F0075FC62 /* random-org.der */; };
+		B22327211AD6AB4F0075FC62 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = B223271C1AD6AB4F0075FC62 /* test.html */; };
+		B22327221AD6AB4F0075FC62 /* twitter.der in Resources */ = {isa = PBXBuildFile; fileRef = B223271D1AD6AB4F0075FC62 /* twitter.der */; };
 		B24FC8C91AC8210100474510 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24FC8C81AC8210100474510 /* ImageIO.framework */; };
 		B24FC8DA1AC821AF00474510 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B24FC8D21AC8218100474510 /* libSDWebImage.a */; };
 		B24FC8E01AC82A7600474510 /* BaseManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B24FC8DD1AC82A7600474510 /* BaseManagedObject.m */; };
@@ -14,6 +20,7 @@
 		B24FC8EE1AC833D300474510 /* TestEntity1.m in Sources */ = {isa = PBXBuildFile; fileRef = B24FC8ED1AC833D300474510 /* TestEntity1.m */; };
 		B280F19B1AB0B52900DC28FC /* SmartSec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D24A6E1A90C7D100FA8CEA /* SmartSec.framework */; };
 		B280F19C1AB0B52900DC28FC /* SmartSec.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2D24A6E1A90C7D100FA8CEA /* SmartSec.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2C83C031AD6D633003B7C16 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = B2C83C021AD6D633003B7C16 /* style.css */; };
 		B2D24A391A90C77800FA8CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A381A90C77800FA8CEA /* main.m */; };
 		B2D24A3C1A90C77800FA8CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A3B1A90C77800FA8CEA /* AppDelegate.m */; };
 		B2D24A3F1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2D24A3D1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld */; };
@@ -105,6 +112,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B22326191AD4794C0075FC62 /* SmartSecExample.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSecExample.pch; sourceTree = "<group>"; };
+		B22327151AD6A7200075FC62 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B22327161AD6A7200075FC62 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B22327191AD6AB4F0075FC62 /* infohaiku.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = infohaiku.der; sourceTree = "<group>"; };
+		B223271A1AD6AB4F0075FC62 /* kosmos.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = kosmos.der; sourceTree = "<group>"; };
+		B223271B1AD6AB4F0075FC62 /* random-org.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "random-org.der"; sourceTree = "<group>"; };
+		B223271C1AD6AB4F0075FC62 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		B223271D1AD6AB4F0075FC62 /* twitter.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = twitter.der; sourceTree = "<group>"; };
 		B24FC8C81AC8210100474510 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		B24FC8CA1AC8218100474510 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "SDWebImage-3.7.2/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
 		B24FC8DC1AC82A7600474510 /* BaseManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseManagedObject.h; sourceTree = "<group>"; };
@@ -113,6 +128,7 @@
 		B24FC8DF1AC82A7600474510 /* NSManagedObjectContext+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Request.m"; sourceTree = "<group>"; };
 		B24FC8EC1AC833D300474510 /* TestEntity1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity1.h; sourceTree = "<group>"; };
 		B24FC8ED1AC833D300474510 /* TestEntity1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity1.m; sourceTree = "<group>"; };
+		B2C83C021AD6D633003B7C16 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		B2D24A331A90C77800FA8CEA /* SmartSecExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartSecExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D24A371A90C77800FA8CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D24A381A90C77800FA8CEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -151,6 +167,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B22327181AD6AB4F0075FC62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2C83C011AD6D633003B7C16 /* styles */,
+				B22327191AD6AB4F0075FC62 /* infohaiku.der */,
+				B223271A1AD6AB4F0075FC62 /* kosmos.der */,
+				B223271B1AD6AB4F0075FC62 /* random-org.der */,
+				B223271C1AD6AB4F0075FC62 /* test.html */,
+				B223271D1AD6AB4F0075FC62 /* twitter.der */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B24FC8C61AC81F6500474510 /* external */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +219,14 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		B2C83C011AD6D633003B7C16 /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				B2C83C021AD6D633003B7C16 /* style.css */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
 		B2D24A2A1A90C77800FA8CEA = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +254,8 @@
 				B2D24A3B1A90C77800FA8CEA /* AppDelegate.m */,
 				B2D24A401A90C77800FA8CEA /* ViewController.h */,
 				B2D24A411A90C77800FA8CEA /* ViewController.m */,
+				B22327151AD6A7200075FC62 /* SecondViewController.h */,
+				B22327161AD6A7200075FC62 /* SecondViewController.m */,
 				B2D24A431A90C77800FA8CEA /* Main.storyboard */,
 				B2D24A461A90C77800FA8CEA /* Images.xcassets */,
 				B2D24A481A90C77800FA8CEA /* LaunchScreen.xib */,
@@ -231,8 +270,10 @@
 		B2D24A361A90C77800FA8CEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B22327181AD6AB4F0075FC62 /* Resources */,
 				B2D24A371A90C77800FA8CEA /* Info.plist */,
 				B2D24A381A90C77800FA8CEA /* main.m */,
+				B22326191AD4794C0075FC62 /* SmartSecExample.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -395,9 +436,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22327211AD6AB4F0075FC62 /* test.html in Resources */,
+				B223271E1AD6AB4F0075FC62 /* infohaiku.der in Resources */,
 				B2D24A451A90C77800FA8CEA /* Main.storyboard in Resources */,
+				B223271F1AD6AB4F0075FC62 /* kosmos.der in Resources */,
 				B2D24A4A1A90C77800FA8CEA /* LaunchScreen.xib in Resources */,
 				B2D24A471A90C77800FA8CEA /* Images.xcassets in Resources */,
+				B2C83C031AD6D633003B7C16 /* style.css in Resources */,
+				B22327201AD6AB4F0075FC62 /* random-org.der in Resources */,
+				B22327221AD6AB4F0075FC62 /* twitter.der in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +466,7 @@
 				B2D24A391A90C77800FA8CEA /* main.m in Sources */,
 				B2D24A421A90C77800FA8CEA /* ViewController.m in Sources */,
 				B2D24A3F1A90C77800FA8CEA /* SmartSecExample.xcdatamodeld in Sources */,
+				B22327171AD6A7200075FC62 /* SecondViewController.m in Sources */,
 				B24FC8E11AC82A7600474510 /* NSManagedObjectContext+Request.m in Sources */,
 				B24FC8E01AC82A7600474510 /* BaseManagedObject.m in Sources */,
 				B24FC8EE1AC833D300474510 /* TestEntity1.m in Sources */,
@@ -560,7 +608,9 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Olga Dalton (V4AHWHD65Q)";
+				DEPLOYMENT_POSTPROCESSING = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmartSecExample/SmartSecExample.pch";
 				INFOPLIST_FILE = SmartSecExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -568,6 +618,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2f640063-b879-4d34-9a8b-aef38caabbf5";
+				SEPARATE_STRIP = YES;
 			};
 			name = Debug;
 		};
@@ -577,7 +628,9 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Olga Dalton (V4AHWHD65Q)";
+				DEPLOYMENT_POSTPROCESSING = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmartSecExample/SmartSecExample.pch";
 				INFOPLIST_FILE = SmartSecExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -585,6 +638,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2f640063-b879-4d34-9a8b-aef38caabbf5";
+				SEPARATE_STRIP = YES;
 			};
 			name = Release;
 		};

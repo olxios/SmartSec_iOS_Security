@@ -1,0 +1,14 @@
+//
+//  SmartSecExample.pch
+//  SmartSecExample
+//
+//  Created by Olga Dalton on 07/04/15.
+//  Copyright (c) 2015 Olga Dalton. All rights reserved.
+//
+
+#ifndef SmartSecExample_SmartSecExample_pch
+#define SmartSecExample_SmartSecExample_pch
+
+#import <SmartSec/SecImports.h>
+
+#endif

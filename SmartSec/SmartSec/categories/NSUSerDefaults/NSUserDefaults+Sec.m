@@ -45,8 +45,9 @@
 #pragma mark - Swizzled methods
 
 - (void)swizzledSetObject:(id)value forKey:(NSString *)defaultName
-{    
+{
     if (![NSUserDefaults encryptionDisabled]
+        && value
         && [[value class] conformsToProtocol:@protocol(NSCoding)])
     {
         NSData *valueData = value;
@@ -82,7 +83,7 @@
         }
         
         NSData *decryptedData = getDecryptedData(encryptedData, NO);
-        
+                
         if (decryptedData)
         {
             id unarchieved = nil;

@@ -9,6 +9,8 @@
 #import "UIApplication+Sec.h"
 #import "SmartSecConfigurable.h"
 #import "NSObject+State.h"
+#import "UIApplication+SecText.h"
+#import "UIApplication+WhiteList.h"
 
 #import <objc/runtime.h>
 #include <spawn.h>
@@ -26,9 +28,11 @@
     // can initialize the library, when delegate is ready
     [SmartSecConfigurable sharedInstance];
     
+    [self setupURLSchemeFilter];
+    
     // add application state observer
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(applicationStateChanged)
+                                             selector:@selector(applicationDidEnterForeground)
                                                  name:UIApplicationDidBecomeActiveNotification
                                                object:nil];
     
@@ -36,12 +40,16 @@
                                              selector:@selector(applicationStateChanged)
                                                  name:UIApplicationWillResignActiveNotification
                                                object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidEnterBackground)
+                                                 name:UIApplicationDidEnterBackgroundNotification
+                                               object:nil];
 }
 
 + (void)load
 {
     Method original, swizzled;
-    
     original = class_getInstanceMethod(self, @selector(setDelegate:));
     swizzled = class_getInstanceMethod(self, @selector(swizzledSetDelegate:));
     method_exchangeImplementations(original, swizzled);
@@ -52,7 +60,7 @@
 
 - (void)applicationStateChanged
 {
-    [[self class] notifyObservers:@(self.applicationState) fromObservedObject:self];
+    [[UIApplication class] notifyObservers:@(self.applicationState) fromObservedObject:self];
 }
 
 #pragma mark -
@@ -63,6 +71,20 @@
     // kill(getpid(), SIGKILL);
     // abort();
     exit(-1);
+}
+
+#pragma mark -
+#pragma mark - Application Screenshots
+
+- (void)applicationDidEnterBackground
+{
+    [[UIApplication sharedApplication] hideTextFieldsContent];
+}
+
+- (void)applicationDidEnterForeground
+{
+    [self applicationStateChanged];
+    [[UIApplication sharedApplication] showTextFieldsContent];
 }
 
 @end

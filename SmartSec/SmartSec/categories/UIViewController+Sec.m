@@ -21,7 +21,7 @@
     [self swizzledViewWillAppear:animated];
     
     // notify observers that view has loaded
-    [[self class] notifyObservers:NSStringFromSelector(@selector(viewWillAppear:)) fromObservedObject:self];
+    [[UIViewController class] notifyObservers:NSStringFromSelector(@selector(viewWillAppear:)) fromObservedObject:self];
 }
 
 - (void)swizzledViewDidLoad
@@ -29,7 +29,7 @@
     // call the real implementation
     [self swizzledViewDidLoad];
     
-    [[self class] notifyObservers:NSStringFromSelector(@selector(viewDidLoad)) fromObservedObject:self];
+    [[UIViewController class] notifyObservers:NSStringFromSelector(@selector(viewDidLoad)) fromObservedObject:self];
 }
 
 + (void)load

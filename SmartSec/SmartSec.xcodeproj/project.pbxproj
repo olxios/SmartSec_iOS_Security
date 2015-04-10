@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B223260D1AD423E50075FC62 /* UITextField+SecText.h in Headers */ = {isa = PBXBuildFile; fileRef = B223260B1AD423E50075FC62 /* UITextField+SecText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B223260E1AD423E50075FC62 /* UITextField+SecText.m in Sources */ = {isa = PBXBuildFile; fileRef = B223260C1AD423E50075FC62 /* UITextField+SecText.m */; };
+		B22326111AD423F30075FC62 /* UIView+SecText.h in Headers */ = {isa = PBXBuildFile; fileRef = B223260F1AD423F30075FC62 /* UIView+SecText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B22326121AD423F30075FC62 /* UIView+SecText.m in Sources */ = {isa = PBXBuildFile; fileRef = B22326101AD423F30075FC62 /* UIView+SecText.m */; };
+		B22326151AD43B670075FC62 /* UIViewController+SecText.h in Headers */ = {isa = PBXBuildFile; fileRef = B22326131AD43B670075FC62 /* UIViewController+SecText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B22326161AD43B670075FC62 /* UIViewController+SecText.m in Sources */ = {isa = PBXBuildFile; fileRef = B22326141AD43B670075FC62 /* UIViewController+SecText.m */; };
+		B22326181AD479070075FC62 /* SecImports.h in Headers */ = {isa = PBXBuildFile; fileRef = B22326171AD478990075FC62 /* SecImports.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B223261C1AD47A3D0075FC62 /* SecLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B223261A1AD47A3D0075FC62 /* SecLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B223261D1AD47A3D0075FC62 /* SecLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B223261B1AD47A3D0075FC62 /* SecLog.m */; };
+		B22326211AD47B580075FC62 /* UIApplication+TopController.h in Headers */ = {isa = PBXBuildFile; fileRef = B223261F1AD47B580075FC62 /* UIApplication+TopController.h */; };
+		B22326221AD47B580075FC62 /* UIApplication+TopController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22326201AD47B580075FC62 /* UIApplication+TopController.m */; };
+		B22326251AD47F6F0075FC62 /* UIApplication+SecText.h in Headers */ = {isa = PBXBuildFile; fileRef = B22326231AD47F6F0075FC62 /* UIApplication+SecText.h */; };
+		B22326261AD47F6F0075FC62 /* UIApplication+SecText.m in Sources */ = {isa = PBXBuildFile; fileRef = B22326241AD47F6F0075FC62 /* UIApplication+SecText.m */; };
+		B22326331AD599380075FC62 /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = B22326311AD599380075FC62 /* NSString+Hash.h */; };
+		B22326341AD599380075FC62 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = B22326321AD599380075FC62 /* NSString+Hash.m */; };
+		B223263A1AD59FC50075FC62 /* PinnedURLConnectionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B22326381AD59FC50075FC62 /* PinnedURLConnectionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B223263B1AD59FC50075FC62 /* PinnedURLConnectionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B22326391AD59FC50075FC62 /* PinnedURLConnectionHandler.m */; };
+		B223263E1AD59FE20075FC62 /* NSURLConnection+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B223263C1AD59FE20075FC62 /* NSURLConnection+Sec.h */; };
+		B223263F1AD59FE20075FC62 /* NSURLConnection+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B223263D1AD59FE20075FC62 /* NSURLConnection+Sec.m */; };
+		B22327131AD6A6670075FC62 /* UIWebView+BaseUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = B22327111AD6A6670075FC62 /* UIWebView+BaseUrl.h */; };
+		B22327141AD6A6670075FC62 /* UIWebView+BaseUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = B22327121AD6A6670075FC62 /* UIWebView+BaseUrl.m */; };
+		B233D7861AD8526F001D33EA /* WKWebViewNavigationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B233D7841AD8526F001D33EA /* WKWebViewNavigationDelegate.h */; };
+		B233D7871AD8526F001D33EA /* WKWebViewNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B233D7851AD8526F001D33EA /* WKWebViewNavigationDelegate.m */; };
+		B233D78A1AD85320001D33EA /* WKWebView+Callbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = B233D7881AD85320001D33EA /* WKWebView+Callbacks.h */; };
+		B233D78B1AD85320001D33EA /* WKWebView+Callbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = B233D7891AD85320001D33EA /* WKWebView+Callbacks.m */; };
+		B233D78E1AD85329001D33EA /* WKWebView+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B233D78C1AD85329001D33EA /* WKWebView+Sec.h */; };
+		B233D78F1AD85329001D33EA /* WKWebView+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B233D78D1AD85329001D33EA /* WKWebView+Sec.m */; };
+		B233D7931AD87A81001D33EA /* UIApplication+WhiteList.h in Headers */ = {isa = PBXBuildFile; fileRef = B233D7911AD87A81001D33EA /* UIApplication+WhiteList.h */; };
+		B233D7941AD87A81001D33EA /* UIApplication+WhiteList.m in Sources */ = {isa = PBXBuildFile; fileRef = B233D7921AD87A81001D33EA /* UIApplication+WhiteList.m */; };
 		B24FC8E51AC831F200474510 /* BaseCoreDataTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = B24FC8E31AC831F200474510 /* BaseCoreDataTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B24FC8E61AC831F200474510 /* BaseCoreDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B24FC8E41AC831F200474510 /* BaseCoreDataTransformer.m */; };
 		B262C8321AC41B3D009E090F /* JailbreakCheck1.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8301AC41B3D009E090F /* JailbreakCheck1.h */; };
@@ -66,6 +95,12 @@
 		B280F1931AB06D3F00DC28FC /* BaseChecksTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1921AB06D3F00DC28FC /* BaseChecksTemplate.h */; };
 		B280F1981AB0974300DC28FC /* UIViewController+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1961AB0974300DC28FC /* UIViewController+Sec.h */; };
 		B280F1991AB0974300DC28FC /* UIViewController+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B280F1971AB0974300DC28FC /* UIViewController+Sec.m */; };
+		B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C0D1AD71662003B7C16 /* URLWhitelist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2C83C101AD71662003B7C16 /* URLWhitelist.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C83C0E1AD71662003B7C16 /* URLWhitelist.m */; };
+		B2C83C131AD82792003B7C16 /* UIWebView+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C111AD82792003B7C16 /* UIWebView+Sec.h */; };
+		B2C83C141AD82792003B7C16 /* UIWebView+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C83C121AD82792003B7C16 /* UIWebView+Sec.m */; };
+		B2C83C171AD83260003B7C16 /* WebViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C151AD83260003B7C16 /* WebViewDelegate.h */; };
+		B2C83C181AD83260003B7C16 /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C83C161AD83260003B7C16 /* WebViewDelegate.m */; };
 		B2D24A0A1A90C42900FA8CEA /* SmartSec.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D24A091A90C42900FA8CEA /* SmartSec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2D24A101A90C42A00FA8CEA /* SmartSec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D24A041A90C42900FA8CEA /* SmartSec.framework */; };
 		B2D24A281A90C6A600FA8CEA /* SmartSecConfigurable.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D24A261A90C6A600FA8CEA /* SmartSecConfigurable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -96,6 +131,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B223260B1AD423E50075FC62 /* UITextField+SecText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SecText.h"; sourceTree = "<group>"; };
+		B223260C1AD423E50075FC62 /* UITextField+SecText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SecText.m"; sourceTree = "<group>"; };
+		B223260F1AD423F30075FC62 /* UIView+SecText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SecText.h"; sourceTree = "<group>"; };
+		B22326101AD423F30075FC62 /* UIView+SecText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SecText.m"; sourceTree = "<group>"; };
+		B22326131AD43B670075FC62 /* UIViewController+SecText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SecText.h"; sourceTree = "<group>"; };
+		B22326141AD43B670075FC62 /* UIViewController+SecText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SecText.m"; sourceTree = "<group>"; };
+		B22326171AD478990075FC62 /* SecImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecImports.h; sourceTree = "<group>"; };
+		B223261A1AD47A3D0075FC62 /* SecLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecLog.h; sourceTree = "<group>"; };
+		B223261B1AD47A3D0075FC62 /* SecLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecLog.m; sourceTree = "<group>"; };
+		B223261F1AD47B580075FC62 /* UIApplication+TopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TopController.h"; sourceTree = "<group>"; };
+		B22326201AD47B580075FC62 /* UIApplication+TopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TopController.m"; sourceTree = "<group>"; };
+		B22326231AD47F6F0075FC62 /* UIApplication+SecText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SecText.h"; sourceTree = "<group>"; };
+		B22326241AD47F6F0075FC62 /* UIApplication+SecText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SecText.m"; sourceTree = "<group>"; };
+		B22326311AD599380075FC62 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		B22326321AD599380075FC62 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		B22326381AD59FC50075FC62 /* PinnedURLConnectionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinnedURLConnectionHandler.h; sourceTree = "<group>"; };
+		B22326391AD59FC50075FC62 /* PinnedURLConnectionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinnedURLConnectionHandler.m; sourceTree = "<group>"; };
+		B223263C1AD59FE20075FC62 /* NSURLConnection+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+Sec.h"; sourceTree = "<group>"; };
+		B223263D1AD59FE20075FC62 /* NSURLConnection+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+Sec.m"; sourceTree = "<group>"; };
+		B22327111AD6A6670075FC62 /* UIWebView+BaseUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+BaseUrl.h"; sourceTree = "<group>"; };
+		B22327121AD6A6670075FC62 /* UIWebView+BaseUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+BaseUrl.m"; sourceTree = "<group>"; };
+		B233D7841AD8526F001D33EA /* WKWebViewNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewNavigationDelegate.h; sourceTree = "<group>"; };
+		B233D7851AD8526F001D33EA /* WKWebViewNavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewNavigationDelegate.m; sourceTree = "<group>"; };
+		B233D7881AD85320001D33EA /* WKWebView+Callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+Callbacks.h"; sourceTree = "<group>"; };
+		B233D7891AD85320001D33EA /* WKWebView+Callbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+Callbacks.m"; sourceTree = "<group>"; };
+		B233D78C1AD85329001D33EA /* WKWebView+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+Sec.h"; sourceTree = "<group>"; };
+		B233D78D1AD85329001D33EA /* WKWebView+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+Sec.m"; sourceTree = "<group>"; };
+		B233D7911AD87A81001D33EA /* UIApplication+WhiteList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+WhiteList.h"; sourceTree = "<group>"; };
+		B233D7921AD87A81001D33EA /* UIApplication+WhiteList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+WhiteList.m"; sourceTree = "<group>"; };
 		B24FC8E31AC831F200474510 /* BaseCoreDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCoreDataTransformer.h; sourceTree = "<group>"; };
 		B24FC8E41AC831F200474510 /* BaseCoreDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCoreDataTransformer.m; sourceTree = "<group>"; };
 		B262C8301AC41B3D009E090F /* JailbreakCheck1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailbreakCheck1.h; sourceTree = "<group>"; };
@@ -154,6 +218,12 @@
 		B280F1921AB06D3F00DC28FC /* BaseChecksTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseChecksTemplate.h; sourceTree = "<group>"; };
 		B280F1961AB0974300DC28FC /* UIViewController+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sec.h"; sourceTree = "<group>"; };
 		B280F1971AB0974300DC28FC /* UIViewController+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sec.m"; sourceTree = "<group>"; };
+		B2C83C0D1AD71662003B7C16 /* URLWhitelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLWhitelist.h; sourceTree = "<group>"; };
+		B2C83C0E1AD71662003B7C16 /* URLWhitelist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLWhitelist.m; sourceTree = "<group>"; };
+		B2C83C111AD82792003B7C16 /* UIWebView+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Sec.h"; sourceTree = "<group>"; };
+		B2C83C121AD82792003B7C16 /* UIWebView+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Sec.m"; sourceTree = "<group>"; };
+		B2C83C151AD83260003B7C16 /* WebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewDelegate.h; sourceTree = "<group>"; };
+		B2C83C161AD83260003B7C16 /* WebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewDelegate.m; sourceTree = "<group>"; };
 		B2D24A041A90C42900FA8CEA /* SmartSec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SmartSec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D24A081A90C42900FA8CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D24A091A90C42900FA8CEA /* SmartSec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartSec.h; sourceTree = "<group>"; };
@@ -198,6 +268,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B223260A1AD423C80075FC62 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				B223260B1AD423E50075FC62 /* UITextField+SecText.h */,
+				B223260C1AD423E50075FC62 /* UITextField+SecText.m */,
+				B223260F1AD423F30075FC62 /* UIView+SecText.h */,
+				B22326101AD423F30075FC62 /* UIView+SecText.m */,
+				B22326131AD43B670075FC62 /* UIViewController+SecText.h */,
+				B22326141AD43B670075FC62 /* UIViewController+SecText.m */,
+				B22326231AD47F6F0075FC62 /* UIApplication+SecText.h */,
+				B22326241AD47F6F0075FC62 /* UIApplication+SecText.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		B223261E1AD47B470075FC62 /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				B223261F1AD47B580075FC62 /* UIApplication+TopController.h */,
+				B22326201AD47B580075FC62 /* UIApplication+TopController.m */,
+			);
+			path = Screenshot;
+			sourceTree = "<group>";
+		};
+		B22326271AD538C50075FC62 /* SSL */ = {
+			isa = PBXGroup;
+			children = (
+				B22326311AD599380075FC62 /* NSString+Hash.h */,
+				B22326321AD599380075FC62 /* NSString+Hash.m */,
+				B223263C1AD59FE20075FC62 /* NSURLConnection+Sec.h */,
+				B223263D1AD59FE20075FC62 /* NSURLConnection+Sec.m */,
+			);
+			path = SSL;
+			sourceTree = "<group>";
+		};
+		B22326371AD59FB00075FC62 /* SSL */ = {
+			isa = PBXGroup;
+			children = (
+				B22326381AD59FC50075FC62 /* PinnedURLConnectionHandler.h */,
+				B22326391AD59FC50075FC62 /* PinnedURLConnectionHandler.m */,
+			);
+			path = SSL;
+			sourceTree = "<group>";
+		};
+		B22327101AD6A64B0075FC62 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				B22327111AD6A6670075FC62 /* UIWebView+BaseUrl.h */,
+				B22327121AD6A6670075FC62 /* UIWebView+BaseUrl.m */,
+				B2C83C111AD82792003B7C16 /* UIWebView+Sec.h */,
+				B2C83C121AD82792003B7C16 /* UIWebView+Sec.m */,
+				B233D7881AD85320001D33EA /* WKWebView+Callbacks.h */,
+				B233D7891AD85320001D33EA /* WKWebView+Callbacks.m */,
+				B233D78C1AD85329001D33EA /* WKWebView+Sec.h */,
+				B233D78D1AD85329001D33EA /* WKWebView+Sec.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		B233D7901AD87A41001D33EA /* URL Schemes */ = {
+			isa = PBXGroup;
+			children = (
+				B233D7911AD87A81001D33EA /* UIApplication+WhiteList.h */,
+				B233D7921AD87A81001D33EA /* UIApplication+WhiteList.m */,
+			);
+			path = "URL Schemes";
+			sourceTree = "<group>";
+		};
 		B24FC8E21AC831A200474510 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +441,19 @@
 			path = crypto;
 			sourceTree = "<group>";
 		};
+		B2C83C0C1AD715B9003B7C16 /* whitelist */ = {
+			isa = PBXGroup;
+			children = (
+				B2C83C0D1AD71662003B7C16 /* URLWhitelist.h */,
+				B2C83C0E1AD71662003B7C16 /* URLWhitelist.m */,
+				B2C83C151AD83260003B7C16 /* WebViewDelegate.h */,
+				B2C83C161AD83260003B7C16 /* WebViewDelegate.m */,
+				B233D7841AD8526F001D33EA /* WKWebViewNavigationDelegate.h */,
+				B233D7851AD8526F001D33EA /* WKWebViewNavigationDelegate.m */,
+			);
+			path = whitelist;
+			sourceTree = "<group>";
+		};
 		B2D249FA1A90C42900FA8CEA = {
 			isa = PBXGroup;
 			children = (
@@ -326,9 +477,12 @@
 		B2D24A061A90C42900FA8CEA /* SmartSec */ = {
 			isa = PBXGroup;
 			children = (
+				B22326171AD478990075FC62 /* SecImports.h */,
 				B2D24A091A90C42900FA8CEA /* SmartSec.h */,
 				B2D73A391AAF74EA00F8BB26 /* Defines.h */,
 				B2E50A421AC33C2C00BBD5CA /* config */,
+				B2C83C0C1AD715B9003B7C16 /* whitelist */,
+				B22326371AD59FB00075FC62 /* SSL */,
 				B280F1951AB0964300DC28FC /* crypto */,
 				B2D73A411AAF887300F8BB26 /* checks */,
 				B2D73A3C1AAF821600F8BB26 /* categories */,
@@ -376,6 +530,11 @@
 		B2D73A3C1AAF821600F8BB26 /* categories */ = {
 			isa = PBXGroup;
 			children = (
+				B233D7901AD87A41001D33EA /* URL Schemes */,
+				B22327101AD6A64B0075FC62 /* WebView */,
+				B22326271AD538C50075FC62 /* SSL */,
+				B223261E1AD47B470075FC62 /* Screenshot */,
+				B223260A1AD423C80075FC62 /* UITextField */,
 				B262C88E1AC6C52D009E090F /* Encrypted Files */,
 				B262C8641AC56641009E090F /* NSUSerDefaults */,
 				B280F18A1AB0689700DC28FC /* NSObject+State.h */,
@@ -422,6 +581,8 @@
 				B262C8401AC44A41009E090F /* LOOCryptString.m */,
 				B2E50A3B1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h */,
 				B2E50A3C1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m */,
+				B223261A1AD47A3D0075FC62 /* SecLog.h */,
+				B223261B1AD47A3D0075FC62 /* SecLog.m */,
 			);
 			path = general;
 			sourceTree = "<group>";
@@ -442,27 +603,42 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22326181AD479070075FC62 /* SecImports.h in Headers */,
+				B22326111AD423F30075FC62 /* UIView+SecText.h in Headers */,
+				B22326151AD43B670075FC62 /* UIViewController+SecText.h in Headers */,
+				B223260D1AD423E50075FC62 /* UITextField+SecText.h in Headers */,
 				B262C83C1AC445C1009E090F /* Defines.h in Headers */,
+				B233D78A1AD85320001D33EA /* WKWebView+Callbacks.h in Headers */,
 				B262C89F1AC72D38009E090F /* NSArray+Sec.h in Headers */,
 				B262C87B1AC57593009E090F /* RNDecryptor.h in Headers */,
+				B22326211AD47B580075FC62 /* UIApplication+TopController.h in Headers */,
 				B262C8751AC57593009E090F /* RNCryptor+Private.h in Headers */,
 				B262C8A71AC72D54009E090F /* UIImage+Sec.h in Headers */,
+				B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */,
 				B2E50A3D1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h in Headers */,
+				B233D78E1AD85329001D33EA /* WKWebView+Sec.h in Headers */,
 				B262C8761AC57593009E090F /* RNCryptor-Prefix.pch in Headers */,
 				B262C8791AC57593009E090F /* RNCryptorEngine.h in Headers */,
+				B22326331AD599380075FC62 /* NSString+Hash.h in Headers */,
 				B262C8A31AC72D49009E090F /* NSDictionary+Sec.h in Headers */,
-				B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */,
+				B223263A1AD59FC50075FC62 /* PinnedURLConnectionHandler.h in Headers */,
+				B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */,
 				B262C89B1AC72CF0009E090F /* NSString+Sec.h in Headers */,
+				B223261C1AD47A3D0075FC62 /* SecLog.h in Headers */,
 				B262C8911AC6C547009E090F /* NSData+Sec.h in Headers */,
 				B24FC8E51AC831F200474510 /* BaseCoreDataTransformer.h in Headers */,
 				B262C8671AC56657009E090F /* NSUserDefaults+Sec.h in Headers */,
 				B262C8321AC41B3D009E090F /* JailbreakCheck1.h in Headers */,
 				B262C8881AC5C7EB009E090F /* xxhash.h in Headers */,
+				B22326251AD47F6F0075FC62 /* UIApplication+SecText.h in Headers */,
+				B223263E1AD59FE20075FC62 /* NSURLConnection+Sec.h in Headers */,
+				B233D7861AD8526F001D33EA /* WKWebViewNavigationDelegate.h in Headers */,
 				B262C8971AC710FD009E090F /* NSFileManager+Sec.h in Headers */,
 				B2D24A281A90C6A600FA8CEA /* SmartSecConfigurable.h in Headers */,
 				B2D73A3F1AAF82AA00F8BB26 /* UIApplication+Sec.h in Headers */,
 				B262C8521AC4728B009E090F /* IntegrityCheck2.h in Headers */,
 				B262C8411AC44A41009E090F /* LOOCryptString.h in Headers */,
+				B233D7931AD87A81001D33EA /* UIApplication+WhiteList.h in Headers */,
 				B262C87D1AC57593009E090F /* RNEncryptor.h in Headers */,
 				B262C8451AC4676A009E090F /* JailbreakCheck2.h in Headers */,
 				B2E50A2F1AC2FC2100BBD5CA /* SmartSecDefault.h in Headers */,
@@ -472,7 +648,10 @@
 				B280F18C1AB0689700DC28FC /* NSObject+State.h in Headers */,
 				B262C84E1AC4720F009E090F /* IntegrityCheck1.h in Headers */,
 				B2D24A0A1A90C42900FA8CEA /* SmartSec.h in Headers */,
+				B2C83C131AD82792003B7C16 /* UIWebView+Sec.h in Headers */,
 				B280F1891AB0625A00DC28FC /* OnStateChangeListener.h in Headers */,
+				B2C83C171AD83260003B7C16 /* WebViewDelegate.h in Headers */,
+				B22327131AD6A6670075FC62 /* UIWebView+BaseUrl.h in Headers */,
 				B2E50A381AC31ADB00BBD5CA /* DebugCheck2.h in Headers */,
 				B262C83A1AC43781009E090F /* UIWindow+Sec.h in Headers */,
 				B262C8491AC46C1D009E090F /* UINavigationController+Sec.h in Headers */,
@@ -578,35 +757,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				B262C8921AC6C547009E090F /* NSData+Sec.m in Sources */,
+				B22326161AD43B670075FC62 /* UIViewController+SecText.m in Sources */,
+				B223263F1AD59FE20075FC62 /* NSURLConnection+Sec.m in Sources */,
 				B262C83B1AC43781009E090F /* UIWindow+Sec.m in Sources */,
 				B262C87C1AC57593009E090F /* RNDecryptor.m in Sources */,
 				B262C8681AC56657009E090F /* NSUserDefaults+Sec.m in Sources */,
 				B280F1991AB0974300DC28FC /* UIViewController+Sec.m in Sources */,
 				B262C8461AC4676A009E090F /* JailbreakCheck2.m in Sources */,
+				B22326341AD599380075FC62 /* NSString+Hash.m in Sources */,
 				B262C8981AC710FD009E090F /* NSFileManager+Sec.m in Sources */,
 				B262C8781AC57593009E090F /* RNCryptor.m in Sources */,
+				B2C83C101AD71662003B7C16 /* URLWhitelist.m in Sources */,
 				B2E50A461AC33C4A00BBD5CA /* SmartSecConfig.m in Sources */,
 				B262C8A81AC72D54009E090F /* UIImage+Sec.m in Sources */,
+				B233D7941AD87A81001D33EA /* UIApplication+WhiteList.m in Sources */,
 				B2E50A301AC2FC2100BBD5CA /* SmartSecDefault.m in Sources */,
+				B2C83C141AD82792003B7C16 /* UIWebView+Sec.m in Sources */,
 				B262C87E1AC57593009E090F /* RNEncryptor.m in Sources */,
 				B262C89C1AC72CF0009E090F /* NSString+Sec.m in Sources */,
 				B2E50A411AC3219F00BBD5CA /* DebugCheck2.m in Sources */,
 				B2E50A3E1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m in Sources */,
+				B22326221AD47B580075FC62 /* UIApplication+TopController.m in Sources */,
+				B233D7871AD8526F001D33EA /* WKWebViewNavigationDelegate.m in Sources */,
 				B2D24A291A90C6A600FA8CEA /* SmartSecConfigurable.m in Sources */,
 				B2D73A401AAF82AA00F8BB26 /* UIApplication+Sec.m in Sources */,
 				B262C84F1AC4720F009E090F /* IntegrityCheck1.m in Sources */,
 				B262C8621AC56542009E090F /* CryptoManager.m in Sources */,
+				B223263B1AD59FC50075FC62 /* PinnedURLConnectionHandler.m in Sources */,
+				B22327141AD6A6670075FC62 /* UIWebView+BaseUrl.m in Sources */,
 				B262C8A01AC72D38009E090F /* NSArray+Sec.m in Sources */,
 				B262C87A1AC57593009E090F /* RNCryptorEngine.m in Sources */,
+				B22326121AD423F30075FC62 /* UIView+SecText.m in Sources */,
 				B2E50A401AC3219C00BBD5CA /* DebugCheck1.m in Sources */,
 				B24FC8E61AC831F200474510 /* BaseCoreDataTransformer.m in Sources */,
+				B2C83C181AD83260003B7C16 /* WebViewDelegate.m in Sources */,
 				B262C8A41AC72D49009E090F /* NSDictionary+Sec.m in Sources */,
+				B22326261AD47F6F0075FC62 /* UIApplication+SecText.m in Sources */,
 				B262C8871AC5C7EB009E090F /* xxhash.c in Sources */,
+				B223260E1AD423E50075FC62 /* UITextField+SecText.m in Sources */,
 				B262C8531AC4728B009E090F /* IntegrityCheck2.m in Sources */,
 				B262C8331AC41B3D009E090F /* JailbreakCheck1.m in Sources */,
 				B262C84A1AC46C1D009E090F /* UINavigationController+Sec.m in Sources */,
+				B233D78F1AD85329001D33EA /* WKWebView+Sec.m in Sources */,
+				B223261D1AD47A3D0075FC62 /* SecLog.m in Sources */,
 				B262C8421AC44A41009E090F /* LOOCryptString.m in Sources */,
 				B262C8891AC5C7EB009E090F /* xxhsum.c in Sources */,
+				B233D78B1AD85320001D33EA /* WKWebView+Callbacks.m in Sources */,
 				B280F18D1AB0689700DC28FC /* NSObject+State.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,6 +920,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				DEFINES_MODULE = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -732,7 +929,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = debugging;
 			};
 			name = Debug;
 		};
@@ -741,6 +940,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				DEFINES_MODULE = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -750,7 +950,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = YES;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Release;
 		};

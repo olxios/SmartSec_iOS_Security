@@ -7,20 +7,28 @@
 //
 
 #import "ViewController.h"
-#import <SmartSec/SmartSec.h>
-#import "AppDelegate.h"
-#import <SDWebImage/UIImageView+WebCache.h>
-#import "TestEntity1.h"
 
-@interface ViewController ()
+#import <SmartSec/SmartSec.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#import "TestEntity1.h"
+#import "AppDelegate.h"
+#import "SecondViewController.h"
+
+@interface ViewController () <NSURLConnectionDelegate>
 {
     IBOutlet UIImageView *_localImageView;
     IBOutlet UIImageView *_remoteImageView;
+    
+    IBOutlet UITextField *_testTextField;
 }
 
 @end
 
 @implementation ViewController
+
+#pragma mark -
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad
 {
@@ -28,7 +36,19 @@
     
     [self loadLocalImage];
     [self loadRemoteImage];
+    [self accessCoreData];
+    [self performURLRequest];
     
+    [self performSelector:@selector(showSecondViewController)
+               withObject:nil
+               afterDelay:5.0f];
+}
+
+#pragma mark - 
+#pragma mark - General methods
+
+- (void)accessCoreData
+{
     TestEntity1 *entity = (TestEntity1 *)[TestEntity1 insertNewObjectIfNeeded:@"test2"];
     entity.itemID = @"test2";
     entity.attribute1 = @(8);
@@ -51,11 +71,6 @@
     NSLog(@"Attribute7 = %@, %@", entity2.attribute7, [entity2.attribute7 class]);
     NSLog(@"Attribute9 = %@, %@", entity2.attribute9, [entity2.attribute9 class]);
     NSLog(@"Attribute10 = %@, %@", [[NSString alloc] initWithData:entity2.attribute10 encoding:NSUTF8StringEncoding], [entity2.attribute10 class]);
-    
-    /*
-    [self performSelector:@selector(showSecondViewController)
-               withObject:nil
-               afterDelay:20.0f];*/
 }
 
 - (void)loadLocalImage
@@ -83,14 +98,62 @@
 
 - (void)showSecondViewController
 {
-    enableDebuggerChecks(); // just for test
+    //enableDebuggerChecks();
     //enableJailbreakChecks();
     
-    UIViewController *controller = [[UIViewController alloc] init];
-    controller.view.backgroundColor = [UIColor greenColor];
-    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SecondViewController *controller = [storyBoard instantiateViewControllerWithIdentifier:@"SecondViewController"];
     [self.navigationController pushViewController:controller animated:YES];
-    
 }
+
+- (IBAction)dismissKeyboard:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+#pragma mark -
+#pragma mark - Network request
+
+- (void)performURLRequest
+{
+    //NSString *requestUrl = @"https://www.google.ee";
+    //NSString *requestUrl = @"https://kosmos.infohaiku.com";
+    NSString *requestUrl = @"https://twitter.com";
+    NSURL *url = [NSURL URLWithString:requestUrl];
+    
+    NSURLRequest* request = [NSURLRequest requestWithURL:url
+                                             cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                         timeoutInterval:5.0f];
+    
+    NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [connection start];
+}
+
+#pragma mark -
+#pragma mark - NSURLConnectionDelegate
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    ReleaseLog(@"Connection did fail with error: %@/%@", connection, error);
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    ReleaseLog(@"Connection did finish loading %@", connection);
+}
+
+/*
+- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+{
+    ReleaseLog(@"Will send request for auth challenge: %@", challenge);
+    
+    NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
+    [challenge.sender useCredential:credential
+         forAuthenticationChallenge:challenge];
+}*/
 
 @end

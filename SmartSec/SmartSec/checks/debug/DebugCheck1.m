@@ -49,7 +49,7 @@ typedef int (*ptrace_ptr_t)(int _request, pid_t _pid, caddr_t _addr, int _data);
 #pragma mark - OnStateChangeListener
 
 - (void)onStateChanged:(id)stateObject fromObject:(id)observedObject
-{
+{    
 #if ENABLE_CHECKS
     disable_debugger_check1();
 #endif
@@ -67,7 +67,7 @@ typedef int (*ptrace_ptr_t)(int _request, pid_t _pid, caddr_t _addr, int _data);
 
 // Standard ptrace check
 void disable_debugger_check1()
-{    
+{
     void* handle = dlopen(0, RTLD_GLOBAL | RTLD_NOW);
     ptrace_ptr_t ptrace_ptr = dlsym(handle, "ptrace");
     ptrace_ptr(PT_DENY_ATTACH, 0, 0, 0);

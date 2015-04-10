@@ -18,7 +18,7 @@
     [self swizzledPushViewController:viewController animated:animated];
     
     // notify observers
-    [[self class] notifyObservers:NSStringFromSelector(@selector(pushViewController:animated:))
+    [[UINavigationController class] notifyObservers:NSStringFromSelector(@selector(pushViewController:animated:))
                fromObservedObject:self];
 }
 

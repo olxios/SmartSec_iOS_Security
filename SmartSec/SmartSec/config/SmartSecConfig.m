@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 Olga Dalton. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+
 #import "SmartSecConfig.h"
-#import "Defines.h"
 
 #import "JailbreakCheck1.h"
 
@@ -20,6 +22,10 @@
 
 #import "NSUserDefaults+Sec.h"
 #import "NSObject+State.h"
+
+#import "UIApplication+SecText.h"
+#import "UITextField+SecText.h"
+#import "PinnedURLConnectionHandler.h"
 
 // static variables
 static unsigned long long defaultThresholdSize = -1;
@@ -146,7 +152,7 @@ extern FORCE_INLINE void onJailbreakDetected(OnJailbreakDetected jailbreakDetect
 #pragma mark -
 #pragma mark - Encryption settings
 
-extern void enableFileEncryption()
+extern FORCE_INLINE void enableFileEncryption()
 {
     [NSData setEncryptionDisabled:NO];
     [NSString setEncryptionDisabled:NO];
@@ -154,12 +160,38 @@ extern void enableFileEncryption()
     [NSDictionary setEncryptionDisabled:NO];
 }
 
-extern void disableFileEncryption()
+extern FORCE_INLINE void disableFileEncryption()
 {
     [NSData setEncryptionDisabled:YES];
     [NSString setEncryptionDisabled:YES];
     [NSArray setEncryptionDisabled:YES];
     [NSDictionary setEncryptionDisabled:YES];
+}
+
+#pragma mark -
+#pragma mark - TextField settings
+
+extern FORCE_INLINE void disableSecureTextfields()
+{
+    [UITextField setCorrectionDisabled:YES];
+}
+
+extern FORCE_INLINE void enableSecureTextfields()
+{
+    [UITextField setCorrectionDisabled:NO];
+}
+
+#pragma mark -
+#pragma mark - Screenshot settings
+
+extern FORCE_INLINE void disableAppScreenshotsProtection()
+{
+    [UIApplication sharedApplication].screenshotsProtectionDisabled = YES;
+}
+
+extern FORCE_INLINE void enableAppScreenshotsProtection()
+{
+    [UIApplication sharedApplication].screenshotsProtectionDisabled = NO;
 }
 
 #pragma mark -
@@ -169,7 +201,8 @@ extern FORCE_INLINE unsigned long long getThresholdFileSize()
 {
     if (defaultThresholdSize == -1)
     {
-        // Default threshold will be quite low, occupying 1 / 1024 of all RAM
+        // Default threshold will be quite low to not cause overhead
+        // occupying 1 / 1024 of all RAM
         // e.g for iPhone 6 (1 GB RAM) it will be around 1 MB
         unsigned long long totalMemory = [NSProcessInfo processInfo].physicalMemory;
         
@@ -183,6 +216,24 @@ extern FORCE_INLINE unsigned long long getThresholdFileSize()
 extern FORCE_INLINE void setThresholdFileSize(unsigned long long newFileSize)
 {
     defaultThresholdSize = newFileSize;
+}
+
+#pragma mark -
+#pragma mark - SSL handling
+
+extern FORCE_INLINE void allowInvalidCertificatesInTestMode(NSArray *domains)
+{
+    allowInvalidCertificates(NO, domains);
+}
+
+extern FORCE_INLINE void allowInvalidCertificatesInReleaseMode(NSArray *domains)
+{
+    allowInvalidCertificates(YES, domains);
+}
+
+extern FORCE_INLINE void pinSSLCertificatesWithDictionary(NSDictionary *sslPinningDictionary)
+{
+    savedPinnedCertificates(sslPinningDictionary);
 }
 
 #pragma mark -

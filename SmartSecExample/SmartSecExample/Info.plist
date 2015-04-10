@@ -26,6 +26,26 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>WebAccessWhiteList</key>
+	<array>
+		<string>http://*.com/*</string>
+		<string>*://*.ee/*</string>
+	</array>
+	<key>URLSchemesAccessWhiteList</key>
+	<array>
+		<string>com.*.mobilesafari</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>SmartSec</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>com.olgadalton.smartsec</string>
+		</dict>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

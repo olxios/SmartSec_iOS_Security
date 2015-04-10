@@ -10,5 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)dismissKeyboard:(id)sender;
+
 @end
 

@@ -11,6 +11,16 @@
 
 @interface SmartSecConfig : NSObject
 
+/******* Callbacks  *******/
+
+// Jailbreak callback
+extern void onJailbreakDetected(OnJailbreakDetected jailbreakDetected);
+
+// Integrity encryption check callback
+extern void onMissingEncryption(OnEncryptionMissingDetected missingEncryptionDetected);
+
+/******* Settings  *******/
+
 // Debugger
 extern void enableDebuggerChecks();
 extern void disableDebuggerChecks();
@@ -19,15 +29,9 @@ extern void disableDebuggerChecks();
 extern void enableJailbreakChecks();
 extern void disableJailbreakChecks();
 
-// Jailbreak callback
-extern void onJailbreakDetected(OnJailbreakDetected jailbreakDetected);
-
 // Integrity
 extern void enableIntegrityChecks();
 extern void disableIntegrityChecks();
-
-// Integrity encryption check callback
-extern void onMissingEncryption(OnEncryptionMissingDetected missingEncryptionDetected);
 
 // NSUserDefaults encryption
 extern void enableNSUserDefaultsEncryption();
@@ -40,6 +44,23 @@ extern void disableFileEncryption();
 // File encryption settings
 extern unsigned long long getThresholdFileSize();
 extern void setThresholdFileSize(unsigned long long newFileSize);
+
+// Textfields settings
+extern void disableSecureTextfields();
+extern void enableSecureTextfields();
+
+// Screenshots settings
+extern void disableAppScreenshotsProtection();
+extern void enableAppScreenshotsProtection();
+
+// SSL certificates validation config
+extern void allowInvalidCertificatesInTestMode(NSArray *domains);
+extern void allowInvalidCertificatesInReleaseMode(NSArray *domains);
+
+// SSL pinning config
+extern void pinSSLCertificatesWithDictionary(NSDictionary *sslPinningDictionary);
+
+/******* Setuping the framework  *******/
 
 + (void)setup:(const void *)mainReference;
 

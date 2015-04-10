@@ -200,11 +200,11 @@ NSData *keychainItemForIdentifier(NSString *identifier)
     NSURL *documentsPath = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
     
     // Documents directory gets recreated after the reinstallation
-    NSDate *appModificationDate = [[[NSFileManager defaultManager] attributesOfItemAtPath:documentsPath.path error:nil] fileModificationDate];
+    NSDate *appCreationDate = [[[NSFileManager defaultManager] attributesOfItemAtPath:documentsPath.path error:nil] fileCreationDate];
     
     NSDate *keychainModificationDate = keychainDictionary[(__bridge id)kSecAttrModificationDate];
     
-    if ([appModificationDate timeIntervalSince1970]
+    if ([appCreationDate timeIntervalSince1970]
         - [keychainModificationDate timeIntervalSince1970] > 10)
     {
         // New installation, encryption key needs update

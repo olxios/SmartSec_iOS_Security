@@ -17,7 +17,7 @@
     [self swizzledBecomeKeyWindow];
     
     // notify observers
-    [[self class] notifyObservers:NSStringFromSelector(@selector(becomeKeyWindow)) fromObservedObject:self];
+    [[UIWindow class] notifyObservers:NSStringFromSelector(@selector(becomeKeyWindow)) fromObservedObject:self];
 }
 
 + (void)load

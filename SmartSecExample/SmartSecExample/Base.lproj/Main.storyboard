@@ -33,51 +33,71 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ag0-4Y-fJA">
-                                <rect key="frame" x="247" y="20" width="107" height="24"/>
+                                <rect key="frame" x="247" y="90" width="107" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cQ6-kA-v1d">
-                                <rect key="frame" x="220" y="54" width="160" height="160"/>
+                                <rect key="frame" x="240" y="124" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Z2m-oE-ZRJ"/>
-                                    <constraint firstAttribute="height" constant="160" id="nL3-ou-KQs"/>
+                                    <constraint firstAttribute="width" constant="120" id="Z2m-oE-ZRJ"/>
+                                    <constraint firstAttribute="height" constant="120" id="nL3-ou-KQs"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remote image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vM2-LV-J6x">
-                                <rect key="frame" x="236" y="254" width="129" height="24"/>
+                                <rect key="frame" x="236" y="284" width="129" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNu-FU-RsC">
-                                <rect key="frame" x="220" y="288" width="160" height="160"/>
+                                <rect key="frame" x="240" y="318" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Zru-rW-dhl"/>
-                                    <constraint firstAttribute="height" constant="160" id="dVv-Yv-RRh"/>
+                                    <constraint firstAttribute="width" constant="120" id="Zru-rW-dhl"/>
+                                    <constraint firstAttribute="height" constant="120" id="dVv-Yv-RRh"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QVD-pm-ocs">
+                                <rect key="frame" x="200" y="40" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="SgT-Zg-C2n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="insecureEntry" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="2fE-eX-b8h"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.042538018519043382" green="0.12076666333594747" blue="0.27039574795081966" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vM2-LV-J6x" firstAttribute="top" secondItem="cQ6-kA-v1d" secondAttribute="bottom" constant="40" id="8ez-0x-9kp"/>
+                            <constraint firstAttribute="centerX" secondItem="QVD-pm-ocs" secondAttribute="centerX" id="9tE-dZ-Che"/>
                             <constraint firstAttribute="centerX" secondItem="vM2-LV-J6x" secondAttribute="centerX" id="ARd-q2-0ll"/>
                             <constraint firstAttribute="centerX" secondItem="ag0-4Y-fJA" secondAttribute="centerX" id="BB6-E1-Utp"/>
                             <constraint firstItem="cQ6-kA-v1d" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="BC5-So-TSJ"/>
                             <constraint firstItem="ag0-4Y-fJA" firstAttribute="top" secondItem="cQ6-kA-v1d" secondAttribute="bottom" constant="5" id="Fpl-Wg-sVi"/>
+                            <constraint firstItem="QVD-pm-ocs" firstAttribute="top" secondItem="eNu-FU-RsC" secondAttribute="bottom" constant="30" id="HZP-8F-qF5"/>
+                            <constraint firstItem="QVD-pm-ocs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="40" id="OMq-Bl-K3G"/>
                             <constraint firstAttribute="centerX" secondItem="cQ6-kA-v1d" secondAttribute="centerX" id="PWg-pk-2Rh"/>
                             <constraint firstItem="ag0-4Y-fJA" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="WpP-Mf-qah"/>
                             <constraint firstAttribute="centerX" secondItem="eNu-FU-RsC" secondAttribute="centerX" id="bZy-lP-a6X"/>
                             <constraint firstAttribute="centerY" secondItem="ag0-4Y-fJA" secondAttribute="centerY" id="bqR-xI-kyI"/>
                             <constraint firstItem="cQ6-kA-v1d" firstAttribute="top" secondItem="ag0-4Y-fJA" secondAttribute="bottom" constant="10" id="dfZ-lf-qfw"/>
+                            <constraint firstItem="ag0-4Y-fJA" firstAttribute="top" secondItem="QVD-pm-ocs" secondAttribute="bottom" constant="20" id="eHG-m5-Wcm"/>
                             <constraint firstItem="eNu-FU-RsC" firstAttribute="top" secondItem="vM2-LV-J6x" secondAttribute="bottom" constant="10" id="eqL-Xe-kqV"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="BC5-So-TSJ"/>
+                                <exclude reference="HZP-8F-qF5"/>
                                 <exclude reference="Fpl-Wg-sVi"/>
+                                <exclude reference="WpP-Mf-qah"/>
                                 <exclude reference="bqR-xI-kyI"/>
+                                <exclude reference="BC5-So-TSJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -85,11 +105,48 @@
                     <connections>
                         <outlet property="_localImageView" destination="cQ6-kA-v1d" id="Kk4-tT-2Qo"/>
                         <outlet property="_remoteImageView" destination="eNu-FU-RsC" id="Wf9-ap-Y58"/>
+                        <outlet property="_testTextField" destination="QVD-pm-ocs" id="a51-bO-Skl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="312" y="10"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="imY-K4-NHd">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="kya-Rr-m96" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BkO-Aq-WOw"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGP-zS-IoK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fe0-Wk-Ial">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0j-FK-GQO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kya-Rr-m96" id="via-xl-eVm"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W0j-FK-GQO" firstAttribute="leading" secondItem="fe0-Wk-Ial" secondAttribute="leading" id="No8-kV-DeX"/>
+                            <constraint firstItem="HGP-zS-IoK" firstAttribute="top" secondItem="W0j-FK-GQO" secondAttribute="bottom" id="cYw-GB-WcR"/>
+                            <constraint firstAttribute="trailing" secondItem="W0j-FK-GQO" secondAttribute="trailing" id="f2S-lI-4CW"/>
+                            <constraint firstItem="W0j-FK-GQO" firstAttribute="top" secondItem="fe0-Wk-Ial" secondAttribute="top" id="nex-2h-Tnn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_webView" destination="W0j-FK-GQO" id="FSh-zg-aT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEB-BM-kKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="-682"/>
         </scene>
     </scenes>
 </document>
