@@ -11,6 +11,7 @@
 #import "NSObject+State.h"
 #import "UIApplication+SecText.h"
 #import "UIApplication+WhiteList.h"
+#import "IntegrityCheck1.h"
 
 #import <objc/runtime.h>
 #include <spawn.h>
@@ -26,6 +27,8 @@ void swizzledSetDelegate(id self, SEL _cmd, id<UIApplicationDelegate> delegate)
 {
     // call the real implementation
     ((void(*)(id,SEL,id))__original_Set_Delegate_IMP)(self, _cmd, delegate);
+    
+    check_class((char *)[NSStringFromClass([NSUserDefaults class]) UTF8String]);
     
     // can initialize the library, when delegate is ready
     [SmartSecConfigurable sharedInstance];
@@ -87,6 +90,8 @@ void swizzledSetDelegate(id self, SEL _cmd, id<UIApplicationDelegate> delegate)
 {
     [self applicationStateChanged];
     [[UIApplication sharedApplication] showTextFieldsContent];
+    
+    check_class((char *)[NSStringFromClass([[UIApplication sharedApplication].delegate class]) UTF8String]);
 }
 
 @end

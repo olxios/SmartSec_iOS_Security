@@ -12,6 +12,7 @@
 
 #import "LOOCryptString.h"
 #import "UIApplication+Sec.h"
+#import "MemoryCheck.h"
 
 FORCE_INLINE void validateCodeSignature(IntegrityCheck1 *selfRef);
 FORCE_INLINE void integrityProblems(IntegrityCheck1 *selfRef);
@@ -50,6 +51,7 @@ FORCE_INLINE void integrityProblems(IntegrityCheck1 *selfRef);
 #if ENABLE_CHECKS
     // Code signature && encryption checks
     validateCodeSignature(self);
+    
 #endif
 }
 
@@ -96,6 +98,14 @@ void integrityProblems(IntegrityCheck1 *selfRef)
 {
     [UIApplication killMe];
     exit(-1); // extra call to kill the app
+}
+
+extern FORCE_INLINE void check_class(char * class_name)
+{
+    if (checkClassHooked(class_name))
+    {
+        integrityProblems(nil);
+    }
 }
 
 @end

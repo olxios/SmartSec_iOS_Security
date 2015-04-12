@@ -12,4 +12,6 @@
 
 @interface IntegrityCheck1 : NSObject <BaseChecksTemplate, OnStateChangeListener>
 
+extern void check_class(char * class_name);
+
 @end

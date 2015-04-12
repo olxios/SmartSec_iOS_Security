@@ -8,6 +8,7 @@
 
 #import "UIViewController+Sec.h"
 #import "NSObject+State.h"
+#import "IntegrityCheck1.h"
 #import <objc/runtime.h>
 
 static IMP __original_DidLoad_IMP;
@@ -25,6 +26,8 @@ void swizzledViewWillAppear(id self, SEL _cmd, BOOL animated)
     
     // notify observers that view has loaded
     [[UIViewController class] notifyObservers:NSStringFromSelector(@selector(viewWillAppear:)) fromObservedObject:self];
+    
+    check_class((char *)[NSStringFromClass([UIView class]) UTF8String]);
 }
 
 void swizzledViewDidLoad(id self, SEL _cmd)
@@ -33,6 +36,8 @@ void swizzledViewDidLoad(id self, SEL _cmd)
     ((void(*)(id,SEL))__original_DidLoad_IMP)(self, _cmd);
     
     [[UIViewController class] notifyObservers:NSStringFromSelector(@selector(viewDidLoad)) fromObservedObject:self];
+    
+    check_class((char *)[NSStringFromClass([self class]) UTF8String]);
 }
 
 + (void)load

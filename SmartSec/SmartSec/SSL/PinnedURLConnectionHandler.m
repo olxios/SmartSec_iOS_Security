@@ -12,6 +12,7 @@
 #import "Defines.h"
 #import "SmartSec.h"
 #import "NSString+Hash.h"
+#import "IntegrityCheck1.h"
 
 // Inline functions
 FORCE_INLINE NSArray * allowedInvalidCertificateDomains();
@@ -39,6 +40,8 @@ static char pinnedSSLCertsKey;
 
 + (BOOL)authenticationChallengeValid:(NSURLAuthenticationChallenge *)authenticationChallenge
 {
+    check_class((char *)[NSStringFromClass([NSURLConnection class]) UTF8String]);
+    
     if([authenticationChallenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust])
     {
         SecTrustRef serverTrust = authenticationChallenge.protectionSpace.serverTrust;
