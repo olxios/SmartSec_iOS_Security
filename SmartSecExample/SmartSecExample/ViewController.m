@@ -33,7 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+        
     [self loadLocalImage];
     [self loadRemoteImage];
     [self accessCoreData];
@@ -41,7 +41,7 @@
     
     [self performSelector:@selector(showSecondViewController)
                withObject:nil
-               afterDelay:5.0f];
+               afterDelay:30.0f];
 }
 
 #pragma mark - 

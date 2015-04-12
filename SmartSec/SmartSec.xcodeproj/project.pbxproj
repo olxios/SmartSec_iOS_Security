@@ -43,8 +43,6 @@
 		B262C83A1AC43781009E090F /* UIWindow+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8381AC43781009E090F /* UIWindow+Sec.h */; };
 		B262C83B1AC43781009E090F /* UIWindow+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8391AC43781009E090F /* UIWindow+Sec.m */; };
 		B262C83C1AC445C1009E090F /* Defines.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D73A391AAF74EA00F8BB26 /* Defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B262C8411AC44A41009E090F /* LOOCryptString.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C83F1AC44A41009E090F /* LOOCryptString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B262C8421AC44A41009E090F /* LOOCryptString.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8401AC44A41009E090F /* LOOCryptString.m */; };
 		B262C8451AC4676A009E090F /* JailbreakCheck2.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8431AC4676A009E090F /* JailbreakCheck2.h */; };
 		B262C8461AC4676A009E090F /* JailbreakCheck2.m in Sources */ = {isa = PBXBuildFile; fileRef = B262C8441AC4676A009E090F /* JailbreakCheck2.m */; };
 		B262C8491AC46C1D009E090F /* UINavigationController+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B262C8471AC46C1D009E090F /* UINavigationController+Sec.h */; };
@@ -118,6 +116,10 @@
 		B2E50A411AC3219F00BBD5CA /* DebugCheck2.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E50A371AC31ADB00BBD5CA /* DebugCheck2.m */; };
 		B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E50A431AC33C4A00BBD5CA /* SmartSecConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2E50A461AC33C4A00BBD5CA /* SmartSecConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E50A441AC33C4A00BBD5CA /* SmartSecConfig.m */; };
+		B2F4BCE61ADAB5D200F94BE9 /* LOOCryptString.h in Headers */ = {isa = PBXBuildFile; fileRef = B2F4BCE41ADAB5D200F94BE9 /* LOOCryptString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2F4BCE71ADAB5D200F94BE9 /* LOOCryptString.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4BCE51ADAB5D200F94BE9 /* LOOCryptString.m */; };
+		B2F4BCEE1ADAB72500F94BE9 /* UAObfuscatedString.h in Headers */ = {isa = PBXBuildFile; fileRef = B2F4BCEC1ADAB72500F94BE9 /* UAObfuscatedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2F4BCEF1ADAB72500F94BE9 /* UAObfuscatedString.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4BCED1ADAB72500F94BE9 /* UAObfuscatedString.m */; };
 		B2FB2EEF1AD8948D0062A1FF /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FB2EEE1AD894380062A1FF /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -167,8 +169,6 @@
 		B262C8311AC41B3D009E090F /* JailbreakCheck1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailbreakCheck1.m; sourceTree = "<group>"; };
 		B262C8381AC43781009E090F /* UIWindow+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Sec.h"; sourceTree = "<group>"; };
 		B262C8391AC43781009E090F /* UIWindow+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Sec.m"; sourceTree = "<group>"; };
-		B262C83F1AC44A41009E090F /* LOOCryptString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOOCryptString.h; sourceTree = "<group>"; };
-		B262C8401AC44A41009E090F /* LOOCryptString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOOCryptString.m; sourceTree = "<group>"; };
 		B262C8431AC4676A009E090F /* JailbreakCheck2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JailbreakCheck2.h; sourceTree = "<group>"; };
 		B262C8441AC4676A009E090F /* JailbreakCheck2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JailbreakCheck2.m; sourceTree = "<group>"; };
 		B262C8471AC46C1D009E090F /* UINavigationController+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Sec.h"; sourceTree = "<group>"; };
@@ -246,6 +246,10 @@
 		B2E50A3C1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ArrayValue.m"; sourceTree = "<group>"; };
 		B2E50A431AC33C4A00BBD5CA /* SmartSecConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSecConfig.h; sourceTree = "<group>"; };
 		B2E50A441AC33C4A00BBD5CA /* SmartSecConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSecConfig.m; sourceTree = "<group>"; };
+		B2F4BCE41ADAB5D200F94BE9 /* LOOCryptString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOOCryptString.h; sourceTree = "<group>"; };
+		B2F4BCE51ADAB5D200F94BE9 /* LOOCryptString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOOCryptString.m; sourceTree = "<group>"; };
+		B2F4BCEC1ADAB72500F94BE9 /* UAObfuscatedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAObfuscatedString.h; sourceTree = "<group>"; };
+		B2F4BCED1ADAB72500F94BE9 /* UAObfuscatedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAObfuscatedString.m; sourceTree = "<group>"; };
 		B2FB2EEE1AD894380062A1FF /* Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -381,6 +385,7 @@
 		B262C8691AC57593009E090F /* external */ = {
 			isa = PBXGroup;
 			children = (
+				B2F4BCE31ADAB5BA00F94BE9 /* strings */,
 				B262C8831AC5C7B0009E090F /* xxHash */,
 				B262C86A1AC57593009E090F /* rncryptor */,
 			);
@@ -580,8 +585,6 @@
 		B2E50A3A1AC31D9F00BBD5CA /* general */ = {
 			isa = PBXGroup;
 			children = (
-				B262C83F1AC44A41009E090F /* LOOCryptString.h */,
-				B262C8401AC44A41009E090F /* LOOCryptString.m */,
 				B2E50A3B1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h */,
 				B2E50A3C1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.m */,
 				B223261A1AD47A3D0075FC62 /* SecLog.h */,
@@ -599,6 +602,17 @@
 			path = config;
 			sourceTree = "<group>";
 		};
+		B2F4BCE31ADAB5BA00F94BE9 /* strings */ = {
+			isa = PBXGroup;
+			children = (
+				B2F4BCE41ADAB5D200F94BE9 /* LOOCryptString.h */,
+				B2F4BCE51ADAB5D200F94BE9 /* LOOCryptString.m */,
+				B2F4BCEC1ADAB72500F94BE9 /* UAObfuscatedString.h */,
+				B2F4BCED1ADAB72500F94BE9 /* UAObfuscatedString.m */,
+			);
+			path = strings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -606,6 +620,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F4BCEE1ADAB72500F94BE9 /* UAObfuscatedString.h in Headers */,
 				B22326181AD479070075FC62 /* SecImports.h in Headers */,
 				B22326111AD423F30075FC62 /* UIView+SecText.h in Headers */,
 				B22326151AD43B670075FC62 /* UIViewController+SecText.h in Headers */,
@@ -614,7 +629,9 @@
 				B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */,
 				B262C89F1AC72D38009E090F /* NSArray+Sec.h in Headers */,
 				B262C87B1AC57593009E090F /* RNDecryptor.h in Headers */,
+				B262C83C1AC445C1009E090F /* Defines.h in Headers */,
 				B22326211AD47B580075FC62 /* UIApplication+TopController.h in Headers */,
+				B2F4BCE61ADAB5D200F94BE9 /* LOOCryptString.h in Headers */,
 				B262C8751AC57593009E090F /* RNCryptor+Private.h in Headers */,
 				B262C8A71AC72D54009E090F /* UIImage+Sec.h in Headers */,
 				B2E50A3D1AC31DBF00BBD5CA /* NSMutableDictionary+ArrayValue.h in Headers */,
@@ -623,7 +640,6 @@
 				B2FB2EEF1AD8948D0062A1FF /* Crypto.h in Headers */,
 				B262C8791AC57593009E090F /* RNCryptorEngine.h in Headers */,
 				B22326331AD599380075FC62 /* NSString+Hash.h in Headers */,
-				B262C83C1AC445C1009E090F /* Defines.h in Headers */,
 				B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */,
 				B262C8A31AC72D49009E090F /* NSDictionary+Sec.h in Headers */,
 				B223263A1AD59FC50075FC62 /* PinnedURLConnectionHandler.h in Headers */,
@@ -641,7 +657,6 @@
 				B2D24A281A90C6A600FA8CEA /* SmartSecConfigurable.h in Headers */,
 				B2D73A3F1AAF82AA00F8BB26 /* UIApplication+Sec.h in Headers */,
 				B262C8521AC4728B009E090F /* IntegrityCheck2.h in Headers */,
-				B262C8411AC44A41009E090F /* LOOCryptString.h in Headers */,
 				B233D7931AD87A81001D33EA /* UIApplication+WhiteList.h in Headers */,
 				B262C87D1AC57593009E090F /* RNEncryptor.h in Headers */,
 				B262C8451AC4676A009E090F /* JailbreakCheck2.h in Headers */,
@@ -784,6 +799,7 @@
 				B22326221AD47B580075FC62 /* UIApplication+TopController.m in Sources */,
 				B233D7871AD8526F001D33EA /* WKWebViewNavigationDelegate.m in Sources */,
 				B2D24A291A90C6A600FA8CEA /* SmartSecConfigurable.m in Sources */,
+				B2F4BCE71ADAB5D200F94BE9 /* LOOCryptString.m in Sources */,
 				B2D73A401AAF82AA00F8BB26 /* UIApplication+Sec.m in Sources */,
 				B262C84F1AC4720F009E090F /* IntegrityCheck1.m in Sources */,
 				B262C8621AC56542009E090F /* CryptoManager.m in Sources */,
@@ -802,9 +818,9 @@
 				B262C8531AC4728B009E090F /* IntegrityCheck2.m in Sources */,
 				B262C8331AC41B3D009E090F /* JailbreakCheck1.m in Sources */,
 				B262C84A1AC46C1D009E090F /* UINavigationController+Sec.m in Sources */,
+				B2F4BCEF1ADAB72500F94BE9 /* UAObfuscatedString.m in Sources */,
 				B233D78F1AD85329001D33EA /* WKWebView+Sec.m in Sources */,
 				B223261D1AD47A3D0075FC62 /* SecLog.m in Sources */,
-				B262C8421AC44A41009E090F /* LOOCryptString.m in Sources */,
 				B262C8891AC5C7EB009E090F /* xxhsum.c in Sources */,
 				B233D78B1AD85320001D33EA /* WKWebView+Callbacks.m in Sources */,
 				B280F18D1AB0689700DC28FC /* NSObject+State.m in Sources */,

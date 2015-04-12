@@ -15,15 +15,17 @@
 #import <objc/runtime.h>
 #include <spawn.h>
 
+static IMP __original_Set_Delegate_IMP;
+
 @implementation UIApplication(Sec)
 
 #pragma mark -
 #pragma mark - Swizzle
 
-- (void)swizzledSetDelegate:(id<UIApplicationDelegate>)delegate
+void swizzledSetDelegate(id self, SEL _cmd, id<UIApplicationDelegate> delegate)
 {
     // call the real implementation
-    [self swizzledSetDelegate:delegate];
+    ((void(*)(id,SEL,id))__original_Set_Delegate_IMP)(self, _cmd, delegate);
     
     // can initialize the library, when delegate is ready
     [SmartSecConfigurable sharedInstance];
@@ -49,10 +51,10 @@
 
 + (void)load
 {
-    Method original, swizzled;
+    Method original;
+    
     original = class_getInstanceMethod(self, @selector(setDelegate:));
-    swizzled = class_getInstanceMethod(self, @selector(swizzledSetDelegate:));
-    method_exchangeImplementations(original, swizzled);
+    __original_Set_Delegate_IMP = method_setImplementation(original, (IMP)swizzledSetDelegate);
 }
 
 #pragma mark -

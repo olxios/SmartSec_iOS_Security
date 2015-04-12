@@ -11,25 +11,27 @@
 
 #import <objc/runtime.h>
 
+static IMP __original_PushController_IMP;
+
 @implementation UINavigationController (Sec)
 
-- (void)swizzledPushViewController:(UIViewController *)viewController animated:(BOOL)animated
+void swizzledPushViewController(id self, SEL _cmd, UIViewController *viewController, BOOL animated)
 {
-    [self swizzledPushViewController:viewController animated:animated];
+    // call the real implementation
+    ((void(*)(id,SEL,UIViewController*,BOOL))__original_PushController_IMP)(self, _cmd, viewController, animated);
     
     // notify observers
     [[UINavigationController class] notifyObservers:NSStringFromSelector(@selector(pushViewController:animated:))
-               fromObservedObject:self];
+                                 fromObservedObject:self];
 }
 
 + (void)load
 {
-    Method original, swizzled;
+    Method original;
     
     // viewWillAppear called before subviews laid out
     original = class_getInstanceMethod(self, @selector(pushViewController:animated:));
-    swizzled = class_getInstanceMethod(self, @selector(swizzledPushViewController:animated:));
-    method_exchangeImplementations(original, swizzled);
+    __original_PushController_IMP = method_setImplementation(original, (IMP)swizzledPushViewController);
 }
 
 @end

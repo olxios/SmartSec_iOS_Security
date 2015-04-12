@@ -57,7 +57,7 @@ static char applicationHookedKey;
 #pragma mark - Swizzle
 
 - (void)setupURLSchemeFilter
-{
+{    
     if (![self delegateHooked])
     {
         // Save hooking

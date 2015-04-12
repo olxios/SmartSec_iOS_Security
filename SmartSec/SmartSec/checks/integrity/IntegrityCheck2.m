@@ -30,7 +30,13 @@ FORCE_INLINE void encryptionProblems(IntegrityCheck2 *selfRef);
 - (void)setMainReference:(const void *)mainReference
 {
     _mainReference = mainReference;
+    
+#if ENABLE_CHECKS
+    
     checkBinaryEncryption(self);
+    
+#endif
+    
 }
 
 #pragma mark -

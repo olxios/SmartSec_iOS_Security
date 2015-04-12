@@ -30,6 +30,7 @@
 // IMPORTANT: Works with -Os (Fastest, Smallest) optimization level.
 
 #import <Foundation/Foundation.h>
+#import "UAObfuscatedString.h"
 
 // __str - C-string.
 // __n - Number of characters in string (without trailing \0 character).
@@ -37,6 +38,8 @@
 // TODO: use more complex approach!
 // XOR is easy to find
 #define LOO_ENCRYPT_STR_CHAR_AT(__str, __i) ((unsigned char)(__str[__i]) ^ ("UIApplicationDidBecomeActiveNotification"[__i%40]))
+
+// Obfuscate.U.I.A.p.p.l.i.c.a.t.i.o.n.D.idBecomeActiveNotification
 
 // This must match LOO_ENCRYPT_STR_CHAR_AT.
 NSString *LOODecrypStrN(const unsigned char encStr[], size_t n);

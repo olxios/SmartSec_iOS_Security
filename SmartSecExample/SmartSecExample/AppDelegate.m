@@ -29,7 +29,7 @@ int main (int argc, char *argv[]);
     onMissingEncryption(^{
         ReleaseLog(@"ENCRYPTION MISSING! DO SOMETHING SMART...!");
     });
-    
+        
     //allowInvalidCertificatesInReleaseMode(@[@"kosmos.infohaiku.com"]);
     
     NSDictionary *sslPinDictionary = @{@"twitter.com" :
@@ -44,7 +44,7 @@ int main (int argc, char *argv[]);
         // This password will be used only to safeguard memory, not used for actual encryption
         return [@"CurrentUserSessionId" dataUsingEncoding:NSUTF8StringEncoding];
     }];
-    
+        
     return YES;
 }
 
