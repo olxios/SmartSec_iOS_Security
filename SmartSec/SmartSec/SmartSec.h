@@ -26,3 +26,4 @@ FOUNDATION_EXPORT const unsigned char SmartSecVersionString[];
 #import <SmartSec/UIView+SecText.h>
 #import <SmartSec/UITextField+SecText.h>
 #import <SmartSec/UIViewController+SecText.h>
+#import <SmartSec/URLWhitelist.h>

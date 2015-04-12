@@ -20,5 +20,13 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>WebAccessWhiteList</key>
+	<array>
+		<string>http://*.com/*</string>
+	</array>
+	<key>URLSchemesAccessWhiteList</key>
+	<array>
+		<string>com.*.mobilesafari</string>
+	</array>
 </dict>
 </plist>

@@ -7,14 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Defines.h"
 
 @interface CryptoManager : NSObject
-
-// Encrypted writeToFile: support
-// NSData
-// NSString
-// NSArray
-// NSDictionary
 
 extern NSData *getEncryptionKey(BOOL useWhenLocked);
 extern NSData *getEncryptedDataAndHash(NSData *data, BOOL useWhenLocked, BOOL addHash);
@@ -22,5 +17,6 @@ extern NSData *getEncryptedDataWithoutHash(NSData *data, BOOL useWhenLocked);
 extern NSData *getEncryptedData(NSData *data, BOOL useWhenLocked);
 extern NSData *getDecryptedData(NSData *data, BOOL useWhenLocked);
 extern NSData *validateEncryptedData(NSData *data);
+extern void setSessionPasswordCallback(OnSessionPasswordRequired sessionPasswordCallback);
 
 @end

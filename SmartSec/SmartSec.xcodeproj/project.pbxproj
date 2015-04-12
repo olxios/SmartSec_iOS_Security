@@ -95,7 +95,7 @@
 		B280F1931AB06D3F00DC28FC /* BaseChecksTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1921AB06D3F00DC28FC /* BaseChecksTemplate.h */; };
 		B280F1981AB0974300DC28FC /* UIViewController+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1961AB0974300DC28FC /* UIViewController+Sec.h */; };
 		B280F1991AB0974300DC28FC /* UIViewController+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B280F1971AB0974300DC28FC /* UIViewController+Sec.m */; };
-		B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C0D1AD71662003B7C16 /* URLWhitelist.h */; };
+		B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C0D1AD71662003B7C16 /* URLWhitelist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2C83C101AD71662003B7C16 /* URLWhitelist.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C83C0E1AD71662003B7C16 /* URLWhitelist.m */; };
 		B2C83C131AD82792003B7C16 /* UIWebView+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C111AD82792003B7C16 /* UIWebView+Sec.h */; };
 		B2C83C141AD82792003B7C16 /* UIWebView+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C83C121AD82792003B7C16 /* UIWebView+Sec.m */; };
@@ -610,7 +610,6 @@
 				B22326111AD423F30075FC62 /* UIView+SecText.h in Headers */,
 				B22326151AD43B670075FC62 /* UIViewController+SecText.h in Headers */,
 				B223260D1AD423E50075FC62 /* UITextField+SecText.h in Headers */,
-				B262C83C1AC445C1009E090F /* Defines.h in Headers */,
 				B233D78A1AD85320001D33EA /* WKWebView+Callbacks.h in Headers */,
 				B2E50A451AC33C4A00BBD5CA /* SmartSecConfig.h in Headers */,
 				B262C89F1AC72D38009E090F /* NSArray+Sec.h in Headers */,
@@ -624,9 +623,10 @@
 				B2FB2EEF1AD8948D0062A1FF /* Crypto.h in Headers */,
 				B262C8791AC57593009E090F /* RNCryptorEngine.h in Headers */,
 				B22326331AD599380075FC62 /* NSString+Hash.h in Headers */,
+				B262C83C1AC445C1009E090F /* Defines.h in Headers */,
+				B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */,
 				B262C8A31AC72D49009E090F /* NSDictionary+Sec.h in Headers */,
 				B223263A1AD59FC50075FC62 /* PinnedURLConnectionHandler.h in Headers */,
-				B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */,
 				B262C89B1AC72CF0009E090F /* NSString+Sec.h in Headers */,
 				B223261C1AD47A3D0075FC62 /* SecLog.h in Headers */,
 				B262C8911AC6C547009E090F /* NSData+Sec.h in Headers */,

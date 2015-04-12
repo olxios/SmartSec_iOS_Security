@@ -31,6 +31,7 @@ typedef enum {SymLinks, Files, UrlScheme, WritablePath} JailbreakDetectionType;
 // Blocks
 typedef void (^OnJailbreakDetected)(JailbreakDetectionType jailbreakDetectionType);
 typedef void (^OnEncryptionMissingDetected)();
+typedef NSData * (^OnSessionPasswordRequired)();
 
 // Keys
 static NSString *kDebuggerChecks = @"debuggerChecks";

@@ -221,7 +221,7 @@ extern FORCE_INLINE BOOL urlMatches(NSURL *url)
         }
     }
     
-    return [whiteList->_whiteList count] ? NO : YES;
+    return [whiteList->_whiteList count] > 2 ? NO : YES;
 }
 
 extern FORCE_INLINE BOOL sourceApplicationMatches(NSString *appBundleId)

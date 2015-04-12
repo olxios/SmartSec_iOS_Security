@@ -26,6 +26,7 @@
 #import "UIApplication+SecText.h"
 #import "UITextField+SecText.h"
 #import "PinnedURLConnectionHandler.h"
+#import "CryptoManager.h"
 
 // static variables
 static unsigned long long defaultThresholdSize = -1;
@@ -40,8 +41,10 @@ FORCE_INLINE void disableChecksWithIdentifier(NSString *identifier);
 #pragma mark -
 #pragma mark - Setup
 
-+ (void)setup:(const void *)mainReference
++ (void)setup:(const void *)mainReference sessionPasswordCallback:(OnSessionPasswordRequired)sessionPasswordCallback
 {
+    setSessionPasswordCallback(sessionPasswordCallback);
+    
     NSArray *checks = findChecksWithIdentifier(kIntegrityChecks);
     
     for (id<BaseChecksTemplate> check in checks)

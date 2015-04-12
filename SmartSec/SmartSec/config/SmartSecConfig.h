@@ -62,6 +62,6 @@ extern void pinSSLCertificatesWithDictionary(NSDictionary *sslPinningDictionary)
 
 /******* Setuping the framework  *******/
 
-+ (void)setup:(const void *)mainReference;
++ (void)setup:(const void *)mainReference sessionPasswordCallback:(OnSessionPasswordRequired)sessionPasswordCallback;
 
 @end

@@ -39,7 +39,11 @@ int main (int argc, char *argv[]);
     
     pinSSLCertificatesWithDictionary(sslPinDictionary);
     
-    [SmartSecConfig setup:main];
+    [SmartSecConfig setup:main sessionPasswordCallback:^NSData *{
+        // In real project use some actual user sessionId here, don't use a hardcoded password!!!
+        // This password will be used only to safeguard memory, not used for actual encryption
+        return [@"CurrentUserSessionId" dataUsingEncoding:NSUTF8StringEncoding];
+    }];
     
     return YES;
 }

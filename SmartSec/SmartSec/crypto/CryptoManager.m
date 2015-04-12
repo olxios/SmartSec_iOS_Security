@@ -20,54 +20,106 @@
 // Two separate keys for usage, when device is locked and no
 static NSData *key = nil;
 static NSData *lockedKey = nil;
+static OnSessionPasswordRequired sessionPasswordRequiredCallback;
 
 #define ENCRYPTION_KEY (useWhenLocked ? lockedKey : key)
+#define ENCRYPTION_KEY_SAFE (useWhenLocked ? getEncryptionKey(YES) : getEncryptionKey(NO))
+#define SESSION_KEY (sessionPasswordRequiredCallback ? sessionPasswordRequiredCallback() : nil)
 
 // Inline functions
 FORCE_INLINE NSData *keychainItemForIdentifier(NSString *identifier);
 FORCE_INLINE NSMutableDictionary *keychainDictionaryForIdentifier(NSString *identifier);
-
-// Encryption format
-static const RNCryptorSettings kRNCryptorAES128Settings = {
-    .algorithm = kCCAlgorithmAES128,
-    .blockSize = kCCBlockSizeAES128,
-    .IVSize = kCCBlockSizeAES128,
-    .options = kCCOptionPKCS7Padding,
-    .HMACAlgorithm = kCCHmacAlgSHA1,
-    .HMACLength = CC_SHA1_DIGEST_LENGTH,
-    
-    .keySettings = {
-        .keySize = kCCKeySizeAES128,
-        .saltSize = 8,
-        .PBKDFAlgorithm = kCCPBKDF2,
-        .PRF = kCCPRFHmacAlgSHA1,
-        .rounds = 10000
-    },
-    
-    .HMACKeySettings = {
-        .keySize = kCCKeySizeAES128,
-        .saltSize = 8,
-        .PBKDFAlgorithm = kCCPBKDF2,
-        .PRF = kCCPRFHmacAlgSHA1,
-        .rounds = 10000
-    }
-};
+FORCE_INLINE NSData *sessionKey();
 
 @implementation CryptoManager
 
 #pragma mark -
 #pragma mark - Key handling
 
+extern FORCE_INLINE void setSessionPasswordCallback(OnSessionPasswordRequired sessionPasswordCallback)
+{
+    sessionPasswordRequiredCallback = sessionPasswordCallback;
+}
+
+NSData *sessionKey()
+{
+    NSData *sessionPass = SESSION_KEY;
+    
+    if (![sessionPass length])
+    {
+        return nil;
+    }
+    
+    if ([sessionPass length] < kRNCryptorAES256Settings.keySettings.keySize)
+    {
+        NSMutableData *tempData = [NSMutableData dataWithData:sessionPass];
+        
+        while ([tempData length] < kRNCryptorAES256Settings.keySettings.keySize)
+        {
+            [tempData appendData:[sessionPass subdataWithRange:NSMakeRange(0, MIN([sessionPass length], kRNCryptorAES256Settings.keySettings.keySize - [tempData length]))]];
+        }
+        
+        return tempData;
+    }
+    else if ([sessionPass length] > kRNCryptorAES256Settings.keySettings.keySize)
+    {
+        return [sessionPass subdataWithRange:NSMakeRange(0, kRNCryptorAES256Settings.keySettings.keySize)];
+    }
+    
+    return sessionPass;
+}
+
+// Lazy initialization
 extern FORCE_INLINE NSData *getEncryptionKey(BOOL useWhenLocked)
 {
+    NSData *sessionPass = sessionKey();
+    
     // If key in memory, return it
     if (key && !useWhenLocked)
     {
-        return key;
+        if (sessionPass)
+        {
+            NSData *decryptedKey = [RNDecryptor decryptData:key
+                                               withSettings:kRNCryptorAES256Settings
+                                              encryptionKey:sessionPass
+                                                    HMACKey:nil
+                                                      error:nil];
+            
+            memset((void*)[sessionPass bytes], 0, [sessionPass length]);
+            
+            if (decryptedKey)
+            {
+                return decryptedKey;
+            }
+            // ELSE: will be retrieved again from the keychain
+        }
+        else
+        {
+            return key;
+        }
     }
     else if (lockedKey && useWhenLocked)
     {
-        return lockedKey;
+        if (sessionPass)
+        {
+            NSData *decryptedKey = [RNDecryptor decryptData:lockedKey
+                                               withSettings:kRNCryptorAES256Settings
+                                              encryptionKey:sessionPass
+                                                    HMACKey:nil
+                                                      error:nil];
+            
+            memset((void*)[sessionPass bytes], 0, [sessionPass length]);
+            
+            if (decryptedKey)
+            {
+                return decryptedKey;
+            }
+            // ELSE: will be retrieved again from the keychain
+        }
+        else
+        {
+            return lockedKey;
+        }
     }
     
     // Otherwise, try to load it from the keychain
@@ -145,7 +197,49 @@ extern FORCE_INLINE NSData *getEncryptionKey(BOOL useWhenLocked)
         key = keychainItem;
     }
     
-    return ENCRYPTION_KEY;
+    sessionPass = sessionKey();
+    
+    NSData *returnKey = [[NSData alloc] initWithData:ENCRYPTION_KEY];
+    
+    if (sessionPass)
+    {
+        if (useWhenLocked)
+        {
+            NSData *encryptedKey = [RNEncryptor encryptData:lockedKey
+                                    withSettings:kRNCryptorAES256Settings
+                                   encryptionKey:sessionPass
+                                         HMACKey:nil
+                                              IV:[RNCryptor randomDataOfLength:kRNCryptorAES256Settings.IVSize]
+                                           error:nil];
+            
+            lockedKey = encryptedKey;
+        }
+        else
+        {
+            NSData *encryptedKey = [RNEncryptor encryptData:key
+                                    withSettings:kRNCryptorAES256Settings
+                                   encryptionKey:sessionPass
+                                         HMACKey:nil
+                                              IV:[RNCryptor randomDataOfLength:kRNCryptorAES256Settings.IVSize]
+                                           error:nil];
+            
+            key = encryptedKey;
+        }
+
+        memset((void*)[sessionPass bytes], 0, [sessionPass length]);
+    }
+    else
+    {
+        memset((void*)[lockedKey bytes], 0, [lockedKey length]);
+        memset((void*)[key bytes], 0, [key length]);
+        
+        // Can't encrypt the key in memory, won't be saved in memory at all!
+        // Will be retrieved each time when needed...
+        lockedKey = nil;
+        key = nil;
+    }
+    
+    return returnKey;
 }
 
 NSMutableDictionary *keychainDictionaryForIdentifier(NSString *identifier)
@@ -181,6 +275,8 @@ NSMutableDictionary *keychainDictionaryForIdentifier(NSString *identifier)
 
 NSData *keychainItemForIdentifier(NSString *identifier)
 {
+    //NSLog(@"Retrieve keychain item for identifier %@", identifier);
+    
     NSMutableDictionary *searchDictionary = keychainDictionaryForIdentifier(identifier);
     searchDictionary[(__bridge id)kSecMatchLimit] = (__bridge id)kSecMatchLimitOne;
     searchDictionary[(__bridge id)kSecReturnData] = (__bridge id)kCFBooleanTrue;
@@ -236,13 +332,17 @@ extern FORCE_INLINE NSData *getEncryptedData(NSData *data, BOOL useWhenLocked)
 // TODO: is HMAC needed?
 extern NSData *getEncryptedDataAndHash(NSData *data, BOOL useWhenLocked, BOOL addHash)
 {
+    NSData *encryptionKey = ENCRYPTION_KEY_SAFE;
+    
     NSError *error;
     NSData *encryptedData = (NSMutableData *)[RNEncryptor encryptData:data
                                         withSettings:kRNCryptorAES256Settings
-                                       encryptionKey:ENCRYPTION_KEY
+                                       encryptionKey:encryptionKey
                                              HMACKey:nil
                                                   IV:[RNCryptor randomDataOfLength:kRNCryptorAES256Settings.IVSize]
                                                error:&error];
+    
+    memset((void*)[encryptionKey bytes], 0, [encryptionKey length]);
     
     if (!addHash)
     {
@@ -292,15 +392,18 @@ extern FORCE_INLINE NSData *validateEncryptedData(NSData *data)
 
 extern FORCE_INLINE NSData *getDecryptedData(NSData *data, BOOL useWhenLocked)
 {
+    NSData *encryptionKey = ENCRYPTION_KEY_SAFE;
+    
     NSError *error;
     NSData *decryptedData = [RNDecryptor decryptData:data
                                         withSettings:kRNCryptorAES256Settings
-                                       encryptionKey:ENCRYPTION_KEY
+                                       encryptionKey:encryptionKey
                                              HMACKey:nil
                                                error:&error];
     
+    memset((void*)[encryptionKey bytes], 0, [encryptionKey length]);
+    
     return decryptedData;
 }
-
 
 @end
