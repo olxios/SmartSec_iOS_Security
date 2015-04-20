@@ -41,7 +41,7 @@ FORCE_INLINE void disableChecksWithIdentifier(NSString *identifier);
 #pragma mark -
 #pragma mark - Setup
 
-+ (void)setup:(const void *)mainReference sessionPasswordCallback:(OnSessionPasswordRequired)sessionPasswordCallback
+extern FORCE_INLINE void setup(const void * mainReference, OnSessionPasswordRequired sessionPasswordCallback)
 {
     setSessionPasswordCallback(sessionPasswordCallback);
     

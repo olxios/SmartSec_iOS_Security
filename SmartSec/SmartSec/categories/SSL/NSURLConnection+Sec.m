@@ -8,6 +8,9 @@
 
 #import "NSURLConnection+Sec.h"
 #import "PinnedURLConnectionHandler.h"
+#import "IntegrityCheck1.h"
+#import "IntegrityCheck2.h"
+#import "DebugCheck1.h"
 #import <objc/runtime.h>
 
 @implementation NSURLConnection (Sec)
@@ -16,14 +19,22 @@
 #pragma mark - Init methods
 
 - (instancetype)initWithRequestSwizzled:(NSURLRequest *)request delegate:(id)delegate startImmediately:(BOOL)startImmediately
-{
+{    
     [self setupDelegate:delegate];
+    
+    check_class_all_methods((char *)[NSStringFromClass([DebugCheck1 class]) UTF8String]);
+    
     return [self initWithRequestSwizzled:request delegate:delegate startImmediately:startImmediately];
 }
 
 - (instancetype)initWithRequestSwizzled:(NSURLRequest *)request delegate:(id)delegate
 {
+    // Add validation logic to the NSURLConnection delegate
     [self setupDelegate:delegate];
+    
+    check_class_all_methods((char *)[NSStringFromClass([IntegrityCheck2 class]) UTF8String]);
+    
+    // Call the original method
     return [self initWithRequestSwizzled:request delegate:delegate];
 }
 
@@ -92,8 +103,14 @@
 + (void)load
 {
     Method original, swizzled;
+    
+    // 1. Find the original method
     original = class_getInstanceMethod(self, @selector(initWithRequest:delegate:));
+    
+    // 2. Find the replacement method
     swizzled = class_getInstanceMethod(self, @selector(initWithRequestSwizzled:delegate:));
+    
+    // 3. Exchange methods implementations
     method_exchangeImplementations(original, swizzled);
     
     original = class_getInstanceMethod(self, @selector(initWithRequest:delegate:startImmediately:));

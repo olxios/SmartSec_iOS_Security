@@ -99,7 +99,6 @@
 - (void)showSecondViewController
 {
     //enableDebuggerChecks();
-    //enableJailbreakChecks();
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     SecondViewController *controller = [storyBoard instantiateViewControllerWithIdentifier:@"SecondViewController"];

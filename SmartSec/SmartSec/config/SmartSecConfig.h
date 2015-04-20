@@ -61,7 +61,6 @@ extern void allowInvalidCertificatesInReleaseMode(NSArray *domains);
 extern void pinSSLCertificatesWithDictionary(NSDictionary *sslPinningDictionary);
 
 /******* Setuping the framework  *******/
-
-+ (void)setup:(const void *)mainReference sessionPasswordCallback:(OnSessionPasswordRequired)sessionPasswordCallback;
+extern void setup(const void * mainReference, OnSessionPasswordRequired sessionPasswordCallback);
 
 @end

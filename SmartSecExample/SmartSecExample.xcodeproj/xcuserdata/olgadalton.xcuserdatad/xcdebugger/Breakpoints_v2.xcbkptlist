@@ -66,6 +66,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "-[URLWhitelist initWebViewWhiteListWithKey:]"
                   moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/whitelist/URLWhitelist.m"
                   timestampString = "450397388.150365"
                   startingColumnNumber = "9223372036854775807"
@@ -80,6 +81,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "initWhiteList"
                   moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/whitelist/URLWhitelist.m"
                   timestampString = "450397388.150652"
                   startingColumnNumber = "9223372036854775807"
@@ -94,6 +96,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "-[URLWhitelist initURLSchemeWhiteListWithKey:]"
                   moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/whitelist/URLWhitelist.m"
                   timestampString = "450397388.151068"
                   startingColumnNumber = "9223372036854775807"
@@ -108,6 +111,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "urlSchemesWhiteListEntry"
                   moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/whitelist/URLWhitelist.m"
                   timestampString = "450397388.151359"
                   startingColumnNumber = "9223372036854775807"
@@ -117,6 +121,22 @@
                   offsetFromSymbolStart = "24">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSecTests/NSUserDefaultsTest.m"
+            timestampString = "451255474.425918"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "401"
+            endingLineNumber = "401"
+            landmarkName = "-testSetPlainURLForKey"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

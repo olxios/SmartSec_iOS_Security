@@ -108,4 +108,12 @@ extern FORCE_INLINE void check_class(char * class_name)
     }
 }
 
+extern FORCE_INLINE void check_class_all_methods(char * class_name)
+{
+    if (checkClassHookedWithAllMethods(class_name))
+    {
+        integrityProblems(nil);
+    }
+}
+
 @end

@@ -10,6 +10,8 @@
 #import <XCTest/XCTest.h>
 #import "RNCryptor.h"
 #import <SmartSec/SmartSec.h>
+#import "CryptoManager.h"
+#import "RNCryptor.h"
 
 @interface NSStringTest : XCTestCase
 
@@ -20,6 +22,10 @@
 - (void)setUp
 {
     [super setUp];
+    
+    setSessionPasswordCallback(^NSData *{
+        return [@"NSStringTest" dataUsingEncoding:NSUTF8StringEncoding];
+    });
 }
 
 - (void)tearDown

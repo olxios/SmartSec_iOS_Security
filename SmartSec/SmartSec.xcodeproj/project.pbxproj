@@ -121,7 +121,7 @@
 		B2F4BCEE1ADAB72500F94BE9 /* UAObfuscatedString.h in Headers */ = {isa = PBXBuildFile; fileRef = B2F4BCEC1ADAB72500F94BE9 /* UAObfuscatedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2F4BCEF1ADAB72500F94BE9 /* UAObfuscatedString.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F4BCED1ADAB72500F94BE9 /* UAObfuscatedString.m */; };
 		B2FB2EEF1AD8948D0062A1FF /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FB2EEE1AD894380062A1FF /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2FB708D1ADAE29000FD0F87 /* MemoryCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FB708B1ADAE29000FD0F87 /* MemoryCheck.h */; };
+		B2FB708D1ADAE29000FD0F87 /* MemoryCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FB708B1ADAE29000FD0F87 /* MemoryCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2FB708E1ADAE29000FD0F87 /* MemoryCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FB708C1ADAE29000FD0F87 /* MemoryCheck.m */; };
 /* End PBXBuildFile section */
 
@@ -627,7 +627,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F4BCEE1ADAB72500F94BE9 /* UAObfuscatedString.h in Headers */,
-				B2FB708D1ADAE29000FD0F87 /* MemoryCheck.h in Headers */,
 				B22326181AD479070075FC62 /* SecImports.h in Headers */,
 				B22326111AD423F30075FC62 /* UIView+SecText.h in Headers */,
 				B22326151AD43B670075FC62 /* UIViewController+SecText.h in Headers */,
@@ -645,6 +644,7 @@
 				B233D78E1AD85329001D33EA /* WKWebView+Sec.h in Headers */,
 				B262C8761AC57593009E090F /* RNCryptor-Prefix.pch in Headers */,
 				B2FB2EEF1AD8948D0062A1FF /* Crypto.h in Headers */,
+				B2FB708D1ADAE29000FD0F87 /* MemoryCheck.h in Headers */,
 				B262C8791AC57593009E090F /* RNCryptorEngine.h in Headers */,
 				B22326331AD599380075FC62 /* NSString+Hash.h in Headers */,
 				B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */,

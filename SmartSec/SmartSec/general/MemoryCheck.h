@@ -9,3 +9,6 @@
 #import <Foundation/Foundation.h>
 
 extern BOOL checkClassHooked(char * class_name);
+extern BOOL checkClassHookedWithAllMethods(char * class_name);
+
+extern BOOL checkClassMethodHooked(char * class_name, SEL methodSelector);

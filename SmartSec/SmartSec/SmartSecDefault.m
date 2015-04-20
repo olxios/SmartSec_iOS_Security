@@ -14,7 +14,7 @@
 
 // Checks import
 #import "DebugCheck2.h"
-#import "JailbreakCheck2.h"
+#import "JailbreakCheck1.h"
 #import "IntegrityCheck2.h"
 
 #import "CryptoManager.h"
@@ -98,7 +98,7 @@ extern FORCE_INLINE void hookDefaultDebuggerChecks(SmartSecDefault *selfRef)
 
 extern FORCE_INLINE void hookDefaultJailbreakChecks(SmartSecDefault *selfRef)
 {
-    JailbreakCheck2 *jailbreakCheck = [[JailbreakCheck2 alloc] init];
+    JailbreakCheck1 *jailbreakCheck = [[JailbreakCheck1 alloc] init];
     [jailbreakCheck hookChecks];
     
     [selfRef.enabledCheckers addItem:jailbreakCheck forKey:kJailbreakChecks];

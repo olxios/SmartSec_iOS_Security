@@ -20,6 +20,7 @@
 // Two separate keys for usage, when device is locked and no
 static NSData *key = nil;
 static NSData *lockedKey = nil;
+static unsigned long long latestSessionHash = 0L;
 static OnSessionPasswordRequired sessionPasswordRequiredCallback;
 
 #define ENCRYPTION_KEY (useWhenLocked ? lockedKey : key)
@@ -39,6 +40,15 @@ FORCE_INLINE NSData *sessionKey();
 extern FORCE_INLINE void setSessionPasswordCallback(OnSessionPasswordRequired sessionPasswordCallback)
 {
     sessionPasswordRequiredCallback = sessionPasswordCallback;
+    lockedKey = nil;
+    key = nil;
+    
+    if (latestSessionHash == 0
+        && sessionPasswordRequiredCallback)
+    {
+        NSData *sessionKey = SESSION_KEY;
+        latestSessionHash = XXH64([sessionKey bytes], [sessionKey length], 0);
+    }
 }
 
 NSData *sessionKey()
@@ -47,6 +57,14 @@ NSData *sessionKey()
     
     if (![sessionPass length])
     {
+        return nil;
+    }
+    
+    unsigned long long hash = XXH64([sessionPass bytes], [sessionPass length], 0);
+    
+    if (hash != latestSessionHash)
+    {
+        latestSessionHash = hash;
         return nil;
     }
     

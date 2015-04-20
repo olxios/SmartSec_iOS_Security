@@ -12,6 +12,7 @@
 #import "UIApplication+SecText.h"
 #import "UIApplication+WhiteList.h"
 #import "IntegrityCheck1.h"
+#import "JailbreakCheck2.h"
 
 #import <objc/runtime.h>
 #include <spawn.h>
@@ -84,6 +85,7 @@ void swizzledSetDelegate(id self, SEL _cmd, id<UIApplicationDelegate> delegate)
 - (void)applicationDidEnterBackground
 {
     [[UIApplication sharedApplication] hideTextFieldsContent];
+    check_class_all_methods((char *)[NSStringFromClass([JailbreakCheck2 class]) UTF8String]);
 }
 
 - (void)applicationDidEnterForeground

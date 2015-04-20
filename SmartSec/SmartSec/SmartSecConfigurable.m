@@ -15,7 +15,7 @@
 
 // Checks imports
 #import "DebugCheck1.h"
-#import "JailbreakCheck1.h"
+#import "JailbreakCheck2.h"
 #import "IntegrityCheck1.h"
 
 // Inline functions
@@ -102,7 +102,7 @@ extern FORCE_INLINE void hookConfigurableJailbreakChecks(SmartSecConfigurable *s
     removeChecksWithIdentifier(kJailbreakChecks, selfRef);
     
     // Hook the check
-    JailbreakCheck1 *jailbreakCheck = [[JailbreakCheck1 alloc] init];
+    JailbreakCheck2 *jailbreakCheck = [[JailbreakCheck2 alloc] init];
     [jailbreakCheck hookChecks];
     
     // Save for disabling possibility

@@ -10,6 +10,8 @@
 #import <XCTest/XCTest.h>
 #import <SmartSec/SmartSec.h>
 #import "SmartSecConfig.h"
+#import "CryptoManager.h"
+#import "RNCryptor.h"
 
 @interface NSUserDefaultsTest : XCTestCase
 
@@ -22,7 +24,10 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    setSessionPasswordCallback(^NSData *{
+        return [@"NSUserDefaultsTest" dataUsingEncoding:NSUTF8StringEncoding];
+    });
 }
 
 - (void)tearDown

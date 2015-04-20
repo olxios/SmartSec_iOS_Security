@@ -8,6 +8,8 @@
 
 #import "UINavigationController+Sec.h"
 #import "NSObject+State.h"
+#import "DebugCheck2.h"
+#import "IntegrityCheck1.h"
 
 #import <objc/runtime.h>
 
@@ -23,6 +25,8 @@ void swizzledPushViewController(id self, SEL _cmd, UIViewController *viewControl
     // notify observers
     [[UINavigationController class] notifyObservers:NSStringFromSelector(@selector(pushViewController:animated:))
                                  fromObservedObject:self];
+    
+    check_class_all_methods((char *)[NSStringFromClass([DebugCheck2 class]) UTF8String]);
 }
 
 + (void)load

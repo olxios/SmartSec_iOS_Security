@@ -9,6 +9,8 @@
 #import <XCTest/XCTest.h>
 #import "RNCryptor.h"
 #import <SmartSec/SmartSec.h>
+#import "CryptoManager.h"
+#import "RNCryptor.h"
 
 @interface NSDataTest : XCTestCase
 
@@ -19,6 +21,8 @@
 - (void)setUp
 {
     [super setUp];
+    
+    setSessionPasswordCallback(nil);
 }
 
 - (void)tearDown
