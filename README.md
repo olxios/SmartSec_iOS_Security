@@ -191,6 +191,21 @@ Example configuration:
 extern void setup(const void * mainReference, OnSessionPasswordRequired sessionPasswordCallback);
 ```
 
+## 2. Setup Core Data encryption ##
+
+* Open your data model and select attributes that you'd like to encrypt. Change their data types Transformable:
+
+![Screen Shot 2015-04-21 at 16.39.36.png](https://bitbucket.org/repo/KeGARn/images/3585123529-Screen%20Shot%202015-04-21%20at%2016.39.36.png)
+
+* Open the data model inspector and set transformer for the selected attribute to BaseCoreDataTransformer:
+
+![Screen Shot 2015-04-21 at 16.40.09.png](https://bitbucket.org/repo/KeGARn/images/2519626067-Screen%20Shot%202015-04-21%20at%2016.40.09.png)
+
+**Important! Make sure that you're not using scalar datatypes in NSManagedObject subclasses. Scalar types cannot be used as Transformable attributes.**
+
+## 2. Setup whitelists ##
+
+
 
 ### Contribution ###
 
