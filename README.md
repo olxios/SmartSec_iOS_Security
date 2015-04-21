@@ -225,7 +225,7 @@ Text fields, which are not used for sensitive information entry, should be marke
 
 ## 6. Configure SSL validation && pinning ##
 
-SSL pinning works for NSURLConnection based requests. In order to configure it, you must provide whether embedded certificate path or the hash of the public certificate SPKI. The hash is the recommended way, but make sure you hide the hash string. 
+SSL pinning works for NSURLConnection based requests. In order to configure it, you must provide whether embedded certificate path or the hash of the public certificate SPKI. The hash is the recommended way, **but make sure you hide the hash string**. 
 You can provide multiple certificates for one host. 
 
 Example configuration:
