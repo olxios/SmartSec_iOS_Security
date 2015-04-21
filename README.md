@@ -2,6 +2,8 @@
 
 This is an iOS framework, which incorporates multiple security controls into one framework. It was written for a Master's thesis about iOS application security as a proof-of-concept project. 
 
+Tested with iOS 8.0+
+
 # List of implemented security controls #
 
 * Debugger controls
@@ -270,8 +272,14 @@ extern BOOL checkClassHookedWithAllMethods(char * class_name);
 extern BOOL checkClassMethodHooked(char * class_name, SEL methodSelector);
 ```
 
-### Contribution ###
+# Contributions #
 
-* Writing tests
-* Code review
-* Other guidelines
+## The framework uses following open-source code: ##
+
+* LOOCryptString -> https://gist.github.com/sfider/3072633
+* RNCryptor -> https://github.com/RNCryptor/RNCryptor
+* xxHash -> https://github.com/Cyan4973/xxHash
+
+# Acknowledgement #
+
+This code should be considered beta and there are many improvements and new features to do. Use on your own risk.
