@@ -217,6 +217,59 @@ Example whitelist:
 
 The framework will automatically disable NSLog logging in the release mode. If you still need to log something in the release mode, use ReleaseLog(...) function instead. Both are defined using pre-processing macros - to skip this control, skip the <SmartSec/SecImports.h> import.
 
+## 5. Setup textfields ##
+
+Text fields, which are not used for sensitive information entry, should be marked as insecure. To do this, set the **insecureEntry** property of the text field, its superview or view controller to YES. Insecure text fields will not be masked on the background screenshot.  
+
+## 6. Configure SSL validation && pinning ##
+
+SSL pinning works for NSURLConnection based requests. In order to configure it, you must provide whether embedded certificate path or the hash of the public certificate SKPI. The hash is the recommended way. You can provide multiple certificates for one host. 
+
+Example configuration:
+
+```
+#!objective-c
+
+NSDictionary *sslPinDictionary = @{@"twitter.com" :
+                @[[[NSBundle mainBundle] pathForResource:@"random-org" ofType:@"der"],
+                @"cfb6fe515a13f0f84e058865c62087e890d8f0ea9d6723f8fc6a2193d29ced51"]};
+ 
+pinSSLCertificatesWithDictionary(sslPinDictionary);
+```
+
+To use self-signed certificates, use following functions:
+
+```
+#!objective-c
+
+extern void allowInvalidCertificatesInTestMode(NSArray *domains);
+extern void allowInvalidCertificatesInReleaseMode(NSArray *domains);
+```
+
+The purpose of having different certificates for test and release mode is to avoid forgetting to remove self-signed certificate allowing code, when doing application release.
+
+## 7. Add runtime integrity checks ##
+
+You can optionally add runtime integrity checks for your custom classes to protect against method swizzling in runtime. 
+
+To do it, use following functions:
+
+```
+#!objective-c
+
+// Select randomly class methods and validate each method origin
+// Returns YES, if method's image origin is unexpected
+extern BOOL checkClassHooked(char * class_name);
+
+// Same as previous, but validate each and every method
+// Returns YES, if method's image origin is unexpected
+extern BOOL checkClassHookedWithAllMethods(char * class_name);
+
+// Validate a specific method for a specific class
+// Returns YES, if method's image origin is unexpected
+extern BOOL checkClassMethodHooked(char * class_name, SEL methodSelector);
+```
+
 ### Contribution ###
 
 * Writing tests
