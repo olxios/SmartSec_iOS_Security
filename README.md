@@ -225,18 +225,20 @@ Text fields, which are not used for sensitive information entry, should be marke
 
 ## 6. Configure SSL validation && pinning ##
 
-SSL pinning works for NSURLConnection based requests. In order to configure it, you must provide whether embedded certificate path or the hash of the public certificate SPKI. The hash is the recommended way. You can provide multiple certificates for one host. 
+SSL pinning works for NSURLConnection based requests. In order to configure it, you must provide whether embedded certificate path or the hash of the public certificate SPKI. The hash is the recommended way, but make sure you hide the hash string. 
+You can provide multiple certificates for one host. 
 
 Example configuration:
 
 ```
 #!objective-c
 
+NSString *certPath = [[NSBundle mainBundle] pathForResource:@"random-org" ofType:@"der"];
+
+NSString *certHash = @"cfb6fe515a13f0f84e058865c62087e890d8f0ea9d6723f8fc6a2193d29ced51";
+    
 NSDictionary *sslPinDictionary = @{@"twitter.com" :
-                @[[[NSBundle mainBundle] pathForResource:@"random-org" ofType:@"der"],
-                @"cfb6fe515a13f0f84e058865c62087e890d8f0ea9d6723f8fc6a2193d29ced51"]};
- 
-pinSSLCertificatesWithDictionary(sslPinDictionary);
+                                       @[certPath, certHash]}; 
 ```
 
 To use self-signed certificates, use following functions:
