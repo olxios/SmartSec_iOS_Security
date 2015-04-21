@@ -32,9 +32,11 @@ int main (int argc, char *argv[]);
         
     //allowInvalidCertificatesInReleaseMode(@[@"kosmos.infohaiku.com"]);
     
+    NSString *certPath = [[NSBundle mainBundle] pathForResource:@"random-org" ofType:@"der"];
+    NSString *certHash = @"cfb6fe515a13f0f84e058865c62087e890d8f0ea9d6723f8fc6a2193d29ced51";
+    
     NSDictionary *sslPinDictionary = @{@"twitter.com" :
-                                           @[[[NSBundle mainBundle] pathForResource:@"random-org" ofType:@"der"],
-                                             @"cfb6fe515a13f0f84e058865c62087e890d8f0ea9d6723f8fc6a2193d29ced51"]};
+                                           @[certPath, certHash]};
     
     pinSSLCertificatesWithDictionary(sslPinDictionary);
     
