@@ -56,6 +56,8 @@ BOOL checkClassHookedWithConfig(char * class_name, BOOL checkAllMethods)
     
     int max = (int)(nMethods / 20);
     
+    // Pass through all class methods
+    // If checkAllMethods == NO, select methods to check randomly
     for (int i = 0; i < nMethods; i+= (checkAllMethods ? 1 : (MAX((int)ceilf(arc4random()%(max ? max : 1)), 1))))
     {
         m = methods[i];
@@ -82,13 +84,16 @@ BOOL checkMethodImplementationHooked(IMP methodimp)
     
     Dl_info info;
     
+    // Query DL_info from method implementation using dladdr
     int d = dladdr((const void *) methodimp, &info);
     
     if (!d)
     {
+        // Something terribly wrong
         return YES;
     }
     
+    // Check image origin against legit origins
     if (strstr(info.dli_fname, [LOO_CRYPT_STR_N("/usr/lib/", 9) UTF8String]))
     {
         return NO;
@@ -114,6 +119,7 @@ BOOL checkMethodImplementationHooked(IMP methodimp)
         return NO;
     }
     
+    // Compose application path
     char appPath[512];
     snprintf(appPath, sizeof(appPath), "%s/%s/",
              [[[NSBundle mainBundle] resourcePath] UTF8String],
@@ -135,6 +141,7 @@ BOOL checkMethodImplementationHooked(IMP methodimp)
         return NO;
     }
     
+    // Check that a swizzled method origins from the security framework
     if (endsWith(info.dli_fname, [LOO_CRYPT_STR_N("/SmartSec.framework/SmartSec", 28) UTF8String])
         || endsWith(info.dli_fname, [LOO_CRYPT_STR_N("/SmartSec.framework/SmartSec/", 29) UTF8String]))
     {

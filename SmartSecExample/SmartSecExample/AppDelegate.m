@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import <SmartSec/SmartSec.h>
 
-// need to add this, otherwise compiler gets angry :(
+// need to add this, otherwise compiler gets angry...
 int main (int argc, char *argv[]);
 
 @interface AppDelegate ()
@@ -34,7 +34,6 @@ int main (int argc, char *argv[]);
     
     NSDictionary *sslPinDictionary = @{@"twitter.com" :
                                            @[[[NSBundle mainBundle] pathForResource:@"random-org" ofType:@"der"],
-                                            /*[[NSBundle mainBundle] pathForResource:@"twitter" ofType:@"der"]]*/
                                              @"cfb6fe515a13f0f84e058865c62087e890d8f0ea9d6723f8fc6a2193d29ced51"]};
     
     pinSSLCertificatesWithDictionary(sslPinDictionary);
