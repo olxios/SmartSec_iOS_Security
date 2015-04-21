@@ -16,7 +16,7 @@ This is an iOS framework, which incorporates multiple security controls into one
 
 ### Framework architecture ###
 
-The framework relies on Objective-C runtime to automatically inject validation logic. However, the framework does not change any system APIs behaviour, but only intercepts methods’ invocations, performs needed operations and proceeds with original implementation. **Each and every time the original method implementation will be called to ensure that nothing will break in the application!**
+The framework relies on Objective-C runtime to automatically inject validation logic. However, the framework does not change any system APIs behaviour, but only intercepts methods’ invocations, performs needed operations and proceeds with original implementation. **Each and every time the original method implementation will be called to ensure that nothing will break the application!**
 
 The general architecture is depicted on this diagram:
 
@@ -24,12 +24,65 @@ The general architecture is depicted on this diagram:
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+## 1. Add the framework to your project ##
+
+* Copy this repository
+* Drag the SmartSec.xcodeproj somewhere into your project
+* Navigate to Build phases -> Link binary With libraries and add the SmartSec.framework from the WorkSpace group
+
+![add_sec.png](https://bitbucket.org/repo/KeGARn/images/1040406618-add_sec.png)
+
+## 2. Add needed imports ##
+
+* Open your prefix file (YourProjectName.pch) and add following lines
+
+```
+#!objective-c
+
+#import <SmartSec/SecImports.h>
+#import <SmartSec/Crypto.h>
+```
+
+* Open your AppDelegate file and add the framework import:
+
+```
+#!objective-c
+
+#import <SmartSec/SmartSec.h>
+```
+
+## 3. Setup the framework ##
+
+* Into the application:didFinishLaunchingWithOptions: method (or any other suitable place) add framework setup:
+
+```
+#!objective-c
+
+setup(main, ^NSData *{
+    return [User currentUser].sessionId;
+ });
+```
+
+You must add the main function declaration somewhere, otherwise compiler is angry:
+
+```
+#!objective-c
+
+int main (int argc, char *argv[]);
+
+```
+
+**That's it for the basic configuration!**
+
+### Advanced configuration ###
+
+## 1. Choose the needed controls ##
+
+Each control has a way to fully or partially disable/enable it. Additionally, some controls have custom settings, such jailbreak detection callbacks or file encryption threshold settings, and the possibility to partially disable it.
+
+All global settings are described in the SmartSecConfig.h comments:
+
+
 
 ### Contribution ###
 
