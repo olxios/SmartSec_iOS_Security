@@ -203,9 +203,19 @@ extern void setup(const void * mainReference, OnSessionPasswordRequired sessionP
 
 **Important! Make sure that you're not using scalar datatypes in NSManagedObject subclasses. Scalar types cannot be used as Transformable attributes.**
 
-## 2. Setup whitelists ##
+## 3. Setup whitelists ##
 
+OWASP recommends to prohibit users to access arbitrary web content inside the application. To achieve this, all requests must be whitelisted. The security framework implements a whitelisting solution, which is based on the W3C Widget Access specification and should be familiar to users of Apache Cordova. By using wildcard identifier you can define complex request filters. Same whitelisting will also work for URL schemes source applications.
 
+To setup whitelists add WebAccessWhiteList and URLSchemesAccessWhiteList arrays to the Info.plist file.
+
+Example whitelist:
+
+![Screen Shot 2015-04-21 at 16.45.31.png](https://bitbucket.org/repo/KeGARn/images/2858937584-Screen%20Shot%202015-04-21%20at%2016.45.31.png)
+
+## 4. Setup logging ##
+
+The framework will automatically disable NSLog logging in the release mode. If you still need to log something in the release mode, use ReleaseLog(...) function instead. Both are defined using pre-processing macros - to skip this control, skip the <SmartSec/SecImports.h> import.
 
 ### Contribution ###
 
