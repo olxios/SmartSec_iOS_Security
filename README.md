@@ -274,6 +274,8 @@ extern BOOL checkClassHookedWithAllMethods(char * class_name);
 extern BOOL checkClassMethodHooked(char * class_name, SEL methodSelector);
 ```
 
+**For further configuration please refer to the example project.**
+
 # Contributions #
 
 ## The framework uses following open-source code: ##
