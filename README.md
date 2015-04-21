@@ -2,7 +2,7 @@
 
 This is an iOS framework, which incorporates multiple security controls into one framework. It was written for a Master's thesis about iOS application security as a proof-of-concept project. 
 
-### List of implemented security controls ###
+# List of implemented security controls #
 
 * Debugger controls
 * Jailbreak controls
@@ -14,7 +14,7 @@ This is an iOS framework, which incorporates multiple security controls into one
 * Protection against insecure data logging
 * WebView and URL scheme whitelisting
 
-### Framework architecture ###
+# Framework architecture #
 
 The framework relies on Objective-C runtime to automatically inject validation logic. However, the framework does not change any system APIs behaviour, but only intercepts methods’ invocations, performs needed operations and proceeds with original implementation. **Each and every time the original method implementation will be called to ensure that nothing will break the application!**
 
@@ -22,7 +22,7 @@ The general architecture is depicted on this diagram:
 
 ![diagramme_new_v4.png](https://bitbucket.org/repo/KeGARn/images/9585466-diagramme_new_v4.png)
 
-### How do I get set up? ###
+# How do I get set up? #
 
 ## 1. Add the framework to your project ##
 
@@ -74,7 +74,7 @@ int main (int argc, char *argv[]);
 
 **That's it for the basic configuration!**
 
-### Advanced configuration ###
+# Advanced configuration #
 
 ## 1. Choose the needed controls ##
 
