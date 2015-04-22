@@ -48,7 +48,7 @@
 #pragma mark - General methods
 
 - (void)accessCoreData
-{
+{    
     TestEntity1 *entity = (TestEntity1 *)[TestEntity1 insertNewObjectIfNeeded:@"test2"];
     entity.itemID = @"test2";
     entity.attribute1 = @(8);

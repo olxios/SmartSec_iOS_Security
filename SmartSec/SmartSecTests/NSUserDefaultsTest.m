@@ -441,12 +441,34 @@
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"encrypted2"];
 }
 
-/*
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+- (void)testEncryptedUserDefaultPerformance
+{
+    enableNSUserDefaultsEncryption();
+    
+    [self measureBlock:
+     ^{
+        for (int i = 0; i < 1000; i++)
+        {
+            NSData *objectToSave = [RNCryptor randomDataOfLength:100];
+            [[NSUserDefaults standardUserDefaults] setObject:objectToSave forKey:@"performanceTestKey"];
+            [[NSUserDefaults standardUserDefaults] objectForKey:@"performanceTestKey"];
+        }
     }];
-}*/
+}
+
+- (void)testUnEncryptedUserDefaultPerformance
+{
+    disableNSUserDefaultsEncryption();
+    
+    [self measureBlock:
+     ^{
+         for (int i = 0; i < 1000; i++)
+         {
+             NSData *objectToSave = [RNCryptor randomDataOfLength:100];
+             [[NSUserDefaults standardUserDefaults] setObject:objectToSave forKey:@"performanceTestKey2"];
+             [[NSUserDefaults standardUserDefaults] objectForKey:@"performanceTestKey2"];
+         }
+     }];
+}
 
 @end
