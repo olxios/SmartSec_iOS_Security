@@ -38,13 +38,16 @@ void swizzledViewDidLoad(id self, SEL _cmd)
 {
     // Call the original implementation
     ((void(*)(id,SEL))__original_DidLoad_IMP)(self, _cmd);
-    
-    // Notify event observing classes
-    [[UIViewController class] notifyObservers:NSStringFromSelector(@selector(viewDidLoad))
-                           fromObservedObject:self];
-    
-    check_class((char *)[NSStringFromClass([self class]) UTF8String]);
-    check_class((char *)[NSStringFromClass([JailbreakCheck1 class]) UTF8String]);
+
+    if ([[UIApplication sharedApplication].windows count])
+    {
+        // Notify event observing classes
+        [[UIViewController class] notifyObservers:NSStringFromSelector(@selector(viewDidLoad))
+                               fromObservedObject:self];
+        
+        check_class((char *)[NSStringFromClass([self class]) UTF8String]);
+        check_class((char *)[NSStringFromClass([JailbreakCheck1 class]) UTF8String]);
+    }
 }
 
 + (void)load
