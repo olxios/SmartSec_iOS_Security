@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             scope = "0"
@@ -136,6 +136,959 @@
             startingLineNumber = "401"
             endingLineNumber = "401"
             landmarkName = "-testSetPlainURLForKey"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+            timestampString = "451510176.393868"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "jailbreak1Detected()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck1 onStateChanged:fromObject:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451510194.209756"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "832">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkJailbreakPassive"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451510194.210196"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "600">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck1 runChecks]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451510194.210645"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "600">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkJailbreakSymLink"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451510194.210943"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkJailbreakFile"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451510194.211122"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jailbreak1Detected"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451510194.211405"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+            timestampString = "451510179.719413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "jailbreak2Detected()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+            timestampString = "451510181.381368"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "jailbreak2Detected()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck2 onStateChanged:fromObject:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451510194.211806"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck2 onStateChanged:fromObject:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451510194.212067"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "796">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkJailbreakActive"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451510194.212258"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkJailbreakActive"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451510194.212427"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck2 runChecks]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451510194.212604"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck2 runChecks]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451510194.212769"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jailbreak2Detected"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451510194.212936"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SmartSecExample/AppDelegate.m"
+            timestampString = "451510915.636255"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AppDelegate application:didFinishLaunchingWithOptions:]"
+                  moduleName = "SmartSecExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSecExample/SmartSecExample/AppDelegate.m"
+                  timestampString = "451510354.76546"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__57-[AppDelegate application:didFinishLaunchingWithOptions:]_block_invoke"
+                  moduleName = "SmartSecExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSecExample/SmartSecExample/AppDelegate.m"
+                  timestampString = "451510354.765698"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SmartSecExample/AppDelegate.m"
+            timestampString = "451510915.636255"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/SmartSecDefault.m"
+            timestampString = "451510368.459192"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "initialize()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/SmartSecDefault.m"
+            timestampString = "451510371.372027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "initDefaultLibrary()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "initialize"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/SmartSecDefault.m"
+                  timestampString = "451510378.778025"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "initDefaultLibrary"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/SmartSecDefault.m"
+                  timestampString = "451510378.778422"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "420">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/SmartSecDefault.m"
+            timestampString = "451510395.301871"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "initDefaultLibrary()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/SmartSecConfigurable.m"
+            timestampString = "451510420.077393"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "initConfigurableLibrary()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/SmartSecConfigurable.m"
+            timestampString = "451510422.190992"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-setup"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
+            timestampString = "451510682.936719"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "integrityProblems()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IntegrityCheck1 onStateChanged:fromObject:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
+                  timestampString = "451530271.948619"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "1200">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "validateCodeSignature"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
+                  timestampString = "451530271.948946"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "1148">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IntegrityCheck1 runChecks]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
+                  timestampString = "451530271.94929"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "1148">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "integrityProblems"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
+                  timestampString = "451530271.949589"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "check_class"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
+                  timestampString = "451530271.949962"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "check_class_all_methods"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
+                  timestampString = "451530271.950276"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
+            timestampString = "451510714.781083"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "encryptionProblems()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IntegrityCheck2 setMainReference:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
+                  timestampString = "451530271.950641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "644">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkBinaryEncryption"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
+                  timestampString = "451530271.950924"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IntegrityCheck2 onStateChanged:fromObject:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
+                  timestampString = "451530271.951184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "812">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IntegrityCheck2 runChecks]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
+                  timestampString = "451530271.95147"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+            timestampString = "451510718.860631"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "jailbreak1Detected()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck1 onStateChanged:fromObject:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451530271.95181"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "2140">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkJailbreakPassive"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451530271.952156"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "1892">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck1 runChecks]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451530271.95248"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "1892">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkJailbreakSymLink"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451530271.952855"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkJailbreakFile"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451530271.953112"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jailbreak1Detected"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
+                  timestampString = "451530271.95355"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+            timestampString = "451510722.433764"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "jailbreak2Detected()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck2 onStateChanged:fromObject:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451530271.953916"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "980">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "checkJailbreakActive"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451530271.954359"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "728">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JailbreakCheck2 runChecks]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451530271.954779"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "728">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jailbreak2Detected"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
+                  timestampString = "451530271.955462"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/debug/DebugCheck1.m"
+            timestampString = "451510728.135377"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "disable_debugger_check1()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DebugCheck1 onStateChanged:fromObject:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck1.m"
+                  timestampString = "451530271.955876"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DebugCheck1 runChecks]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck1.m"
+                  timestampString = "451530271.956379"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "disable_debugger_check1"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck1.m"
+                  timestampString = "451530271.956908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/debug/DebugCheck2.m"
+            timestampString = "451510832.56938"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "disable_debugger_check2()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DebugCheck2 onStateChanged:fromObject:]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck2.m"
+                  timestampString = "451530271.957374"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DebugCheck2 runChecks]"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck2.m"
+                  timestampString = "451530271.957683"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "disable_debugger_check2"
+                  moduleName = "SmartSec"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck2.m"
+                  timestampString = "451530271.958177"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/checks/debug/DebugCheck2.m"
+            timestampString = "451510839.867518"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "disable_debugger_check2()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/SmartSecConfigurable.m"
+            timestampString = "451511990.944723"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-setup"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

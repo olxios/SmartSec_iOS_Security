@@ -52,8 +52,9 @@ static NSStringEncoding defaultStringEncoding = NSUTF8StringEncoding;
     }
     else if ([value isKindOfClass:[NSString class]])
     {
-        return getEncryptedDataWithoutHash([self addClassHeaderToData:[value dataUsingEncoding:defaultStringEncoding]
-                                withClass:[NSString class]], NO);
+        NSData *result = getEncryptedDataWithoutHash([self addClassHeaderToData:[value dataUsingEncoding:defaultStringEncoding] withClass:[NSString class]], NO);
+        
+        return result;
     }
     else if ([value isKindOfClass:[NSDate class]])
     {
@@ -75,9 +76,10 @@ static NSStringEncoding defaultStringEncoding = NSUTF8StringEncoding;
 {
     if ([value isKindOfClass:[NSData class]])
     {
-        Class dataClass = [self dataClass:value];
+        NSData *data = getDecryptedData(value, NO);
+        Class dataClass = [self dataClass:data];
         
-        NSData *data = getDecryptedData([self dataContent:value], NO);
+        data = [self dataContent:data];
         
         if (dataClass == [NSNumber class])
         {
@@ -91,7 +93,7 @@ static NSStringEncoding defaultStringEncoding = NSUTF8StringEncoding;
         }
         else if (dataClass == [NSString class])
         {
-            return [[NSString alloc] initWithData:value encoding:defaultStringEncoding];
+            return [[NSString alloc] initWithData:data encoding:defaultStringEncoding];
         }
         else if (dataClass == [NSDate class])
         {
@@ -101,7 +103,7 @@ static NSStringEncoding defaultStringEncoding = NSUTF8StringEncoding;
         }
         else if (dataClass == [NSData class])
         {
-            return value;
+            return data;
         }
     }
     

@@ -28,6 +28,8 @@
 #import "PinnedURLConnectionHandler.h"
 #import "CryptoManager.h"
 
+#import "UIViewController+Sec.h"
+
 // static variables
 static unsigned long long defaultThresholdSize = -1;
 
@@ -106,6 +108,11 @@ extern FORCE_INLINE void enableIntegrityChecks()
 extern FORCE_INLINE void disableIntegrityChecks()
 {
     disableChecksWithIdentifier(kIntegrityChecks);
+}
+
+extern FORCE_INLINE void disableOnLoadControls(UIViewController *obj)
+{
+    disableLoadingCheckers(obj);
 }
 
 #pragma mark -

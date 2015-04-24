@@ -44,7 +44,7 @@ static char correctionEnabledKey;
 {    
     self = [self initWithFrameSwizzled:frame];
     
-    if ([[self class] correctionDisabled])
+    if (![[self class] correctionDisabled])
     {
         self.autocorrectionType = UITextAutocorrectionTypeNo;
     }
@@ -56,7 +56,7 @@ static char correctionEnabledKey;
 {
     self = [self initWithCoderSwizzled:aDecoder];
     
-    if ([[self class] correctionDisabled])
+    if (![[self class] correctionDisabled])
     {
         self.autocorrectionType = UITextAutocorrectionTypeNo;
     }

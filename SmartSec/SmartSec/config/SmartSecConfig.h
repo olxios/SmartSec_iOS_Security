@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "Defines.h"
 
 @interface SmartSecConfig : NSObject
@@ -39,6 +40,9 @@ extern void disableJailbreakChecks();
 // including encryption detection check
 extern void enableIntegrityChecks();
 extern void disableIntegrityChecks();
+
+// Disable controls partially for a specific subclass
+extern void disableOnLoadControls(UIViewController *obj);
 
 // NSUserDefaults encryption - enable/disable NSUserDefaults encryption globally
 // If disabled, already encrypted values will stay encrypted until value rewriting

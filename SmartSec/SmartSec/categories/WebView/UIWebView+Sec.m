@@ -62,7 +62,7 @@ static char delegateKey;
         }
         
         // Save hooking
-        objc_setAssociatedObject(self, &delegateKey, self.delegate, OBJC_ASSOCIATION_ASSIGN);
+        objc_setAssociatedObject(self, &delegateKey, NSStringFromClass([self.delegate class]), OBJC_ASSOCIATION_RETAIN);
     }
 }
 
@@ -71,7 +71,7 @@ static char delegateKey;
     if (!self.delegate)
     {
         WebViewDelegate *delegate = [[WebViewDelegate alloc] init];
-        objc_setAssociatedObject(self, &delegateKey, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, &delegateKey, NSStringFromClass([delegate class]), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         self.delegate = delegate;
     }
 }
@@ -81,7 +81,7 @@ static char delegateKey;
 
 - (BOOL)delegateHooked
 {
-    return [objc_getAssociatedObject(self, &delegateKey) isEqual:self.delegate];
+    return [objc_getAssociatedObject(self, &delegateKey) isEqual:NSStringFromClass([self.delegate class])];
 }
 
 @end

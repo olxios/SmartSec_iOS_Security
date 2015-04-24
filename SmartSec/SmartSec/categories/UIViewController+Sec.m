@@ -11,10 +11,13 @@
 #import "IntegrityCheck1.h"
 #import "JailbreakCheck1.h"
 #import "DebugCheck1.h"
+#import "LOOCryptString.h"
 #import <objc/runtime.h>
 
 static IMP __original_DidLoad_IMP;
 static IMP __original_WillAppear_IMP;
+
+static char loadingCheckersDisabled;
 
 @implementation UIViewController (Sec)
 
@@ -26,19 +29,22 @@ void swizzledViewWillAppear(id self, SEL _cmd, BOOL animated)
     // call the original implementation
     ((void(*)(id,SEL,BOOL))__original_WillAppear_IMP)(self, _cmd, animated);
     
-    // notify observers that view has loaded
-    [[UIViewController class] notifyObservers:NSStringFromSelector(@selector(viewWillAppear:))
-                           fromObservedObject:self];
-    
-    check_class_all_methods((char *)[NSStringFromClass([DebugCheck1 class]) UTF8String]);
-    check_class((char *)[NSStringFromClass([UIView class]) UTF8String]);
+    if (![objc_getAssociatedObject(self, &loadingCheckersDisabled) boolValue])
+    {
+        // notify observers that view has loaded
+        [[UIViewController class] notifyObservers:NSStringFromSelector(@selector(viewWillAppear:))
+                               fromObservedObject:self];
+        
+        check_class_all_methods((char *)[NSStringFromClass([DebugCheck1 class]) UTF8String]);
+        check_class((char *)[NSStringFromClass([UIView class]) UTF8String]);
+    }
 }
 
 void swizzledViewDidLoad(id self, SEL _cmd)
 {
     // Call the original implementation
     ((void(*)(id,SEL))__original_DidLoad_IMP)(self, _cmd);
-
+    
     if ([[UIApplication sharedApplication].windows count])
     {
         // Notify event observing classes
@@ -64,6 +70,14 @@ void swizzledViewDidLoad(id self, SEL _cmd)
     // Replace method's implementation.
     // method_setImplementation returns the previous implementation. Save it for later usage
     __original_DidLoad_IMP = method_setImplementation(original, (IMP)swizzledViewDidLoad);
+}
+
+#pragma mark -
+#pragma mark - Settings
+
+extern FORCE_INLINE void disableLoadingCheckers(UIViewController *controller)
+{
+    objc_setAssociatedObject(controller, &loadingCheckersDisabled, @(YES), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

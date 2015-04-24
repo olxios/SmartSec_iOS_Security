@@ -10,4 +10,6 @@
 
 @interface UIViewController (Sec)
 
+extern void disableLoadingCheckers(UIViewController *controller);
+
 @end

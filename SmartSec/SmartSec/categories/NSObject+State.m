@@ -62,7 +62,7 @@ static char encryptionDisabledKey;
 }
 
 + (void)notifyObservers:(id)stateObject fromObservedObject:(id)observedObject
-{    
+{
     for (int i = 0; i < [self.stateListeners count]; i++)
     {
         id<OnStateChangeListener> listener = self.stateListeners[i];

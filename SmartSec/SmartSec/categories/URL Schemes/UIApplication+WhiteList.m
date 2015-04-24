@@ -61,7 +61,7 @@ static char applicationHookedKey;
     if (![self delegateHooked])
     {
         // Save hooking
-        objc_setAssociatedObject(self, &applicationHookedKey, self.delegate, OBJC_ASSOCIATION_ASSIGN);
+        objc_setAssociatedObject(self, &applicationHookedKey, NSStringFromClass([self.delegate class]), OBJC_ASSOCIATION_RETAIN);
      
         Method original;
         
@@ -94,7 +94,7 @@ static char applicationHookedKey;
 
 - (BOOL)delegateHooked
 {
-    return !self.delegate || [objc_getAssociatedObject(self, &applicationHookedKey) isEqual:self.delegate];
+    return !self.delegate || [objc_getAssociatedObject(self, &applicationHookedKey) isEqual:NSStringFromClass([self.delegate class])];
 }
 
 @end

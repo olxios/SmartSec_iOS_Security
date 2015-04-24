@@ -56,7 +56,7 @@ static char wkDelegateKey;
     if (![self delegateHooked])
     {
         // Save hooking
-        objc_setAssociatedObject(self, &wkDelegateKey, self.navigationDelegate, OBJC_ASSOCIATION_ASSIGN);
+        objc_setAssociatedObject(self, &wkDelegateKey, NSStringFromClass([self.navigationDelegate class]), OBJC_ASSOCIATION_RETAIN);
         
         Method original;
         
@@ -92,7 +92,7 @@ static char wkDelegateKey;
     if (!self.navigationDelegate)
     {
         WKWebViewNavigationDelegate *delegate = [[WKWebViewNavigationDelegate alloc] init];
-        objc_setAssociatedObject(self, &wkDelegateKey, delegate, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, &wkDelegateKey, NSStringFromClass([delegate class]), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         self.navigationDelegate = delegate;
     }
 }
@@ -102,7 +102,7 @@ static char wkDelegateKey;
 
 - (BOOL)delegateHooked
 {
-    return [objc_getAssociatedObject(self, &wkDelegateKey) isEqual:self.navigationDelegate];
+    return [objc_getAssociatedObject(self, &wkDelegateKey) isEqual:NSStringFromClass([self.navigationDelegate class])];
 }
 
 @end
