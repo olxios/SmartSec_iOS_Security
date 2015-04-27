@@ -18,6 +18,8 @@
 
 #import "LOOCryptString.h"
 
+static const void *mainFunctionReference = NULL;
+
 // Inline functions
 FORCE_INLINE void checkBinaryEncryption(IntegrityCheck2 *selfRef);
 FORCE_INLINE void encryptionProblems(IntegrityCheck2 *selfRef);
@@ -27,16 +29,9 @@ FORCE_INLINE void encryptionProblems(IntegrityCheck2 *selfRef);
 #pragma mark -
 #pragma mark - Custom setters
 
-- (void)setMainReference:(const void *)mainReference
+extern FORCE_INLINE void setMainReference(const void * mainReference)
 {
-    _mainReference = mainReference;
-    
-#if ENABLE_CHECKS
-    
-    checkBinaryEncryption(self);
-    
-#endif
-    
+    mainFunctionReference = mainReference;
 }
 
 #pragma mark -
@@ -89,9 +84,9 @@ FORCE_INLINE void encryptionProblems(IntegrityCheck2 *selfRef);
 
 void checkBinaryEncryption(IntegrityCheck2 *selfRef)
 {    
-    if (selfRef.mainReference == NULL)
+    if (mainFunctionReference == NULL)
     {
-        return;
+        return; 
     }
     
     // Define needed vars
@@ -99,12 +94,12 @@ void checkBinaryEncryption(IntegrityCheck2 *selfRef)
     const struct mach_header *header32bits;
     Dl_info dlinfo;
     
-    // If main not found,
-    // possibly some modifications made to the binary
-    if (dladdr(selfRef.mainReference, &dlinfo) == 0
+    // If main not found, it could be that internal
+    // Apple methods have changed and we are getting the wrong function reference.
+    // So, we just return silently to not break the application and make this code more safe
+    if (dladdr(mainFunctionReference, &dlinfo) == 0
         || dlinfo.dli_fbase == NULL)
     {
-        encryptionProblems(selfRef);
         return;
     }
     
@@ -175,8 +170,6 @@ void checkBinaryEncryption(IntegrityCheck2 *selfRef)
             cmd = (struct load_command *) ((uint8_t *) cmd + cmd->cmdsize);
         }
     }
-    
-    encryptionProblems(selfRef);
 }
 
 FORCE_INLINE void encryptionProblems(IntegrityCheck2 *selfRef)

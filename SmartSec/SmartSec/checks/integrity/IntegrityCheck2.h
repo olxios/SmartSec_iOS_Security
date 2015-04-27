@@ -12,7 +12,8 @@
 
 @interface IntegrityCheck2 : NSObject <BaseChecksTemplate, OnStateChangeListener>
 
-@property (nonatomic) const void *mainReference;
 @property (nonatomic, copy) OnEncryptionMissingDetected onEncryptionMissingDetected;
+
+extern void setMainReference(const void * mainReference);
 
 @end

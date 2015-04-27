@@ -43,7 +43,7 @@ FORCE_INLINE void disableChecksWithIdentifier(NSString *identifier);
 #pragma mark -
 #pragma mark - Setup
 
-extern FORCE_INLINE void setup(const void * mainReference, OnSessionPasswordRequired sessionPasswordCallback)
+extern FORCE_INLINE void startSecurityFramework(OnSessionPasswordRequired sessionPasswordCallback)
 {
     setSessionPasswordCallback(sessionPasswordCallback);
     
@@ -51,9 +51,9 @@ extern FORCE_INLINE void setup(const void * mainReference, OnSessionPasswordRequ
     
     for (id<BaseChecksTemplate> check in checks)
     {
-        if ([check respondsToSelector:@selector(setMainReference:)])
+        if ([check isKindOfClass:[IntegrityCheck2 class]])
         {
-            [(id)check setMainReference:mainReference];
+            [check runChecks];
         }
     }
     

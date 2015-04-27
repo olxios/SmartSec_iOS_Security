@@ -13,6 +13,7 @@
 #import "UIApplication+WhiteList.h"
 #import "IntegrityCheck1.h"
 #import "JailbreakCheck2.h"
+#import "IntegrityCheck2.h"
 
 #import <objc/runtime.h>
 #include <spawn.h>
@@ -33,6 +34,19 @@ void swizzledSetDelegate(id self, SEL _cmd, id<UIApplicationDelegate> delegate)
     
     // can initialize the library, when delegate is ready
     [SmartSecConfigurable sharedInstance];
+    
+    // Function call stack:
+    // 1. main
+    // 2. UIApplicationMain
+    // 3. - [UIApplication _setDelegate:assumeOwnership:] -> setDelegate:
+    
+    // We are currently in nr 3. To get main, we need to access nr 2 function level
+    // In other functions it may be different
+    // Tricky method, subject to change, if Apple changes call hierarchy
+    // Haven't found a better way yet
+    // Tested on iPhone 6, iPhone 4S, iPad Air (jailbroken)
+    
+    setMainReference(__builtin_return_address(2));
     
     [self setupURLSchemeFilter];
     

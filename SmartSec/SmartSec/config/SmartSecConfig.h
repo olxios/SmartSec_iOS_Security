@@ -101,8 +101,6 @@ extern void pinSSLCertificatesWithDictionary(NSDictionary *sslPinningDictionary)
 
 /******* Setuping the framework  *******/
 
-// mainReference is a reference to the main application function
-// it is needed to check for application binary encryption presence
 // sessionPasswordCallback is an optional callback,
 // which should return some dynamically changing password, associated with a current user
 // It is used for encryption keys memory protection
@@ -111,12 +109,12 @@ extern void pinSSLCertificatesWithDictionary(NSDictionary *sslPinningDictionary)
  
 Example configuration:
  
- setup(main, ^NSData *{
+ startSecurityFramework(^NSData *{
     return [User currentUser].sessionId;
  });
  
  */
 
-extern void setup(const void * mainReference, OnSessionPasswordRequired sessionPasswordCallback);
+extern void startSecurityFramework(OnSessionPasswordRequired sessionPasswordCallback);
 
 @end
