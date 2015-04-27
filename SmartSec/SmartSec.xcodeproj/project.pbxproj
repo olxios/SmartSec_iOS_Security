@@ -93,6 +93,7 @@
 		B280F1931AB06D3F00DC28FC /* BaseChecksTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1921AB06D3F00DC28FC /* BaseChecksTemplate.h */; };
 		B280F1981AB0974300DC28FC /* UIViewController+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B280F1961AB0974300DC28FC /* UIViewController+Sec.h */; };
 		B280F1991AB0974300DC28FC /* UIViewController+Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = B280F1971AB0974300DC28FC /* UIViewController+Sec.m */; };
+		B2B193751AEE5B140026C163 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B193741AEE5B140026C163 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B2C83C0F1AD71662003B7C16 /* URLWhitelist.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C0D1AD71662003B7C16 /* URLWhitelist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2C83C101AD71662003B7C16 /* URLWhitelist.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C83C0E1AD71662003B7C16 /* URLWhitelist.m */; };
 		B2C83C131AD82792003B7C16 /* UIWebView+Sec.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C83C111AD82792003B7C16 /* UIWebView+Sec.h */; };
@@ -221,6 +222,7 @@
 		B280F1921AB06D3F00DC28FC /* BaseChecksTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseChecksTemplate.h; sourceTree = "<group>"; };
 		B280F1961AB0974300DC28FC /* UIViewController+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sec.h"; sourceTree = "<group>"; };
 		B280F1971AB0974300DC28FC /* UIViewController+Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sec.m"; sourceTree = "<group>"; };
+		B2B193741AEE5B140026C163 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B2C83C0D1AD71662003B7C16 /* URLWhitelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLWhitelist.h; sourceTree = "<group>"; };
 		B2C83C0E1AD71662003B7C16 /* URLWhitelist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLWhitelist.m; sourceTree = "<group>"; };
 		B2C83C111AD82792003B7C16 /* UIWebView+Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Sec.h"; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B193751AEE5B140026C163 /* WebKit.framework in Frameworks */,
 				B262C8801AC575D7009E090F /* Security.framework in Frameworks */,
 				B2D73A3B1AAF7D3E00F8BB26 /* UIKit.framework in Frameworks */,
 			);
@@ -468,6 +471,7 @@
 		B2D249FA1A90C42900FA8CEA = {
 			isa = PBXGroup;
 			children = (
+				B2B193741AEE5B140026C163 /* WebKit.framework */,
 				B262C87F1AC575D7009E090F /* Security.framework */,
 				B2D73A3A1AAF7D3E00F8BB26 /* UIKit.framework */,
 				B2D24A061A90C42900FA8CEA /* SmartSec */,
@@ -954,7 +958,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SmartSec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = "-fstack-protector-all";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -976,7 +980,7 @@
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = SmartSec/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = "-fstack-protector-all";
 				PRODUCT_NAME = "$(TARGET_NAME)";
