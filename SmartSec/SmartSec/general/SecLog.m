@@ -21,10 +21,7 @@ void SSLog(BOOL releaseLog, NSString *format, ...)
 #endif
         va_list argumentList;
         va_start(argumentList, format);
-        
-        NSMutableString * message = [[NSMutableString alloc] initWithFormat:format
-                                                                  arguments:argumentList];
-        NSLogv(message, argumentList);
+        NSLogv(format, argumentList);
         va_end(argumentList);
 #ifndef DEBUG
     }
