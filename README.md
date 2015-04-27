@@ -108,6 +108,9 @@ extern void disableJailbreakChecks();
 extern void enableIntegrityChecks();
 extern void disableIntegrityChecks();
 
+// Disable controls partially for a specific subclass
+extern void disableOnLoadControls(UIViewController *obj);
+
 // NSUserDefaults encryption - enable/disable NSUserDefaults encryption globally
 // If disabled, already encrypted values will stay encrypted until value rewriting
 // Encrypted values will be retrieved normally, even if encryption is disabled
@@ -165,8 +168,6 @@ extern void pinSSLCertificatesWithDictionary(NSDictionary *sslPinningDictionary)
 
 /******* Setuping the framework  *******/
 
-// mainReference is a reference to the main application function
-// it is needed to check for application binary encryption presence
 // sessionPasswordCallback is an optional callback,
 // which should return some dynamically changing password, associated with a current user
 // It is used for encryption keys memory protection
@@ -175,13 +176,13 @@ extern void pinSSLCertificatesWithDictionary(NSDictionary *sslPinningDictionary)
  
 Example configuration:
  
- setup(main, ^NSData *{
+ startSecurityFramework(^NSData *{
     return [User currentUser].sessionId;
  });
  
  */
 
-extern void setup(const void * mainReference, OnSessionPasswordRequired sessionPasswordCallback);
+extern void startSecurityFramework(OnSessionPasswordRequired sessionPasswordCallback);
 ```
 
 ## 2. Setup Core Data encryption ##
