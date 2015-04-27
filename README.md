@@ -60,18 +60,9 @@ The general architecture is depicted on this diagram:
 ```
 #!objective-c
 
-setup(main, ^NSData *{
+startSecurityFramework(^NSData *{
     return [User currentUser].sessionId;
  });
-```
-
-You must add the main function declaration somewhere, otherwise compiler is angry:
-
-```
-#!objective-c
-
-int main (int argc, char *argv[]);
-
 ```
 
 **That's it for the basic configuration!**
