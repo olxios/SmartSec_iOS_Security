@@ -20,11 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         disableDebuggerChecks();
         
         onJailbreakDetected { (type) -> Void in
-            NSLog("DEVICE JAILBROKEN")
+            releasePrintln("DEVICE JAILBROKEN")
         }
         
         onMissingEncryption { () -> Void in
-            NSLog("ON MISSING ENCRYPTION")
+            releasePrintln("ON MISSING ENCRYPTION")
         }
         
         allowInvalidCertificatesInTestMode(["kosmos.infohaiku.com"])

@@ -22,6 +22,7 @@
 		B29353521AFCF597001EC341 /* TestEntity1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B293533F1AFCEB2C001EC341 /* TestEntity1.swift */; };
 		B29353541AFCF7D0001EC341 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29353531AFCF7D0001EC341 /* SecondViewController.swift */; };
 		B29353561AFCF851001EC341 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = B29353551AFCF851001EC341 /* test.html */; };
+		B293535A1AFCFBDA001EC341 /* SwiftLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29353591AFCFBDA001EC341 /* SwiftLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		B293533F1AFCEB2C001EC341 /* TestEntity1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEntity1.swift; sourceTree = "<group>"; };
 		B29353531AFCF7D0001EC341 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B29353551AFCF851001EC341 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		B29353591AFCFBDA001EC341 /* SwiftLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				B28856E41AFBEF4700173B94 /* SmartSec.xcodeproj */,
+				B29353591AFCFBDA001EC341 /* SwiftLog.swift */,
 				B28856B71AFBE5E600173B94 /* AppDelegate.swift */,
 				B28856BC1AFBE5E600173B94 /* ViewController.swift */,
 				B29353531AFCF7D0001EC341 /* SecondViewController.swift */,
@@ -387,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B293535A1AFCFBDA001EC341 /* SwiftLog.swift in Sources */,
 				B28856BD1AFBE5E600173B94 /* ViewController.swift in Sources */,
 				B28856BB1AFBE5E600173B94 /* SmartSecExample_Swift.xcdatamodeld in Sources */,
 				B29353521AFCF597001EC341 /* TestEntity1.swift in Sources */,
