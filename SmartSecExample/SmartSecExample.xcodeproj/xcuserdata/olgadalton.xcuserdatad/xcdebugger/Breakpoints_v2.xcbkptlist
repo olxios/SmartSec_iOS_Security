@@ -392,70 +392,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SmartSecExample/AppDelegate.m"
-            timestampString = "451510915.636255"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[AppDelegate application:didFinishLaunchingWithOptions:]"
-                  moduleName = "SmartSecExample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSecExample/SmartSecExample/AppDelegate.m"
-                  timestampString = "451510354.76546"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__57-[AppDelegate application:didFinishLaunchingWithOptions:]_block_invoke"
-                  moduleName = "SmartSecExample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSecExample/SmartSecExample/AppDelegate.m"
-                  timestampString = "451510354.765698"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "8">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SmartSecExample/AppDelegate.m"
-            timestampString = "451510915.636255"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "../SmartSec/SmartSec/SmartSecDefault.m"
             timestampString = "451510368.459192"
             startingColumnNumber = "9223372036854775807"
@@ -585,7 +521,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
-                  timestampString = "451530271.948619"
+                  timestampString = "451945220.811211"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
@@ -600,7 +536,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
-                  timestampString = "451530271.948946"
+                  timestampString = "451945220.811529"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
@@ -615,7 +551,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
-                  timestampString = "451530271.94929"
+                  timestampString = "451945220.811994"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
@@ -630,7 +566,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
-                  timestampString = "451530271.949589"
+                  timestampString = "451945220.812573"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
@@ -645,7 +581,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
-                  timestampString = "451530271.949962"
+                  timestampString = "451945220.813116"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
@@ -660,90 +596,12 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck1.m"
-                  timestampString = "451530271.950276"
+                  timestampString = "451945220.81354"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
                   endingLineNumber = "99"
                   offsetFromSymbolStart = "72">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
-            timestampString = "451510714.781083"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "encryptionProblems()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[IntegrityCheck2 setMainReference:]"
-                  moduleName = "SmartSec"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
-                  timestampString = "451530271.950641"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "191"
-                  endingLineNumber = "191"
-                  offsetFromSymbolStart = "644">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "checkBinaryEncryption"
-                  moduleName = "SmartSec"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
-                  timestampString = "451530271.950924"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "191"
-                  endingLineNumber = "191"
-                  offsetFromSymbolStart = "632">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[IntegrityCheck2 onStateChanged:fromObject:]"
-                  moduleName = "SmartSec"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
-                  timestampString = "451530271.951184"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "191"
-                  endingLineNumber = "191"
-                  offsetFromSymbolStart = "812">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[IntegrityCheck2 runChecks]"
-                  moduleName = "SmartSec"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/integrity/IntegrityCheck2.m"
-                  timestampString = "451530271.95147"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "191"
-                  endingLineNumber = "191"
-                  offsetFromSymbolStart = "632">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -771,7 +629,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
-                  timestampString = "451530271.95181"
+                  timestampString = "451945220.813984"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "134"
@@ -786,7 +644,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
-                  timestampString = "451530271.952156"
+                  timestampString = "451945220.81433"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "134"
@@ -801,7 +659,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
-                  timestampString = "451530271.95248"
+                  timestampString = "451945220.814731"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "134"
@@ -816,7 +674,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
-                  timestampString = "451530271.952855"
+                  timestampString = "451945220.815072"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "134"
@@ -831,7 +689,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
-                  timestampString = "451530271.953112"
+                  timestampString = "451945220.815506"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "134"
@@ -846,7 +704,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck1.m"
-                  timestampString = "451530271.95355"
+                  timestampString = "451945220.815987"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "134"
@@ -879,7 +737,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
-                  timestampString = "451530271.953916"
+                  timestampString = "451945220.816383"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "90"
@@ -894,7 +752,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
-                  timestampString = "451530271.954359"
+                  timestampString = "451945220.816761"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "90"
@@ -909,7 +767,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
-                  timestampString = "451530271.954779"
+                  timestampString = "451945220.817172"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "90"
@@ -924,7 +782,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/jailbreak/JailbreakCheck2.m"
-                  timestampString = "451530271.955462"
+                  timestampString = "451945220.817513"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "90"
@@ -957,7 +815,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck1.m"
-                  timestampString = "451530271.955876"
+                  timestampString = "451945220.818038"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "72"
@@ -972,7 +830,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck1.m"
-                  timestampString = "451530271.956379"
+                  timestampString = "451945220.818315"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "72"
@@ -987,7 +845,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck1.m"
-                  timestampString = "451530271.956908"
+                  timestampString = "451945220.818661"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "72"
@@ -1020,7 +878,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck2.m"
-                  timestampString = "451530271.957374"
+                  timestampString = "451945220.819119"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "93"
@@ -1035,7 +893,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck2.m"
-                  timestampString = "451530271.957683"
+                  timestampString = "451945220.819451"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "93"
@@ -1050,7 +908,7 @@
                   moduleName = "SmartSec"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/olgadalton/Desktop/IOS_DIPLOMA/SourceCode/SmartSec/SmartSec/checks/debug/DebugCheck2.m"
-                  timestampString = "451530271.958177"
+                  timestampString = "451945220.81976"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "93"
@@ -1089,6 +947,38 @@
             startingLineNumber = "73"
             endingLineNumber = "73"
             landmarkName = "-setup"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/categories/SSL/NSURLConnection+Sec.m"
+            timestampString = "451945206.651572"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-swizzledConnection:willSendRequestForAuthenticationChallenge:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SmartSec/SmartSec/categories/SSL/NSURLConnection+Sec.m"
+            timestampString = "451945209.297339"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-connection:willSendRequestForAuthenticationChallenge:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

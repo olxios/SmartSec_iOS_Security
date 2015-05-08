@@ -4,20 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SmartSec.xcscheme</key>
+		<key>SmartSecExample_Swift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B2D24A031A90C42900FA8CEA</key>
+		<key>B28856B11AFBE5E600173B94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B2D24A0E1A90C42A00FA8CEA</key>
+		<key>B28856C91AFBE5E600173B94</key>
 		<dict>
 			<key>primary</key>
 			<true/>

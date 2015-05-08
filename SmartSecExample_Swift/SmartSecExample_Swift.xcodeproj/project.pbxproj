@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B28856B81AFBE5E600173B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28856B71AFBE5E600173B94 /* AppDelegate.swift */; };
+		B28856BB1AFBE5E600173B94 /* SmartSecExample_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B28856B91AFBE5E600173B94 /* SmartSecExample_Swift.xcdatamodeld */; };
+		B28856BD1AFBE5E600173B94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28856BC1AFBE5E600173B94 /* ViewController.swift */; };
+		B28856C01AFBE5E600173B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28856BE1AFBE5E600173B94 /* Main.storyboard */; };
+		B28856C21AFBE5E600173B94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28856C11AFBE5E600173B94 /* Images.xcassets */; };
+		B28856C51AFBE5E600173B94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B28856C31AFBE5E600173B94 /* LaunchScreen.xib */; };
+		B28856D11AFBE5E600173B94 /* SmartSecExample_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28856D01AFBE5E600173B94 /* SmartSecExample_SwiftTests.swift */; };
+		B29352611AFCDCCF001EC341 /* SmartSec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28856EA1AFBEF4700173B94 /* SmartSec.framework */; };
+		B29352621AFCDCCF001EC341 /* SmartSec.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B28856EA1AFBEF4700173B94 /* SmartSec.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B29352671AFCDF48001EC341 /* random-org.der in Resources */ = {isa = PBXBuildFile; fileRef = B29352661AFCDF48001EC341 /* random-org.der */; };
+		B29353341AFCE6E6001EC341 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B293532F1AFCE6D9001EC341 /* libSDWebImage.a */; };
+		B29353381AFCE7A9001EC341 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29353371AFCE7A9001EC341 /* ImageIO.framework */; };
+		B29353521AFCF597001EC341 /* TestEntity1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B293533F1AFCEB2C001EC341 /* TestEntity1.swift */; };
+		B29353541AFCF7D0001EC341 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29353531AFCF7D0001EC341 /* SecondViewController.swift */; };
+		B29353561AFCF851001EC341 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = B29353551AFCF851001EC341 /* test.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B28856CB1AFBE5E600173B94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B28856AA1AFBE5E600173B94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B28856B11AFBE5E600173B94;
+			remoteInfo = SmartSecExample_Swift;
+		};
+		B28856E91AFBEF4700173B94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B28856E41AFBEF4700173B94 /* SmartSec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2D24A041A90C42900FA8CEA;
+			remoteInfo = SmartSec;
+		};
+		B28856EB1AFBEF4700173B94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B28856E41AFBEF4700173B94 /* SmartSec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2D24A0F1A90C42A00FA8CEA;
+			remoteInfo = SmartSecTests;
+		};
+		B29352631AFCDCD0001EC341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B28856E41AFBEF4700173B94 /* SmartSec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D24A031A90C42900FA8CEA;
+			remoteInfo = SmartSec;
+		};
+		B293532E1AFCE6D9001EC341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29353271AFCE6D9001EC341 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53761325155AD0D5005750A4;
+			remoteInfo = SDWebImage;
+		};
+		B29353301AFCE6D9001EC341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29353271AFCE6D9001EC341 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537D95C117ECC1FE0097C263;
+			remoteInfo = "SDWebImage+WebP";
+		};
+		B29353321AFCE6D9001EC341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29353271AFCE6D9001EC341 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 531041E0157EAFA400BBABC3;
+			remoteInfo = "SDWebImage+MKAnnotation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B29352651AFCDCD0001EC341 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B29352621AFCDCCF001EC341 /* SmartSec.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B28856B21AFBE5E600173B94 /* SmartSecExample_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartSecExample_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28856B61AFBE5E600173B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28856B71AFBE5E600173B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B28856BA1AFBE5E600173B94 /* SmartSecExample_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartSecExample_Swift.xcdatamodel; sourceTree = "<group>"; };
+		B28856BC1AFBE5E600173B94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B28856BF1AFBE5E600173B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B28856C11AFBE5E600173B94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B28856C41AFBE5E600173B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B28856CA1AFBE5E600173B94 /* SmartSecExample_SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartSecExample_SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28856CF1AFBE5E600173B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28856D01AFBE5E600173B94 /* SmartSecExample_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartSecExample_SwiftTests.swift; sourceTree = "<group>"; };
+		B28856DA1AFBEB5100173B94 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		B28856E41AFBEF4700173B94 /* SmartSec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SmartSec.xcodeproj; path = ../../SmartSec/SmartSec.xcodeproj; sourceTree = "<group>"; };
+		B29352661AFCDF48001EC341 /* random-org.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = "random-org.der"; sourceTree = "<group>"; };
+		B29353271AFCE6D9001EC341 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "SDWebImage-3.7.2/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
+		B29353351AFCE79B001EC341 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B29353371AFCE7A9001EC341 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B293533F1AFCEB2C001EC341 /* TestEntity1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEntity1.swift; sourceTree = "<group>"; };
+		B29353531AFCF7D0001EC341 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B29353551AFCF851001EC341 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B28856AF1AFBE5E600173B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29353381AFCE7A9001EC341 /* ImageIO.framework in Frameworks */,
+				B29353341AFCE6E6001EC341 /* libSDWebImage.a in Frameworks */,
+				B29352611AFCDCCF001EC341 /* SmartSec.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28856C71AFBE5E600173B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B28856A91AFBE5E600173B94 = {
+			isa = PBXGroup;
+			children = (
+				B29353371AFCE7A9001EC341 /* ImageIO.framework */,
+				B29353351AFCE79B001EC341 /* CoreGraphics.framework */,
+				B28856B41AFBE5E600173B94 /* SmartSecExample_Swift */,
+				B28856CD1AFBE5E600173B94 /* SmartSecExample_SwiftTests */,
+				B28856B31AFBE5E600173B94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B28856B31AFBE5E600173B94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B28856B21AFBE5E600173B94 /* SmartSecExample_Swift.app */,
+				B28856CA1AFBE5E600173B94 /* SmartSecExample_SwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B28856B41AFBE5E600173B94 /* SmartSecExample_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B28856E41AFBEF4700173B94 /* SmartSec.xcodeproj */,
+				B28856B71AFBE5E600173B94 /* AppDelegate.swift */,
+				B28856BC1AFBE5E600173B94 /* ViewController.swift */,
+				B29353531AFCF7D0001EC341 /* SecondViewController.swift */,
+				B293533E1AFCEB2C001EC341 /* core_data */,
+				B28856BE1AFBE5E600173B94 /* Main.storyboard */,
+				B28856C11AFBE5E600173B94 /* Images.xcassets */,
+				B28856C31AFBE5E600173B94 /* LaunchScreen.xib */,
+				B28856B91AFBE5E600173B94 /* SmartSecExample_Swift.xcdatamodeld */,
+				B29352991AFCE5A0001EC341 /* external */,
+				B28856B51AFBE5E600173B94 /* Supporting Files */,
+				B28856DA1AFBEB5100173B94 /* Bridging-Header.h */,
+			);
+			path = SmartSecExample_Swift;
+			sourceTree = "<group>";
+		};
+		B28856B51AFBE5E600173B94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B29353551AFCF851001EC341 /* test.html */,
+				B29352661AFCDF48001EC341 /* random-org.der */,
+				B28856B61AFBE5E600173B94 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B28856CD1AFBE5E600173B94 /* SmartSecExample_SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B28856D01AFBE5E600173B94 /* SmartSecExample_SwiftTests.swift */,
+				B28856CE1AFBE5E600173B94 /* Supporting Files */,
+			);
+			path = SmartSecExample_SwiftTests;
+			sourceTree = "<group>";
+		};
+		B28856CE1AFBE5E600173B94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B28856CF1AFBE5E600173B94 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B28856E51AFBEF4700173B94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B28856EA1AFBEF4700173B94 /* SmartSec.framework */,
+				B28856EC1AFBEF4700173B94 /* SmartSecTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B29352991AFCE5A0001EC341 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				B29353271AFCE6D9001EC341 /* SDWebImage.xcodeproj */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		B29353281AFCE6D9001EC341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B293532F1AFCE6D9001EC341 /* libSDWebImage.a */,
+				B29353311AFCE6D9001EC341 /* libSDWebImage+WebP.a */,
+				B29353331AFCE6D9001EC341 /* libSDWebImage+MKAnnotation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B293533E1AFCEB2C001EC341 /* core_data */ = {
+			isa = PBXGroup;
+			children = (
+				B293533F1AFCEB2C001EC341 /* TestEntity1.swift */,
+			);
+			path = core_data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B28856B11AFBE5E600173B94 /* SmartSecExample_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28856D41AFBE5E600173B94 /* Build configuration list for PBXNativeTarget "SmartSecExample_Swift" */;
+			buildPhases = (
+				B28856AE1AFBE5E600173B94 /* Sources */,
+				B28856AF1AFBE5E600173B94 /* Frameworks */,
+				B28856B01AFBE5E600173B94 /* Resources */,
+				B29352651AFCDCD0001EC341 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B29352641AFCDCD0001EC341 /* PBXTargetDependency */,
+			);
+			name = SmartSecExample_Swift;
+			productName = SmartSecExample_Swift;
+			productReference = B28856B21AFBE5E600173B94 /* SmartSecExample_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B28856C91AFBE5E600173B94 /* SmartSecExample_SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28856D71AFBE5E600173B94 /* Build configuration list for PBXNativeTarget "SmartSecExample_SwiftTests" */;
+			buildPhases = (
+				B28856C61AFBE5E600173B94 /* Sources */,
+				B28856C71AFBE5E600173B94 /* Frameworks */,
+				B28856C81AFBE5E600173B94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B28856CC1AFBE5E600173B94 /* PBXTargetDependency */,
+			);
+			name = SmartSecExample_SwiftTests;
+			productName = SmartSecExample_SwiftTests;
+			productReference = B28856CA1AFBE5E600173B94 /* SmartSecExample_SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B28856AA1AFBE5E600173B94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Olga Dalton";
+				TargetAttributes = {
+					B28856B11AFBE5E600173B94 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B28856C91AFBE5E600173B94 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = B28856B11AFBE5E600173B94;
+					};
+				};
+			};
+			buildConfigurationList = B28856AD1AFBE5E600173B94 /* Build configuration list for PBXProject "SmartSecExample_Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B28856A91AFBE5E600173B94;
+			productRefGroup = B28856B31AFBE5E600173B94 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B29353281AFCE6D9001EC341 /* Products */;
+					ProjectRef = B29353271AFCE6D9001EC341 /* SDWebImage.xcodeproj */;
+				},
+				{
+					ProductGroup = B28856E51AFBEF4700173B94 /* Products */;
+					ProjectRef = B28856E41AFBEF4700173B94 /* SmartSec.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B28856B11AFBE5E600173B94 /* SmartSecExample_Swift */,
+				B28856C91AFBE5E600173B94 /* SmartSecExample_SwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B28856EA1AFBEF4700173B94 /* SmartSec.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SmartSec.framework;
+			remoteRef = B28856E91AFBEF4700173B94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B28856EC1AFBEF4700173B94 /* SmartSecTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SmartSecTests.xctest;
+			remoteRef = B28856EB1AFBEF4700173B94 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B293532F1AFCE6D9001EC341 /* libSDWebImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImage.a;
+			remoteRef = B293532E1AFCE6D9001EC341 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B29353311AFCE6D9001EC341 /* libSDWebImage+WebP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage+WebP.a";
+			remoteRef = B29353301AFCE6D9001EC341 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B29353331AFCE6D9001EC341 /* libSDWebImage+MKAnnotation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage+MKAnnotation.a";
+			remoteRef = B29353321AFCE6D9001EC341 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B28856B01AFBE5E600173B94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28856C01AFBE5E600173B94 /* Main.storyboard in Resources */,
+				B29352671AFCDF48001EC341 /* random-org.der in Resources */,
+				B28856C51AFBE5E600173B94 /* LaunchScreen.xib in Resources */,
+				B29353561AFCF851001EC341 /* test.html in Resources */,
+				B28856C21AFBE5E600173B94 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28856C81AFBE5E600173B94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B28856AE1AFBE5E600173B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28856BD1AFBE5E600173B94 /* ViewController.swift in Sources */,
+				B28856BB1AFBE5E600173B94 /* SmartSecExample_Swift.xcdatamodeld in Sources */,
+				B29353521AFCF597001EC341 /* TestEntity1.swift in Sources */,
+				B29353541AFCF7D0001EC341 /* SecondViewController.swift in Sources */,
+				B28856B81AFBE5E600173B94 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28856C61AFBE5E600173B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28856D11AFBE5E600173B94 /* SmartSecExample_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B28856CC1AFBE5E600173B94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B28856B11AFBE5E600173B94 /* SmartSecExample_Swift */;
+			targetProxy = B28856CB1AFBE5E600173B94 /* PBXContainerItemProxy */;
+		};
+		B29352641AFCDCD0001EC341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SmartSec;
+			targetProxy = B29352631AFCDCD0001EC341 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B28856BE1AFBE5E600173B94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B28856BF1AFBE5E600173B94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B28856C31AFBE5E600173B94 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B28856C41AFBE5E600173B94 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B28856D21AFBE5E600173B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B28856D31AFBE5E600173B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B28856D51AFBE5E600173B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartSecExample_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/SmartSecExample_Swift/Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		B28856D61AFBE5E600173B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartSecExample_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/SmartSecExample_Swift/Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B28856D81AFBE5E600173B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartSecExample_SwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartSecExample_Swift.app/SmartSecExample_Swift";
+			};
+			name = Debug;
+		};
+		B28856D91AFBE5E600173B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartSecExample_SwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartSecExample_Swift.app/SmartSecExample_Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B28856AD1AFBE5E600173B94 /* Build configuration list for PBXProject "SmartSecExample_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28856D21AFBE5E600173B94 /* Debug */,
+				B28856D31AFBE5E600173B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28856D41AFBE5E600173B94 /* Build configuration list for PBXNativeTarget "SmartSecExample_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28856D51AFBE5E600173B94 /* Debug */,
+				B28856D61AFBE5E600173B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28856D71AFBE5E600173B94 /* Build configuration list for PBXNativeTarget "SmartSecExample_SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28856D81AFBE5E600173B94 /* Debug */,
+				B28856D91AFBE5E600173B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B28856B91AFBE5E600173B94 /* SmartSecExample_Swift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B28856BA1AFBE5E600173B94 /* SmartSecExample_Swift.xcdatamodel */,
+			);
+			currentVersion = B28856BA1AFBE5E600173B94 /* SmartSecExample_Swift.xcdatamodel */;
+			path = SmartSecExample_Swift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B28856AA1AFBE5E600173B94 /* Project object */;
+}

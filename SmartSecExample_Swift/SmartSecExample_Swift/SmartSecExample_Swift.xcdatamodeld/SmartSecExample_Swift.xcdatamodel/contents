@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="TestEntity1" representedClassName="SmartSecExample_Swift.TestEntity1" syncable="YES">
+        <attribute name="attribute1" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="attribute3" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="attribute4" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="attribute5" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="attribute6" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="attribute7" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="attribute8" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="attribute9" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="attribute10" optional="YES" attributeType="Transformable" valueTransformerName="BaseCoreDataTransformer" syncable="YES"/>
+        <attribute name="itemID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TestEntity1" positionX="-45" positionY="81" width="128" height="210"/>
+    </elements>
+</model>

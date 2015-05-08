@@ -145,7 +145,6 @@
     ReleaseLog(@"Connection did finish loading %@", connection);
 }
 
-/*
 - (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
 {
     ReleaseLog(@"Will send request for auth challenge: %@", challenge);
@@ -153,6 +152,6 @@
     NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
     [challenge.sender useCredential:credential
          forAuthenticationChallenge:challenge];
-}*/
+}
 
 @end
