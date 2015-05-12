@@ -89,8 +89,8 @@ BOOL checkMethodImplementationHooked(IMP methodimp)
     
     if (!d)
     {
-        // Something terribly wrong
-        return YES;
+        // Requested symbol wasn't found
+        return NO;
     }
     
     // Check image origin against legit origins
