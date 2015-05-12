@@ -67,6 +67,8 @@ startSecurityFramework(^NSData *{
 
 **That's it for the basic configuration!**
 
+## For Swift project configuration refer to the Swift example project ##
+
 # Advanced configuration #
 
 ## 1. Choose the needed controls ##
