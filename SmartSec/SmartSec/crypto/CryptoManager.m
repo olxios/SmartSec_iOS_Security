@@ -305,7 +305,13 @@ NSData *keychainItemForIdentifier(NSString *identifier)
     CFDictionaryRef foundDict = NULL;
     OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)searchDictionary, (CFTypeRef *)&foundDict);
     
-    NSDictionary *keychainDictionary = (__bridge NSDictionary *)foundDict;
+    NSDictionary *keychainDictionary = nil;
+    
+    if (foundDict)
+    {
+        keychainDictionary = [NSDictionary dictionaryWithDictionary:(__bridge NSDictionary *)foundDict];
+        CFRelease(foundDict);
+    }
     
     /* After the application reinstallation, the old encryption key will be removed and replaced with a newly generated key. 
         Different modification dates mean that the application was reinstalled.
