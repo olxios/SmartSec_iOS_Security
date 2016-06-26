@@ -1,4 +1,6 @@
-# THE PROJECT IS NOT MAINTAINED AND HASN'T BEEN TESTED ON IOS 9! #
+#Important!#
+
+## The project is not currently maintained and hasn't been tested on iOS 9! ##
 
 # README #
 
