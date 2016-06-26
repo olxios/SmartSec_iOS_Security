@@ -1,6 +1,6 @@
 #Important!#
 
-## The project is not currently maintained and hasn't been tested on iOS 9! Use as reference only! ##
+## The project is not currently maintained! Use as reference only! ##
 
 # README #
 
