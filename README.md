@@ -1,3 +1,5 @@
+# THE PROJECT IS NOT MAINTAINED AND HASN'T BEEN TESTED ON IOS 9! #
+
 # README #
 
 This is an iOS framework, which incorporates multiple security controls into one framework. It was written for a Master's thesis about iOS application security as a proof-of-concept project. 
