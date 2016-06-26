@@ -6,7 +6,7 @@
 
 This is an iOS framework, which incorporates multiple security controls into one framework. It was written for a Master's thesis about iOS application security as a proof-of-concept project. 
 
-Tested with iOS 8.0+
+Tested with iOS 8.x
 
 # List of implemented security controls #
 
